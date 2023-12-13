@@ -26,6 +26,8 @@
     "build": "react-scripts build",
     "predeploy": "yarn build",
     "deploy": "firebase deploy",
+		"prepreview": "yarn build",
+		"preview": "firebase hosting:channel:deploy preview",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "format:c": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\"",
     "test": "react-scripts test",
