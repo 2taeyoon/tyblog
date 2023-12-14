@@ -4,6 +4,7 @@ import RouteApp from "./pages/RouteApp";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import "./styles/pretendard.css";
 import "./styles/global.css";
 import "./styles/style.scss";
@@ -16,6 +17,7 @@ root.render(
   <Router>
     <RouteApp />
 		<Analytics/>
+		<SpeedInsights/>
   </Router>
 );
 
