@@ -1,6 +1,11 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 
+import "../styles/css/pretendard.css";
+import "../styles/css/global.css";
+import "../styles/scss/style.scss";
+
+import Aside from "../components/layout/Aside";
 
 const Home = lazy(() => import("./home/Home"));
 const Blog = lazy(() => import("./blog/Blog"));
@@ -30,6 +35,7 @@ const routes = [
 const RouteApp = () => {
   return (
     <div className="RouteApp">
+			<Aside/>
       <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
         <Routes>
           {routes.map((route, index) => {

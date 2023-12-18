@@ -5,9 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
-import "./styles/pretendard.css";
-import "./styles/global.css";
-import "./styles/style.scss";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -20,5 +18,7 @@ root.render(
 		<SpeedInsights/>
   </Router>
 );
+
+serviceWorkerRegistration.register();
 
 reportWebVitals();

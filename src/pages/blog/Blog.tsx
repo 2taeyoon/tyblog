@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
-import "../../styles/markdown.css";
-import "../../styles/markdown_atom.css";
+import "../../styles/css/markdown.css";
+import "../../styles/css/markdown_atom.css";
 
 export default function Blog() {
   const [markdown, setMarkdown] = useState("");
