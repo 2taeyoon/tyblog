@@ -1,0 +1,9 @@
+.aside { position: fixed; top: 0; bottom: 0; width: 250px; background-color: #fdfdfd; box-shadow: 0 0 10px #ddd; }
+
+.aside_wrap { display: flex; flex-direction: column; align-items: center; padding: 50px 0; }
+
+.profile_wrap { display: flex; flex-direction: column; align-items: center;
+	.profile { width: 150px; height: 150px; border-radius: 999px; background: url('../../../public/favicon/apple-icon-120x120.png') center center / cover; }
+	.sitename { padding-top: 5px; font-size: 2.0rem; font-weight: 700; }
+	.nickname { font-size: 1.6rem; font-weight: 400; }
+}
