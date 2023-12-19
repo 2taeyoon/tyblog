@@ -1,7 +1,17 @@
-import React from 'react'
+import React from "react";
+import CommonHelmet from "../../components/Common/CommonHelmet";
 
 export default function CodePrortfolioContent() {
-	return (
-		<div>CodePrortfolioContent</div>
-	)
+  return (
+    <>
+			<CommonHelmet
+				title="여기는 포폴의 제목이 들어갈 예정"
+				description="여기는 포폴의 상세 내용이 들어갈 예정"
+				ogTitle="여기는 포폴의 제목이 들어갈 예정"
+				ogDescription="여기는 포폴의 상세 내용이 들어갈 예정"
+				keywords="여기는 포폴의 제목이 들어갈 예정"
+      />
+      <div>CodePrortfolioContent</div>
+    </>
+  );
 }

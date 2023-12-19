@@ -32,26 +32,24 @@ const routes = [
 	{ path: "/designstudy:id", element: <DesignStudyContent /> }
 ];
 
-const RouteApp = () => {
+export default function RouteApp() {
   return (
-    <div className="RouteApp">
+		<div className="RouteApp">
 			<Aside/>
-      <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
-        <Routes>
-          {routes.map((route, index) => {
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                element={route.element}
-              />
-            );
-          })}
+			<Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
+				<Routes>
+					{routes.map((route, index) => {
+						return (
+							<Route
+								key={index}
+								path={route.path}
+								element={route.element}
+							/>
+						);
+					})}
 					<Route path='*' element={ <NotFound/> }/>
-        </Routes>
-      </Suspense>
-    </div>
+				</Routes>
+			</Suspense>
+		</div>
   );
-};
-
-export default RouteApp;
+}
