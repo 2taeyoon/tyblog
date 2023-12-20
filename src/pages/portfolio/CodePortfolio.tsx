@@ -11,7 +11,7 @@ export default function CodePortfolio() {
 				ogDescription="TYCODESIGN의 코드 포트폴리오 페이지입니다."
 				keywords="TYCODESIGN, 코드 포트폴리오"
       />
-      <div>CodePortfolio</div>
+      <div className="common_pd">CodePortfolio page</div>
     </>
   );
 }

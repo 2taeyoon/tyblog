@@ -11,7 +11,7 @@ export default function DesignStudy() {
 				ogDescription="TYCODESIGN의 디자인 스터디 페이지입니다."
 				keywords="TYCODESIGN, 디자인 스터디"
       />
-			<div>DesignStudy</div>
+			<div className="common_pd">DesignStudy page</div>
 		</>
 	)
 }

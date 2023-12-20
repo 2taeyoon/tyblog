@@ -11,7 +11,7 @@ export default function DesignPortfolio() {
 				ogDescription="TYCODESIGN의 디자인 포트폴리오 페이지입니다."
 				keywords="TYCODESIGN, 디자인 포트폴리오"
       />
-      <div>DesignPortfolio</div>
+      <div className="common_pd">DesignPortfolio page</div>
     </>
   );
 }

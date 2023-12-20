@@ -11,7 +11,7 @@ export default function CodeStudyContent() {
 				ogDescription="여기는 블로그의 상세 내용이 들어갈 예정"
 				keywords="여기는 블로그의 제목이 들어갈 예정"
       />
-      <div>CodeStudyContent</div>
+      <div className="common_pd">CodeStudyContent page</div>
     </>
   );
 }
