@@ -17,6 +17,8 @@ const CodeStudy = lazy(() => import("./study/CodeStudy"));
 const CodeStudyContent = lazy(() => import("./study/CodeStudyContent"));
 const DesignStudy = lazy(() => import("./study/DesignStudy"));
 const DesignStudyContent = lazy(() => import("./study/DesignStudyContent"));
+const EtcStudy = lazy(() => import("./study/EtcStudy"));
+const EtcStudyContent = lazy(() => import("./study/EtcStudyContent"));
 const NotFound = lazy(() => import("./NotFound"));
 
 const routes = [
@@ -29,7 +31,9 @@ const routes = [
 	{ path: "/codestudy", element: <CodeStudy /> },
 	{ path: "/codestudy/:id", element: <CodeStudyContent /> },
 	{ path: "/designstudy", element: <DesignStudy /> },
-	{ path: "/designstudy:id", element: <DesignStudyContent /> }
+	{ path: "/designstudy/:id", element: <DesignStudyContent /> },
+	{ path: "/etcstudy", element: <EtcStudy /> },
+	{ path: "/etcstudy/:id", element: <EtcStudyContent /> }
 ];
 
 export default function RouteApp() {
