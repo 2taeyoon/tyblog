@@ -1,5 +1,5 @@
 import React from "react";
-import CommonHelmet from "../../components/Common/CommonHelmet";
+import CommonHelmet from "../../components/utill/CommonHelmet";
 
 export default function CodePortfolio() {
   return (
