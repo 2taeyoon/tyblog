@@ -1,5 +1,6 @@
 import React from "react";
 import CommonHelmet from "../../components/Common/CommonHelmet";
+import codecode from '../../data/codeStudyContent.json';
 
 export default function CodeStudy() {
   return (
@@ -11,14 +12,85 @@ export default function CodeStudy() {
         ogDescription="TYCODESIGN의 코드 스터디 페이지입니다."
         keywords="TYCODESIGN, 코드 스터디"
       />
-      <div style={{ background: "blue" }}>
-        <div>1번의 상단 텍스트</div>
-        <div>1번의 하단 텍스트</div>
+			{/* <div className="common_pd">
+      <div className="card_wrap">
+        {cards.map((card, index) => (
+          <div key={index} className="card">
+            <div className="card_top">
+              <div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
+                <div className="card_badge">
+                  <div>{card.badge}</div>
+                </div>
+              </div>
+            </div>
+            <div className="card_bottom">
+              <div className="card_bottom_profile">
+                <div className="card_profile" style={{ background: `url('${card.profileImage}') center center / cover` }}></div>
+                <div className="card_nickname">{card.nickname}</div>
+                <div className="card_date">{card.date}</div>
+              </div>
+              <div className="card_bottom_title">{card.title}</div>
+              <div className="card_skill_wrap">
+                {card.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="card_skill" style={{ backgroundColor: skill.color }}>
+                    <div className="skill_img" style={{ background: `url('${skill.icon}') center center / cover` }}></div>
+                    <div className="skill_text">{skill.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      <div style={{ background: "red" }}>
-        <div>2번의 상단 텍스트</div>
-        <div>2번의 하단 텍스트</div>
-      </div>
+    </div> */}
+      {/* <div className="common_pd">
+				<div className="card_wrap">
+
+					<div className="card">
+						<div className="card_top">
+							<div className="card_img" style={{ background: `url('./images/title.jpg') center center / cover` }}>
+								<div className="card_badge">
+									<div>콘테스트 1등</div>
+								</div>
+							</div>
+						</div>
+						<div className="card_bottom">
+							<div className="card_bottom_profile">
+								<div className="card_profile" style={{ background: `url('./favicon/favicon-32x32.png') center center / cover` }}></div>
+								<div className="card_nickname">2taeyoon</div>
+								<div className="card_date">23년 10월 10일</div>
+							</div>
+							<div className="card_bottom_title">타이틀 제목입니다.</div>
+							<div className="card_skill_wrap">
+								<div className="card_skill" style={{ backgroundColor: `red`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">JavaScript</div>
+								</div>
+								<div className="card_skill" style={{ backgroundColor: `blue`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">TypeScript</div>
+								</div>
+								<div className="card_skill" style={{ backgroundColor: `blue`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">html</div>
+								</div>
+								<div className="card_skill" style={{ backgroundColor: `blue`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">css</div>
+								</div>
+								<div className="card_skill" style={{ backgroundColor: `blue`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">sass</div>
+								</div>
+								<div className="card_skill" style={{ backgroundColor: `blue`}}>
+									<div className="skill_img" style={{ background: `url('./images/html5.svg') center center / cover` }}></div>
+									<div className="skill_text">tailwind</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> */}
     </>
   );
 }

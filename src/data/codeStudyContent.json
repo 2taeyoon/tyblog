@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "badge": "콘테스트 1등",
+      "image": "./images/title.jpg",
+      "profileImage": "./favicon/favicon-32x32.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 10일",
+      "title": "타이틀 제목입니다.",
+      "skills": [
+        {"name": "JavaScript", "color": "red", "icon": "./images/html5.svg"},
+        {"name": "TypeScript", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "html", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "css", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "sass", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "tailwind", "color": "blue", "icon": "./images/html5.svg"}
+      ]
+    },
+    {
+      "badge": "콘테스트 1등",
+      "image": "./images/title.jpg",
+      "profileImage": "./favicon/favicon-32x32.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 10일",
+      "title": "타이틀 제목입니다.",
+      "skills": [
+        {"name": "JavaScript", "color": "red", "icon": "./images/html5.svg"},
+        {"name": "TypeScript", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "html", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "css", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "sass", "color": "blue", "icon": "./images/html5.svg"},
+        {"name": "tailwind", "color": "blue", "icon": "./images/html5.svg"}
+      ]
+    }
+  ]
+}
