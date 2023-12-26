@@ -10,7 +10,7 @@
 	.nickname { font-size: 1.4rem; font-weight: 400; }
 }
 
-.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: #fdfdfd; box-shadow: 0 0 2px 0 var(--thema);
+.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: #fdfdfd; border: 1px solid var(--line);
 	a { display: block; margin: 0 10px; transition: all .3s;
 		&:hover { transform: scale(1.1); }
 	}
