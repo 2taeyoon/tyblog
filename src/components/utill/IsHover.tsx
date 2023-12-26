@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { IsHoverProps } from "../../types/props";
 
-export default function IsHover({ children, baseClass, hoverClass }: IsHoverProps) {
+export default function IsHover({
+  children,
+  baseClass,
+  hoverClass
+}: IsHoverProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
