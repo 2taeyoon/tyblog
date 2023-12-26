@@ -25,3 +25,21 @@ export interface ListLinkProps {
   baseClass?: string;
 }
 // 링크 컴포넌트 END!
+
+// 카드 컴포넌트 START!
+interface CardProps {
+  image: string;
+	badge?: string;
+	skills?: Array<{name: string; color: string; icon: string;}>;
+	hashs?: Array<{name: string;}>;
+  profileImage?: string;
+  nickname?: string;
+  date?: string;
+  title?: string;
+  subTitle?: string;
+}
+
+export interface Mapping {
+  cards: CardProps[];
+}
+// 카드 컴포넌트 END!
