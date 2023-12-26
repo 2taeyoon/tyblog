@@ -76,7 +76,7 @@ blockquote {
 	margin-inline-end: 40px;
 	border-left: 3px solid #7085ff;
 	padding: 20px;
-	background-color: #f5f5f5;
+	background-color: #fff;
 }
 
 blockquote > p, blockquote > ol, blockquote > ul {

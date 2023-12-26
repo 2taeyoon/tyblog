@@ -8,15 +8,10 @@ import "../styles/scss/style.scss";
 import Aside from "../components/layout/Aside";
 
 const Home = lazy(() => import("./home/Home"));
-const Blog = lazy(() => import("./blog/Blog"));
 const CodePortfolio = lazy(() => import("./portfolio/CodePortfolio"));
-const CodePrortfolioContent = lazy(
-  () => import("./portfolio/CodePrortfolioContent")
-);
+const CodePrortfolioContent = lazy(() => import("./portfolio/CodePrortfolioContent"));
 const DesignPortfolio = lazy(() => import("./portfolio/DesignPortfolio"));
-const DesignPortfolioContent = lazy(
-  () => import("./portfolio/DesignPortfolioContent")
-);
+const DesignPortfolioContent = lazy(() => import("./portfolio/DesignPortfolioContent"));
 const CodeStudy = lazy(() => import("./study/CodeStudy"));
 const CodeStudyContent = lazy(() => import("./study/CodeStudyContent"));
 const DesignStudy = lazy(() => import("./study/DesignStudy"));
@@ -27,7 +22,6 @@ const NotFound = lazy(() => import("./NotFound"));
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/blog", element: <Blog /> },
   { path: "/codeportfolio", element: <CodePortfolio /> },
   { path: "/codeportfolio/:id", element: <CodePrortfolioContent /> },
   { path: "/designportfolio", element: <DesignPortfolio /> },

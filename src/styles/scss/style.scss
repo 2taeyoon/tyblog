@@ -3,21 +3,18 @@
 @import './animation.scss';
 
 
-// $thema: rgb(0, 102, 255);
-// $themalight: #b7d4ff;
-// $shadow: #e5efff;
-// $line: #dceaff;
-
-$thema: #4783dd;
-$themabright: #88b8ff; 
+$thema: #1D55AA;
+$themabright: #4783dd; 
 $themalight: #f5f8ff;
 $line: #dceaff;
 $shadow: #e5efff;
+$black: #232323;
 
 :root {
   --thema: #{$thema};
-	--themalight: #{$themalight};
 	--themabright: #{$themabright};
+	--themalight: #{$themalight};
 	--line: #{$line};
 	--shadow: #{$shadow};
+	--black: #{$black};
 }
