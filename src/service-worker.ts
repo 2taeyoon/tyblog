@@ -80,3 +80,18 @@ self.addEventListener("message", (event) => {
 
 // Any other custom service worker logic can go here.
 */
+
+
+//   	  package.json의 서비스 워커 디펜던시
+// 		  "workbox-background-sync": "^7.0.0",
+//      "workbox-broadcast-update": "^7.0.0",
+//      "workbox-cacheable-response": "^7.0.0",
+//      "workbox-core": "^7.0.0",
+//      "workbox-expiration": "^7.0.0",
+//      "workbox-google-analytics": "^7.0.0",
+//      "workbox-navigation-preload": "^7.0.0",
+//      "workbox-precaching": "^7.0.0",
+//      "workbox-range-requests": "^7.0.0",
+//      "workbox-routing": "^7.0.0",
+//      "workbox-strategies": "^7.0.0",
+//      "workbox-streams": "^7.0.0" 
