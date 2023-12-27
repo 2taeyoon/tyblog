@@ -31,19 +31,19 @@ interface routesProps {
 	element: JSX.Element;
 }
 
-const routes: routesProps[] = [
-  { index: true, path: "/", element: <Home /> },
-  { path: "/codeportfolio", element: <CodePortfolio /> },
-  { path: "/codeportfolio/:url", element: <CodePrortfolioContent /> },
-  { path: "/designportfolio", element: <DesignPortfolio /> },
-  { path: "/designportfolio/:url", element: <DesignPortfolioContent /> },
-  { path: "/codestudy", element: <CodeStudy /> },
-  { path: "/codestudy/:url", element: <CodeStudyContent /> },
-  { path: "/designstudy", element: <DesignStudy /> },
-  { path: "/designstudy/:url", element: <DesignStudyContent /> },
-  { path: "/etcstudy", element: <EtcStudy /> },
-  { path: "/etcstudy/:url", element: <EtcStudyContent /> }
-];
+// const routes: routesProps[] = [
+//   { index: true, path: "/", element: <Home /> },
+//   { path: "/codeportfolio", element: <CodePortfolio /> },
+//   { path: "/codeportfolio/:id", element: <CodePrortfolioContent /> },
+//   { path: "/designportfolio", element: <DesignPortfolio /> },
+//   { path: "/designportfolio/:id", element: <DesignPortfolioContent /> },
+//   { path: "/codestudy", element: <CodeStudy /> },
+//   { path: "/codestudy/:id", element: <CodeStudyContent /> },
+//   { path: "/designstudy", element: <DesignStudy /> },
+//   { path: "/designstudy/:id", element: <DesignStudyContent /> },
+//   { path: "/etcstudy", element: <EtcStudy /> },
+//   { path: "/etcstudy/:id", element: <EtcStudyContent /> }
+// ];
 
 const router = createBrowserRouter([
 	{
@@ -51,7 +51,17 @@ const router = createBrowserRouter([
 			element: <RouteApp/>,
 			errorElement: <NotFound/>,
 			children:[
-					...routes
+				{ index: true, path: "/", element: <Home /> },
+				{ path: "/codeportfolio", element: <CodePortfolio /> },
+				{ path: "/codeportfolio/:id", element: <CodePrortfolioContent /> },
+				{ path: "/designportfolio", element: <DesignPortfolio /> },
+				{ path: "/designportfolio/:id", element: <DesignPortfolioContent /> },
+				{ path: "/codestudy", element: <CodeStudy /> },
+				{ path: "/codestudy/:id", element: <CodeStudyContent /> },
+				{ path: "/designstudy", element: <DesignStudy /> },
+				{ path: "/designstudy/:id", element: <DesignStudyContent /> },
+				{ path: "/etcstudy", element: <EtcStudy /> },
+				{ path: "/etcstudy/:id", element: <EtcStudyContent /> }
 			]
 	}
 ]);

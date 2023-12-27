@@ -2,11 +2,11 @@ import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import CodeCard from '../../data/codeStudyData.json';
 import Card from "../../components/list/Card";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 
 export default function CodeStudy() {
-	const location = useLocation(); // 현재 위치 가져오기
-	console.log(location.pathname)
+	// const location = useLocation(); // 현재 위치 가져오기
+	// console.log(location.pathname)
   return (
     <>
       <CommonHelmet

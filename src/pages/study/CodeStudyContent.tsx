@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 import CodeCard from '../../data/codeStudyData.json';
 
 export default function CodeStudyContent() {
-	const { url } = useParams();
-	const hyphenRemoval = url?.replace(/-/g, ' ');
-	const CodeCardFind = CodeCard.cards.find(item => item.title === hyphenRemoval);
+	const { id } = useParams();
+	// const hyphenRemoval = id?.replace(/-/g, ' ');
+	const CodeCardFind = CodeCard.cards.find(item => item.id === id);
 
 	//console.log('CodeCardFind??',CodeCardFind?.title);
   return (

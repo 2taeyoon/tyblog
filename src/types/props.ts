@@ -28,6 +28,7 @@ export interface ListLinkProps {
 
 // 카드 컴포넌트 START!
 interface CardProps {
+	id: string;
   image: string;
 	badge?: string;
 	skills?: Array<{name: string; color: string; icon: string;}>;
