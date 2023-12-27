@@ -17,7 +17,7 @@ export default function CodeStudy() {
         keywords="TYCODESIGN, 코드 스터디"
       />
 			<div className="common_pd">
-				<Card cards={CodeCard.cards} url={location.pathname}/>
+				<Card cards={CodeCard.cards}/>
       </div>
     </>
   );
