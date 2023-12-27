@@ -20,9 +20,9 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+//import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import { HelmetProvider } from "react-helmet-async";
-import { Route, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { /*Route,*/ RouterProvider, createBrowserRouter } from "react-router-dom";
 
 
 interface routesProps {
@@ -91,6 +91,6 @@ root.render(
 	</React.StrictMode>
 );
 
-serviceWorkerRegistration.register();
+//serviceWorkerRegistration.register();
 
 reportWebVitals();
