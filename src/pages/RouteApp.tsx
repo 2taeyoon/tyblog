@@ -23,15 +23,15 @@ const NotFound = lazy(() => import("./NotFound"));
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/codeportfolio", element: <CodePortfolio /> },
-  { path: "/codeportfolio/:id", element: <CodePrortfolioContent /> },
+  { path: "/codeportfolio/:parameter", element: <CodePrortfolioContent /> },
   { path: "/designportfolio", element: <DesignPortfolio /> },
-  { path: "/designportfolio/:id", element: <DesignPortfolioContent /> },
+  { path: "/designportfolio/:parameter", element: <DesignPortfolioContent /> },
   { path: "/codestudy", element: <CodeStudy /> },
-  { path: "/codestudy/:id", element: <CodeStudyContent /> },
+  { path: "/codestudy/:parameter", element: <CodeStudyContent /> },
   { path: "/designstudy", element: <DesignStudy /> },
-  { path: "/designstudy/:id", element: <DesignStudyContent /> },
+  { path: "/designstudy/:parameter", element: <DesignStudyContent /> },
   { path: "/etcstudy", element: <EtcStudy /> },
-  { path: "/etcstudy/:id", element: <EtcStudyContent /> }
+  { path: "/etcstudy/:parameter", element: <EtcStudyContent /> }
 ];
 
 export default function RouteApp() {
