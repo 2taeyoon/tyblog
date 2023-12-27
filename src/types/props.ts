@@ -41,5 +41,6 @@ interface CardProps {
 
 export interface Mapping {
   cards: CardProps[];
+	url?: string | undefined;
 }
 // 카드 컴포넌트 END!

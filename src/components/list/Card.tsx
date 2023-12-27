@@ -2,11 +2,11 @@ import React from 'react'
 import { Mapping } from "../../types/props"
 import { Link } from "react-router-dom";
 
-export default function Card({ cards }: Mapping) {
+export default function Card({ cards, url }: Mapping) {
 	return (
 		<div className="card_wrap">
 			{ cards.map((card, index) => (
-				<Link to={`/codestudy/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
+				<Link to={`${url}/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
 							{ card.badge ?

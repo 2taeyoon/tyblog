@@ -2,8 +2,11 @@ import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import CodeCard from '../../data/codeStudyData.json';
 import Card from "../../components/list/Card";
+import { useLocation } from "react-router-dom";
 
 export default function CodeStudy() {
+	const location = useLocation(); // 현재 위치 가져오기
+	console.log(location.pathname)
   return (
     <>
       <CommonHelmet
@@ -14,7 +17,7 @@ export default function CodeStudy() {
         keywords="TYCODESIGN, 코드 스터디"
       />
 			<div className="common_pd">
-				<Card cards={CodeCard.cards}/>
+				<Card cards={CodeCard.cards} url={location.pathname}/>
       </div>
     </>
   );
