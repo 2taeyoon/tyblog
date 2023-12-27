@@ -7,7 +7,8 @@ export default function Card({ cards }: Mapping) {
 		<div className="card_wrap">
 			{ cards.map((card, index) => (
 				// <Link to={`/codestudy/${encodeURIComponent(card.title?.replace(/\s+/g, '-'))}`} key={index} className="card">
-				<Link to={`/codestudy/${card.title ? encodeURIComponent(card.title.replace(/\s+/g, '-')) : 'default-title'}`} key={index} className="card">
+				// <Link to={`/codestudy/${card.title ? encodeURIComponent(card.title.replace(/\s+/g, '-')) : 'default-title'}`} key={index} className="card">
+				<Link to={`/codestudy/${card.id}`} key={index} className="card">
 				{/* <Link to={`/codestudy/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card"> */}
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
