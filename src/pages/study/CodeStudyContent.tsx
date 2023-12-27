@@ -5,8 +5,8 @@ import CodeCard from '../../data/codeStudyData.json';
 
 export default function CodeStudyContent() {
 	const { url } = useParams();
-	// const hyphenRemoval = url?.replace(/-/g, ' ');
-	// const CodeCardFind = CodeCard.cards.find(item => item.title === hyphenRemoval);
+	const hyphenRemoval = url?.replace(/-/g, ' ');
+	const CodeCardFind = CodeCard.cards.find(item => item.title === hyphenRemoval);
 
 	//console.log('CodeCardFind??',CodeCardFind?.title);
   return (
@@ -18,7 +18,7 @@ export default function CodeStudyContent() {
         ogDescription="여기는 블로그의 상세 내용이 들어갈 예정"
         keywords="여기는 블로그의 제목이 들어갈 예정"
       />
-      <div className="common_pd">{url}</div>
+      <div className="common_pd">{hyphenRemoval}</div>
     </>
   );
 }
