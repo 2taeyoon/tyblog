@@ -1,11 +1,12 @@
 import React from 'react'
 import { Mapping } from "../../types/props"
+import { Link } from "react-router-dom";
 
 export default function Card({ cards }: Mapping) {
 	return (
 		<div className="card_wrap">
 			{ cards.map((card, index) => (
-				<div key={index} className="card">
+				<Link to={`/codestudy/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
 							{ card.badge ?
@@ -43,7 +44,7 @@ export default function Card({ cards }: Mapping) {
 							</div> : null
 						}
 					</div>
-				</div>
+				</Link>
 			))}
 	</div>
 	)
