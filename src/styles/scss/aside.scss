@@ -31,12 +31,12 @@
 	}
 	.nav_wrap { width: 100%;
 		.category { padding: 20px 36px; color: var(--blacklight);; font-size: 1.5rem; }
-		.item { display: flex; align-items: center; position: relative; width: 100; padding: 12px 36px; color: var(--black); transition: all .3s; overflow: hidden;
+		.item { display: flex; align-items: center; position: relative; width: 100%; padding: 12px 36px; color: var(--black); transition: all .3s; overflow: hidden;
 			&:hover { color: var(--thema); background-color: var(--themalight); }
 			&::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background-color: var(--themabright); transition: .5s ease-in-out; }
 			&:hover::after { right: 0; }
 
-			svg { padding-right: 16px; transition: all .3s; }
+			svg { padding-right: 12px; transition: all .3s; }
 			&:hover svg { fill: var(--thema); }
 		}
 	}

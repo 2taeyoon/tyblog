@@ -2,7 +2,6 @@ import React from "react";
 import ListLink from "../list/ListLink";
 import { CategoryLinksProps } from "../../types/props";
 
-
 export default function CategoryLinks({ category, categoryClass, links }: CategoryLinksProps) {
   return (
     <div className="nav_wrap">
@@ -14,7 +13,9 @@ export default function CategoryLinks({ category, categoryClass, links }: Catego
             baseClass="item"
             linkTo={link.linkTo}
             title={link.title}
-						svgWH="20px"
+						svgWH={link.svgWH}
+						svgColor={link.svgColor}
+						path={link.path}
           />
         ))}
       </ul>

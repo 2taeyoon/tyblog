@@ -41,7 +41,7 @@ export default function Aside() {
 					{categories.map((category, index) => (
 						<CategoryLinks
 							key={index}
-							category={category.name}
+							category={category.category}
 							categoryClass="category"
 							links={category.links}
 						/>

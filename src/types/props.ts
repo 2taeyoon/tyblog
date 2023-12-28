@@ -21,15 +21,39 @@ export interface IsHoverProps {
 // 링크 컴포넌트 START!
 export interface ListLinkProps {
   linkTo: string;
-	svgWH?: string;
   title?: string;
   baseClass?: string;
 	target?: string;
 	rel?: string;
 	ariaLabel?: string;
 	image?: string;
+	svgWH?: string;
+	svgColor?: string;
+	path?: string;
 }
 // 링크 컴포넌트 END!
+
+// 카테고리 링크 컴포넌트 START!
+export interface CategoryLinksProps {
+  category: string;
+	categoryClass: string;
+  links: {
+    linkTo: string;
+    title?: string;
+		svgWH?: string;
+		svgColor?: string;
+		path?: string;
+  }[];
+}
+// 카테고리 링크 컴포넌트 END!
+
+// SVG 컴포넌트 START!
+export interface SvgProps {
+	svgColor?: string;
+	path?: string;
+	svgWH?: string;
+}
+// 카테고리 링크 컴포넌트 END!
 
 // 카드 컴포넌트 START!
 export interface CardProps {
@@ -49,14 +73,3 @@ export interface Mapping {
   cards: CardProps[];
 }
 // 카드 컴포넌트 END!
-
-// 카테고리 링크 컴포넌트 START!
-export interface CategoryLinksProps {
-  category: string;
-	categoryClass: string;
-  links: {
-    linkTo: string;
-    title: string;
-  }[];
-}
-// 카테고리 링크 컴포넌트 END!
