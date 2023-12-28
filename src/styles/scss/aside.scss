@@ -1,4 +1,8 @@
-.aside { position: fixed; top: 0; bottom: 0; width: 250px; background-color: #fff; box-shadow: 0 0 10px var(--shadow); }
+.aside { position: fixed; top: 0; left: 0; bottom: 0; width: 250px; background-color: #fff; box-shadow: 0 0 10px var(--shadow); transition: left 2s ease-in-out;
+	@media (max-width: 1280px) {
+    left: -100%;
+  }
+}
 .aside_wrap { display: flex; flex-direction: column; align-items: center; padding: 50px 0; }
 
 .profile_wrap { display: flex; flex-direction: column; align-items: center;
@@ -21,13 +25,19 @@
 }
 
 .nav { width: 100%; padding: 16px 0; border-top: 1px solid var(--line);
-	.all_post { display: inline-block; width: 100%; padding: 10px 32px; color: var(--thema); font-weight: 500; }
+	.all_post { display: inline-block; width: 100%; padding: 10px 36px;
+		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700;
+		&:hover { animation: hueRotate 2s ease-in infinite alternate; }
+	}
 	.nav_wrap { width: 100%;
 		.category { padding: 20px 36px; color: var(--blacklight);; font-size: 1.5rem; }
-		.item { position: relative; width: 100%; display: inline-block; padding: 12px 36px; color: var(--black); transition: all .5s; overflow: hidden;
+		.item { display: flex; align-items: center; position: relative; width: 100; padding: 12px 36px; color: var(--black); transition: all .3s; overflow: hidden;
 			&:hover { color: var(--thema); background-color: var(--themalight); }
 			&::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background-color: var(--themabright); transition: .5s ease-in-out; }
 			&:hover::after { right: 0; }
+
+			svg { padding-right: 16px; transition: all .3s; }
+			&:hover svg { fill: var(--thema); }
 		}
 	}
 }

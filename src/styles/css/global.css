@@ -22,12 +22,15 @@ time, mark, audio, video, textarea, input {
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
-	letter-spacing: -0.25px;
 	line-height: 150%;
 	word-break: keep-all;
 	font-size: 1.6rem;
   font-weight: 400;
   font-family: "Pretendard", "Malgun Gothic", sans-serif;
+}
+
+p {
+	letter-spacing: -0.5px;
 }
 
 html {
