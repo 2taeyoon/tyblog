@@ -5,7 +5,7 @@ import ListLink from "../list/ListLink";
 // import NotefolioLogo from "../../../public/images/notefolio_logo.png"
 // import LoudLogo from "../../../public/images/loud_logo.png"
 // import VelogLogo from "../../../public/images/velog_logo.png"
-// import GithubLogo from "../../../public/images/github_logo.png"
+// import GithubLogo from "../../../public/images/github_logo.png"s
 
 export default function Aside() {
   return (
