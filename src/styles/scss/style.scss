@@ -1,0 +1,25 @@
+@import './common.scss';
+@import './aside.scss';
+@import './animation.scss';
+@import './codeStudy.scss';
+
+
+$thema: #1D55AA;
+$themabright: #4783dd; 
+$themalight: #f5f5f5;
+$line: #dceaff;
+$shadow: #e5efff;
+$black: #232323;
+$blacklight: #555;
+$blackmute: #8e95a1;
+
+:root {
+  --thema: #{$thema};
+	--themabright: #{$themabright};
+	--themalight: #{$themalight};
+	--line: #{$line};
+	--shadow: #{$shadow};
+	--black: #{$black};
+	--blacklight: #{$blacklight};
+	--blackmute: #{$blackmute};
+}
