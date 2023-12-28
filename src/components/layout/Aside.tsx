@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ListLink from "../list/ListLink";
 // import { navLinks } from "../../data/List";
-// import NotefolioLogo from "../../../public/images/notefolio_logo.png"
-// import LoudLogo from "../../../public/images/loud_logo.png"
-// import VelogLogo from "../../../public/images/velog_logo.png"
-// import GithubLogo from "../../../public/images/github_logo.png"s
 
 export default function Aside() {
   return (
@@ -28,7 +24,7 @@ export default function Aside() {
 						target="_blank"
 						rel="noreferrer noopener"
 						ariaLabel="NoteFolio 프로필 보기"
-						//image={NotefolioLogo}
+						image="./images/notefolio_logo.png"
 					></ListLink>
 					<ListLink
 						linkTo="https://loud.kr/m/2taeyoon"
@@ -36,7 +32,7 @@ export default function Aside() {
 						target="_blank"
 						rel="noreferrer noopener"
 						ariaLabel="Loud 프로필 보기"
-						//image={LoudLogo}
+						image="./images/loud_logo.png"
 					></ListLink>
 					<ListLink
 						linkTo="https://velog.io/@2taeyoon"
@@ -44,7 +40,7 @@ export default function Aside() {
 						target="_blank"
 						rel="noreferrer noopener"
 						ariaLabel="velog 프로필 보기"
-						//image={VelogLogo}
+						image="./images/velog_logo.png"
 					></ListLink>
 					<ListLink
 						linkTo="https://github.com/2taeyoon"
@@ -52,7 +48,7 @@ export default function Aside() {
 						target="_blank"
 						rel="noreferrer noopener"
 						ariaLabel="Github 프로필 보기"
-						//image={GithubLogo}
+						image="./images/github_logo.png"
 					></ListLink>
         </ul>
         <nav className="nav">
