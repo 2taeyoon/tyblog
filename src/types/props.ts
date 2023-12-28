@@ -21,6 +21,7 @@ export interface IsHoverProps {
 // 링크 컴포넌트 START!
 export interface ListLinkProps {
   linkTo: string;
+	svgWH?: string;
   title?: string;
   baseClass?: string;
 	target?: string;
@@ -48,3 +49,14 @@ export interface Mapping {
   cards: CardProps[];
 }
 // 카드 컴포넌트 END!
+
+// 카테고리 링크 컴포넌트 START!
+export interface CategoryLinksProps {
+  category: string;
+	categoryClass: string;
+  links: {
+    linkTo: string;
+    title: string;
+  }[];
+}
+// 카테고리 링크 컴포넌트 END!
