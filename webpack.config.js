@@ -34,7 +34,7 @@ module.exports = (argv) => {
         },
         {
           test: /\.css$/,
-          exclude: /node_modules/,
+          exclude: /node_modules\/(?!swiper)/,
           use: ["style-loader", "css-loader"]
         },
         {
