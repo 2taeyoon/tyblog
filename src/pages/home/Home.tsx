@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Home() {
   return (
@@ -23,7 +23,6 @@ export default function Home() {
 			<div className="swiper_common">
 				<Swiper
 					loop={true}
-					spaceBetween={30}
 					centeredSlides={true}
 					// autoplay={{
 					//   delay: 1000,
@@ -32,11 +31,10 @@ export default function Home() {
 					pagination={{
 						clickable: true
 					}}
-					navigation={true}
-					modules={[Autoplay, Pagination, Navigation]}
+					modules={[Autoplay, Pagination]}
 					className="mySwiper"
 				>
-					<SwiperSlide>Slide 1</SwiperSlide>
+					<SwiperSlide><div className="swiper_image" style={{ background: `url('./images/23.jpg') center center / cover`}}></div></SwiperSlide>
 					<SwiperSlide>Slide 2</SwiperSlide>
 					<SwiperSlide>Slide 3</SwiperSlide>
 				</Swiper>

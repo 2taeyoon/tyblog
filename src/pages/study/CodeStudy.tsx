@@ -23,7 +23,6 @@ export default function CodeStudy() {
         keywords="TYCODESIGN, 코드 스터디"
       />
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 3000,

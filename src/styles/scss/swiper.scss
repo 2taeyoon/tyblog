@@ -1,5 +1,6 @@
-.swiper_common .swiper {
-	width: 100%;
-  max-width: 1200px;
-	height: 100vh;
+.swiper_common .swiper { width: calc(100% - 250px); max-width: 100vw;	height: 60vh; min-height: 300px; margin-left: 250px;
+	@media (max-width: 1280px) {
+    width: 100%; margin-left: 0;
+  }
+	.swiper_image { width: 100%; height: 100%; }
 }
