@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ListLink from "../list/ListLink";
-import { asideLinks, categories } from "../../data/List";
+import { asideLinks, categories } from "../../data/asideList";
 import CategoryLinks from "../ui/CategoryLinks";
 
 export default function Aside() {

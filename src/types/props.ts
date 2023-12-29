@@ -30,6 +30,7 @@ export interface ListLinkProps {
 	svgWH?: string;
 	svgColor?: string;
 	path?: string;
+	path2?: string;
 }
 // 링크 컴포넌트 END!
 
@@ -43,15 +44,17 @@ export interface CategoryLinksProps {
 		svgWH?: string;
 		svgColor?: string;
 		path?: string;
+		path2?: string;
   }[];
 }
 // 카테고리 링크 컴포넌트 END!
 
 // SVG 컴포넌트 START!
 export interface SvgProps {
+	svgWH?: string;
 	svgColor?: string;
 	path?: string;
-	svgWH?: string;
+	path2?: string;
 }
 // 카테고리 링크 컴포넌트 END!
 
