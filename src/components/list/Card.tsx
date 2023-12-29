@@ -6,7 +6,7 @@ export default function Card({ cards }: Mapping) {
 	return (
 		<div className="card_wrap">
 			{ cards.map((card, index) => (
-				<Link to={`${card.id}`} key={index} className="card">
+				<Link to={`${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
 							{ card.badge ?

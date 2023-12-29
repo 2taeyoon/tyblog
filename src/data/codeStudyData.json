@@ -1,7 +1,6 @@
 {
   "cards": [
     {
-			"id": "02",
 			"mdFile": "./images/code_study/02/02.md",
       "image": "./images/code_study/02/main_image.webp",
       "profileImage": "./favicon/favicon-32x32.png",
@@ -16,7 +15,6 @@
       ]
     },
 		{
-			"id": "01",
 			"mdFile": "./images/code_study/01/01.md",
       "image": "./images/code_study/01/main_image.webp",
       "profileImage": "./favicon/favicon-32x32.png",
