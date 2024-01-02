@@ -6,3 +6,12 @@
 		filter: hue-rotate(45deg);
   }
 }
+
+@keyframes slideScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+		transform: scale(1.15);
+  }
+}

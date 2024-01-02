@@ -1,11 +1,13 @@
 .swiper_common { position: relative;
-	.swiper { width: calc(100% - 250px); max-width: 100vw;	height: 60vh; min-height: 300px; margin-left: 250px;
+	.swiper { width: calc(100% - 250px); max-width: 100vw;	height: 70vh; min-height: 300px; margin-left: 250px; overflow: hidden;
 		@media (max-width: 1280px) {
 			width: 100%; margin-left: 0;
 		}
-		.swiper_image { width: 100%; height: 100%; }
-		.title { position: absolute; top: 45%; left: 100px; transform: translateY(-50%); z-index: 100; color: var(--whitelight); text-align: left;
-			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.8rem; font-family: 'TTTtangsbudaejjigae'; font-weight: 500; text-shadow: -1px -1px 0 var(--blacklight), 1px -1px 0 var(--blacklight), -1px 1px 0 var(--blacklight), 1px 1px 0 var(--blacklight); }
+		.swiper-wrapper { animation: slideScale 18s linear infinite alternate; }
+		.swiper-slide .swiper_image { width: 100%; height: 100%; }
+		.title { position: absolute; top: 45%; left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whitelight); text-align: left; line-height: 170%;
+			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.8rem; font-family: 'TTTtangsbudaejjigae'; font-weight: 300; line-height: 170%; }
 		}
 	}
 }
+

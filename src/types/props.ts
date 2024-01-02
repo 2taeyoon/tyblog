@@ -75,3 +75,14 @@ export interface Mapping {
   cards: CardProps[];
 }
 // 카드 컴포넌트 END!
+
+// 슬라이드 컴포넌트 START!
+export interface TypingTextProps {
+	typingText: string;
+}
+
+export interface getRandomIndexProps {
+	arrayLength: number;
+	count: number;
+}
+// 슬라이드 컴포넌트 END!
