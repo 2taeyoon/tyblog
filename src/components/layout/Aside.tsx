@@ -6,7 +6,7 @@ import CategoryLinks from "../ui/CategoryLinks";
 
 export default function Aside() {
   return (
-    <aside className="aside" style={{display: "none"}}>
+    <aside className="aside">
       <div className="aside_wrap">
         <div className="profile_wrap">
           <div className="profile">

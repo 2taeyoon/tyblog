@@ -13,7 +13,7 @@ export default function Home() {
         ogDescription="TYCODESIGN의 개인 공간이자 포트폴리오 사이트입니다."
         keywords="TYCODESIGN"
       />
-			<SliderFade/>
+			<SliderFade typingText="안녕하세요.<br/>1년차 웹 디자이너<br/>이태윤입니다."/>
       <div className="common_pd">Home page</div>
     </>
   );
