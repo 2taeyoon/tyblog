@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+::selection {
+  background: #4783dd;
+  color: #f5f5f5;
+}
+
 body {
   max-width: 100%;
 	background: #fff;

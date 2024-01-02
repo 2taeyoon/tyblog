@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
+import "../styles/css/TTTtangsbudaejjigae.css";
 import "../styles/css/global.css";
 import "../styles/scss/style.scss";
 
