@@ -47,13 +47,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-	// <React.StrictMode>
-	// 	<HelmetProvider>
-	// 		<RouterProvider router={router}/>
-	// 	</HelmetProvider>
-  //   <Analytics />
-  //   <SpeedInsights />
-	// </React.StrictMode>
+
 root.render(
 	<Router>
     <HelmetProvider>
