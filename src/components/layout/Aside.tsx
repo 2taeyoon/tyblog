@@ -1,36 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ListLink from "../list/ListLink";
-import { asideLinks, categories } from "../../data/asideList";
+import { categories } from "../../data/asideList";
 import CategoryLinks from "../ui/CategoryLinks";
+import Profile from "../ui/Profile";
 
 export default function Aside() {
   return (
     <aside className="aside">
       <div className="aside_wrap">
-        <div className="profile_wrap">
-          <div className="profile">{/*"image": "./images/code_study/02/main_image.webp",*/}
-            <img
-              src="/images/profile.webp"
-              alt="profile"
-            />
-          </div>
-          <div className="sitename">TYCODESIGN</div>
-          <div className="nickname">2taeyoon</div>
-        </div>
-        <ul className="another_site">
-					{asideLinks.map((link, index) => (
-						<ListLink
-							key={index}
-							linkTo={link.linkTo}
-							baseClass={link.baseClass}
-							target="_blank"
-							rel="noreferrer noopener"
-							ariaLabel={link.ariaLabel}
-							image={link.image}
-						/>
-					))}
-        </ul>
+				<Profile/>
         <nav className="nav">
           <Link
             to="/"

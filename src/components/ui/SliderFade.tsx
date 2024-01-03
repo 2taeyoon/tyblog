@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
@@ -14,6 +14,21 @@ import { SlidesData } from "../../data/slideData";
 
 
 export default function SliderFade({ typingText }: TypingTextProps) {
+
+	//이미지 미리 로드하는 함수 START!
+	useEffect(() => {
+		preLoadImages(SlidesData);
+	}, []);
+
+	const preLoadImages = (imageArray: string[]) => {
+		imageArray.forEach((image) => {
+			const img = new Image();
+			img.src = image;
+		});
+	};
+	//이미지 미리 로드하는 함수 END!
+
+	//슬라이더 이미지 랜덤으로 3개만 선택한 상수 START!
 	const selectedIndices: number[] = [];
 	while (selectedIndices.length < 3) {
 		const randomIndex = Math.floor(Math.random() * SlidesData.length);
@@ -21,6 +36,7 @@ export default function SliderFade({ typingText }: TypingTextProps) {
 			selectedIndices.push(randomIndex);
 		}
 	}
+	//슬라이더 이미지 랜덤으로 3개만 선택한 상수 END!
 
 	return (
     <div className="swiper_common">

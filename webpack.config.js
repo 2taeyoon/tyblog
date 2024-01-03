@@ -17,7 +17,7 @@ module.exports = (argv) => {
 			publicPath: '/'
     },
     devServer: {
-      port: 5000,
+      port: 8755,
       hot: true,
 			historyApiFallback: true
     },
