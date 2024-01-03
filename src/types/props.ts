@@ -79,6 +79,7 @@ export interface Mapping {
 // 슬라이드 컴포넌트 START!
 export interface TypingTextProps {
 	typingText: string;
+	typingText2: string;
 }
 
 export interface getRandomIndexProps {
