@@ -3,25 +3,25 @@ export const asideLinks = [
     linkTo: "https://notefolio.net/2taeyoon",
     baseClass: "notefolio",
     ariaLabel: "NoteFolio 프로필 보기",
-    image: "./images/notefolio_logo.png",
+    image: "/images/notefolio_logo.png",
   },
   {
     linkTo: "https://loud.kr/m/2taeyoon",
     baseClass: "loud",
     ariaLabel: "Loud 프로필 보기",
-    image: "./images/loud_logo.png",
+    image: "/images/loud_logo.png",
   },
   {
     linkTo: "https://velog.io/@2taeyoon",
     baseClass: "velog",
     ariaLabel: "velog 프로필 보기",
-    image: "./images/velog_logo.png",
+    image: "/images/velog_logo.png",
   },
   {
     linkTo: "https://github.com/2taeyoon",
     baseClass: "github",
     ariaLabel: "Github 프로필 보기",
-    image: "./images/github_logo.png",
+    image: "/images/github_logo.png",
   },
 ];
 

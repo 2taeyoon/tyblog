@@ -9,9 +9,9 @@ export default function Aside() {
     <aside className="aside">
       <div className="aside_wrap">
         <div className="profile_wrap">
-          <div className="profile">
+          <div className="profile">{/*"image": "./images/code_study/02/main_image.webp",*/}
             <img
-              src="./images/profile.webp"
+              src="/images/profile.webp"
               alt="profile"
             />
           </div>

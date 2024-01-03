@@ -40,7 +40,6 @@ export default function RouteApp() {
     <div className="RouteApp">
       <Aside />
       <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
-				{/* <Outlet/> */}
         <Routes>
           {routes.map((route, index) => {
             return (
