@@ -5,9 +5,9 @@
 		}
 		.swiper-wrapper { animation: slideScale 18s linear infinite alternate; }
 		.swiper-slide .swiper_image { width: 100%; height: 100%; }
-		.title { position: absolute; top: 45%; left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whitelight); text-align: left; line-height: 170%;
-			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.8rem; font-family: 'TTTtangsbudaejjigae'; font-weight: 300; line-height: 170%; }
+		.title { position: absolute; top: 45%; left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whitelight); text-align: left;
+			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.8rem; font-family: 'TTTtangsbudaejjigae'; font-weight: 300; }
+			.Typewriter__wrapper .point_color { display: inline-block; font-size: 2.0rem; font-family: 'pretendard'; font-weight: 400; }
 		}
 	}
 }
-

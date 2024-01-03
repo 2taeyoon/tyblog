@@ -4,4 +4,7 @@ export const SlidesData: string[] = [
   './images/slide/slide_image3.png',
 	'./images/slide/slide_image4.png',
 	'./images/slide/slide_image5.png',
+	'./images/slide/slide_image6.png',
+	'./images/slide/slide_image7.png',
+	'./images/slide/slide_image8.png',
 ];

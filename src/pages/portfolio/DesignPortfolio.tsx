@@ -1,5 +1,6 @@
 import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
+import SliderFade from "../../components/ui/SliderFade";
 
 export default function DesignPortfolio() {
   return (

@@ -1,4 +1,4 @@
-.aside { position: fixed; z-index: 50; top: 0; bottom: 0; width: 250px; background-color: #fff; box-shadow: 0 0 10px var(--shadow);
+.aside { position: fixed; z-index: 50; top: 0; bottom: 0; width: 250px; background-color: #fff; box-shadow: 0 0 3px var(--shadow);
 	@media (max-width: 1280px) {
     display: none;
   }

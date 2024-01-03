@@ -49,7 +49,12 @@ export default function SliderFade({ typingText }: TypingTextProps) {
             onInit={(typewriter) => {
               typewriter
 								.changeDelay(70)
-                .typeString(typingText)
+                .typeString("안녕하세요.<br/>1년차 웹 디자이너<br/>이태윤입니다.")
+								.callFunction(() => {
+									const cursorElement = document.querySelector('.Typewriter__cursor') as HTMLElement;;
+									if (cursorElement) cursorElement.style.fontSize = '2.0rem';
+								})
+								.typeString("<br/><p class='point_color'>나만의 공간을 만들고 싶어, 부족한 실력으로 제작한 웹사이트입니다.</p>")
 								.callFunction(() => {
 									setTimeout(() => {
 										const cursorElement = document.querySelector('.Typewriter__cursor') as HTMLElement;;
