@@ -13,10 +13,11 @@ module.exports = (argv) => {
     entry: "./src/index.tsx",
     output: {
       path: path.join(__dirname, "/build"),
-      filename: "index.js"
+      filename: "index.js",
+			publicPath: '/'
     },
     devServer: {
-      port: 3000,
+      port: 5000,
       hot: true,
 			historyApiFallback: true
     },
