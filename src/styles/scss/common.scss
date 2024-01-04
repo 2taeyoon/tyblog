@@ -1,4 +1,6 @@
 .common_wrap { display: flex; justify-content: center; width: calc(100% - 250px); max-width: 100vw; padding: 50px; margin-left: 250px;
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
 	@media (max-width: 640px) { padding: 30px; }
+	
+	.blog { max-width: 768px; }
 }
