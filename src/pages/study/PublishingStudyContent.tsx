@@ -8,9 +8,6 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
 
-import "../../styles/css/markdown.css";
-import "../../styles/css/markdownAtom.css";
-
 export default function PublishingStudyContent() {
 	const { title } = useParams();
   const hyphenRemoval = title?.replace(/-/g, " ");
@@ -35,7 +32,22 @@ export default function PublishingStudyContent() {
       />
       <div className="common_wrap">
 				<div className="blog">
-					<div>{PublishingCardFind?.title}</div>
+					<div className="card_title">{PublishingCardFind?.title}</div>
+					<div className="card_bottom_profile">
+						<div className="card_profile" style={{ background: `url('${PublishingCardFind?.profileImage}') center center / cover` }}></div>
+						<div className="card_nickname">{PublishingCardFind?.nickname}</div>
+						<div className="card_date">{PublishingCardFind?.date}</div>
+					</div>
+					{ PublishingCardFind?.hashs ?
+						<div className="card_hash_wrap">
+							{ PublishingCardFind.hashs.map((hash, hashIndex) => (
+								<div key={hashIndex} className="card_hash">
+									<div className="hash_text">{hash.name}</div>
+								</div>
+							))}
+						</div> : null
+					}
+					<div className="card_img" style={{ background: `url('${PublishingCardFind?.image}') center center / cover` }}></div>
 					<ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
 						{markdown}
 					</ReactMarkdown>
@@ -45,30 +57,17 @@ export default function PublishingStudyContent() {
   );
 }
 
-
-// import React, { useEffect, useState } from "react";
-// import ReactMarkdown from "react-markdown";
-// import rehypeHighlight from "rehype-highlight";
-// import "../../styles/css/markdown.css";
-// import "../../styles/css/markdown_atom.css";
-
-// export default function Blog() {
-//   const [markdown, setMarkdown] = useState("");
-
-//   useEffect(() => {
-//     fetch("./01.md")
-//       .then((response) => response.text())
-//       .then((text) => setMarkdown(text));
-//   }, []);
-
-//   return (
-//     <div style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-//       <div style={{ maxWidth: "768px", width: "100%" }}>
-//         블로그페이지
-//         <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
-//           {markdown}
-//         </ReactMarkdown>
-//       </div>
-//     </div>
-//   );
-// }
+// {
+// 	"mdFile": "/images/publishing_study/02/02.md",
+// 	"image": "/images/publishing_study/02/main_image.webp",
+// 	"profileImage": "/favicon/favicon-32x32.png",
+// 	"nickname": "2taeyoon",
+// 	"date": "23년 10월 10일",
+// 	"title": "React.FC와 타입 직접 선언",
+// 	"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+// 	"hashs": [
+// 		{"name": "#React"},
+// 		{"name": "#TypeScript"},
+// 		{"name": "#JavaScript"}
+// 	]
+// },

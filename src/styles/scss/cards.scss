@@ -10,24 +10,29 @@
 			}
 		}
 	}
-	.card_bottom { width: 100%; padding: 15px;
-		.card_bottom_profile { display: flex; align-items: center; padding: 5px;
-			.card_profile { width: 32px; height: 32px; border-radius: 999px; }
-			.card_nickname { padding-left: 8px; color: var(--blacklight); }
-			.card_date { padding-left: 10px; color: var(--blackmute); font-size: 1.4rem; }
-		}
-		.card_bottom_title { padding: 10px 5px 10px; font-size: 1.8rem; font-weight: 700; }
-		.card_bottom_sub_title { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 5px 10px; font-size: 1.6rem; font-weight: 400; }
-		.card_skill_wrap { display: flex; flex-wrap: wrap; width: 100%; padding-top: 5px;
-			.card_skill { display: flex; align-items: center; justify-content: center; padding: 3px 10px; margin: 5px; border-radius: 999px;
-				.skill_img { width: 13px; height: 13px; }
-				.skill_text { padding-left: 5px; color: #fff; font-size: 1.2rem; letter-spacing: 0; }
-			}
-		}
-		.card_hash_wrap { display: flex; flex-wrap: wrap; width: 100%; padding-top: 5px;
-			.card_hash { display: flex; align-items: center; justify-content: center; padding: 3px 10px; margin: 5px; border-radius: 999px; background-color: var(--thema);
-				.hash_text { color: #fff; font-size: 1.2rem; letter-spacing: 0; }
-			}
-		}
+	.card_bottom { width: 100%; padding: 20px;
+		.card_bottom_title { padding: 10px 0 10px; font-size: 1.8rem; font-weight: 700; }
+		.card_bottom_sub_title { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 0 10px; font-size: 1.6rem; font-weight: 400; }
+	}
+}
+
+
+//반복 되는 CSS는 빼놓아서 다시 재사용
+.card_bottom_profile { display: flex; align-items: center; padding: 5px 0 5px;
+	.card_profile { width: 32px; height: 32px; border-radius: 999px; }
+	.card_nickname { padding-left: 8px; color: var(--blacklight); }
+	.card_date { padding-left: 10px; color: var(--blackmute); font-size: 1.4rem; }
+}
+
+.card_skill_wrap { display: flex; flex-wrap: wrap; width: 100%; padding-top: 5px;
+	.card_skill { display: flex; align-items: center; justify-content: center; padding: 3px 10px; margin: 5px; border-radius: 999px;
+		.skill_img { width: 13px; height: 13px; }
+		.skill_text { padding-left: 5px; color: #fff; font-size: 1.2rem; letter-spacing: 0; }
+	}
+}
+
+.card_hash_wrap { display: flex; flex-wrap: wrap; width: 100%; padding-top: 5px;
+	.card_hash { display: flex; align-items: center; justify-content: center; padding: 3px 10px; margin: 0 10px 10px 0; border-radius: 999px; background-color: var(--thema);
+		.hash_text { color: #fff; font-size: 1.2rem; letter-spacing: 0; }
 	}
 }

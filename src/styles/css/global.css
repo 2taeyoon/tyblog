@@ -34,10 +34,6 @@ time, mark, audio, video, textarea, input {
   font-family: "Pretendard", "Malgun Gothic", sans-serif;
 }
 
-p {
-	letter-spacing: -0.5px;
-}
-
 html {
 	font-size: 62.5%;
 }

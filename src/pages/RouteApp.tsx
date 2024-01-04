@@ -6,6 +6,9 @@ import "../styles/css/TTTtangsbudaejjigae.css";
 import "../styles/css/global.css";
 import "../styles/scss/style.scss";
 
+import "../styles/css/markdown.css";
+import "../styles/css/markdownAtom.css";
+
 import Aside from "../components/layout/Aside";
 
 const Home = lazy(() => import("./home/Home"));

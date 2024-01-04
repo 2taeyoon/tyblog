@@ -73,7 +73,7 @@
 		background-color: #F8F9FA;
 	}
 	blockquote > p { margin: 0; }
-	blockquote > ol, blockquote > ul { margin: 0 0 0 18px;	}
+	blockquote > ol, blockquote > ul { width: calc(100% - 18px); margin: 0 0 0 18px;	}
 	
 	ol {
 		display: block;
@@ -84,7 +84,7 @@
 		margin-inline-end: 0px;
 		margin-inline-start: 18px;
 		margin-inline-end: 0;
-		li { list-style: initial; }
+		li { list-style: initial; margin: 16px 0; }
 	}
 	
 	ul {
@@ -96,7 +96,7 @@
 		margin-inline-end: 0px;
 		margin-inline-start: 18px;
 		margin-inline-end: 0;
-		li { list-style: initial; }
+		li { list-style: initial; margin: 16px 0; }
 	}
 	
 	a {
@@ -109,7 +109,7 @@
 	}
 	
 	hr {
-		border: 1px solid #eeeeee;
+		border: 1px solid #efefef;
 	}
 	
 	code {
