@@ -3,7 +3,7 @@
     {
 			"mdFile": "/images/publishing_study/02/02.md",
       "image": "/images/publishing_study/02/main_image.webp",
-      "profileImage": "/favicon/favicon-32x32.png",
+      "profileImage": "/favicon/favicon-48x48.png",
       "nickname": "2taeyoon",
       "date": "23년 10월 10일",
       "title": "React.FC와 타입 직접 선언",
@@ -17,7 +17,7 @@
 		{
 			"mdFile": "/images/publishing_study/01/01.md",
       "image": "/images/publishing_study/01/main_image.webp",
-      "profileImage": "/favicon/favicon-32x32.png",
+      "profileImage": "/favicon/favicon-48x48.png",
       "nickname": "2taeyoon",
       "date": "23년 10월 10일",
       "title": "TypeScript를 사용하는 이유",
