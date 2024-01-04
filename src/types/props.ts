@@ -2,11 +2,11 @@ import { ReactNode } from "react";
 
 // 메타 태그 START!
 export interface MetaProps {
-  title: string;
-  keywords: string;
-  description: string;
-  ogTitle: string;
-  ogDescription: string;
+  title: string | undefined;
+  keywords: string | undefined;
+  description: string | undefined;
+  ogTitle: string | undefined;
+  ogDescription: string | undefined;
 }
 // 메타 태그 END!
 

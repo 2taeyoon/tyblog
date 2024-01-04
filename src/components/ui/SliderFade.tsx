@@ -64,7 +64,7 @@ export default function SliderFade({ typingText, typingText2 }: TypingTextProps)
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-								.changeDelay(70)
+								.changeDelay(50)
                 .typeString(typingText)
 								.callFunction(() => {
 									const cursorElement = document.querySelector('.Typewriter__cursor') as HTMLElement;;

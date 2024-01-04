@@ -23,12 +23,12 @@ const NotFound = lazy(() => import("./NotFound"));
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/codeportfolio", element: <PublishingPortfolio /> },
-  { path: "/codeportfolio/:title", element: <PublishingPortfolioContent /> },
+  { path: "/publishingportfolio", element: <PublishingPortfolio /> },
+  { path: "/publishingportfolio/:title", element: <PublishingPortfolioContent /> },
   { path: "/designportfolio", element: <DesignPortfolio /> },
   { path: "/designportfolio/:title", element: <DesignPortfolioContent /> },
-  { path: "/codestudy", element: <PublishingStudy /> },
-  { path: "/codestudy/:title", element: <PublishingStudyContent /> },
+  { path: "/publishingstudy", element: <PublishingStudy /> },
+  { path: "/publishingstudy/:title", element: <PublishingStudyContent /> },
   { path: "/designstudy", element: <DesignStudy /> },
   { path: "/designstudy/:title", element: <DesignStudyContent /> },
   { path: "/etcstudy", element: <EtcStudy /> },

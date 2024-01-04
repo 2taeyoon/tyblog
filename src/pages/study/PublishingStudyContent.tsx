@@ -1,49 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import { useParams } from "react-router-dom";
 import PublishingCard from '../../data/publishingStudyData.json';
 import { CardProps } from "../../types/props";
 
+import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import rehypeRaw from "rehype-raw";
+
+import "../../styles/css/markdown.css";
+import "../../styles/css/markdownAtom.css";
+
 export default function PublishingStudyContent() {
 	const { title } = useParams();
-  const hyphenRemoval = title?.replace(/-/g, ' ');
-	const CodeCardFind = PublishingCard.cards.find((item: CardProps) => item.title === hyphenRemoval);
+  const hyphenRemoval = title?.replace(/-/g, " ");
+	const PublishingCardFind = PublishingCard.cards.find((item: CardProps) => item.title === hyphenRemoval);
 
-	//console.log('CodeCardFind??',CodeCardFind?.title);
+	const [markdown, setMarkdown] = useState("");
+
+	useEffect(() => {
+    fetch(`${PublishingCardFind?.mdFile}`)
+      .then((response) => response.text())
+      .then((text) => setMarkdown(text));
+  });
+
   return (
     <>
       <CommonHelmet
-        title="여기는 블로그의 제목이 들어갈 예정"
-        description="여기는 블로그의 상세 내용이 들어갈 예정"
-        ogTitle="여기는 블로그의 제목이 들어갈 예정"
-        ogDescription="여기는 블로그의 상세 내용이 들어갈 예정"
-        keywords="여기는 블로그의 제목이 들어갈 예정"
+        title={PublishingCardFind?.title}
+        description={PublishingCardFind?.subTitle}
+        ogTitle={PublishingCardFind?.title}
+        ogDescription={PublishingCardFind?.subTitle}
+        keywords={PublishingCardFind?.title}
       />
-      <div className="common_pd">{CodeCardFind?.subTitle}</div>
+      <div className="common_wrap">
+				<div className="blog">
+					<div>{PublishingCardFind?.title}</div>
+					<ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+						{markdown}
+					</ReactMarkdown>
+				</div>
+			</div>
     </>
   );
 }
-
-
-// import React from 'react'
-// import { useParams } from 'react-router-dom';
-// import projectDetailJson from '../../data/project.json'
-// import ProjectDetailTop from './ProjectDetailTop';
-// import ProjectDtailMiddle from './ProjectDetailMiddle';
-// import ProjectDtailBottom from './ProjectDtailBottom';
-
-// const ProjectDetailWrap = () => {
-//     const { id } = useParams();
-//     const projectFind = projectDetailJson.project.find(item => item.id === id);
-
-//     return (
-//         <div className='detail_wrap'>
-//             <ProjectDetailTop projectFind={projectFind}/>
-//             <ProjectDtailMiddle projectFind={projectFind}/>
-//             <ProjectDtailBottom projectFind={projectFind}/>
-//         </div>
-//     )
-// }
 
 
 // import React, { useEffect, useState } from "react";
