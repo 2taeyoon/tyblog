@@ -1,13 +1,13 @@
 import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import { useParams } from "react-router-dom";
-import CodeCard from '../../data/codeStudyData.json';
+import PublishingCard from '../../data/publishingStudyData.json';
 import { CardProps } from "../../types/props";
 
-export default function CodeStudyContent() {
+export default function PublishingStudyContent() {
 	const { title } = useParams();
   const hyphenRemoval = title?.replace(/-/g, ' ');
-	const CodeCardFind = CodeCard.cards.find((item: CardProps) => item.title === hyphenRemoval);
+	const CodeCardFind = PublishingCard.cards.find((item: CardProps) => item.title === hyphenRemoval);
 
 	//console.log('CodeCardFind??',CodeCardFind?.title);
   return (
