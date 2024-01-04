@@ -38,8 +38,19 @@ html {
 	font-size: 62.5%;
 }
 
-body {
-	font-size: 1.6em;
+/* 대략 15px */
+@media (max-width: 1280px) { 
+	html { font-size: 58.5%; }
+}
+
+/* 대략 14px */
+@media (max-width: 768px) { 
+	html { font-size: 54.5%; }
+}
+
+/* 대략 13px */
+@media (max-width: 640px) { 
+	html { font-size: 50.5%; }
 }
 
 article, aside, details, figcaption, figure,

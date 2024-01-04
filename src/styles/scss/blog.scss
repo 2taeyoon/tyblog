@@ -1,14 +1,14 @@
 .banner_wrap { height: 70vh;
 	.banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
 		.banner_image { height: 100%; min-height: 350px; border-radius: 0; filter: brightness(.3); }
-		.banner_info { position: absolute; top: 50%; left: 50%; width: 100%; max-width: 768px; transform: translate(-50%, -50%);
+		.banner_info { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 768px; padding: 32px;
 			.card_title { font-size: 4.8rem; color: var(--whitelight); text-align: center; }
 			.card_bottom_profile { padding: 10px 0 20px; justify-content: center;
 				.card_nickname { padding-left: 0; color: var(--blackmute); font-size: 1.6rem; }
 				.card_date { padding-left: 12px; color: var(--blackmute); font-size: 1.6rem; }
 			}
 			.card_hash_wrap { justify-content: center;
-				.card_hash { padding: 5px 12px;
+				.card_hash { padding: 5px 12px; margin: 5px;
 					.hash_text { font-size: 1.6rem; }
 				}
 			}
