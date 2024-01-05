@@ -1,7 +1,7 @@
 .blog {
 	pre > code > span, span, pre, code, li, strong, s, a, p	{ 
 		font-size: 1.8rem;
-		@media (max-width: 640px) { line-height: 170%;  }
+		@media (max-width: 640px) { line-height: 170%; }
 	}
 
 	h1 {

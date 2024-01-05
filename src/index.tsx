@@ -5,7 +5,6 @@ import reportWebVitals from "./reportWebVitals";
 
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -22,7 +21,5 @@ root.render(
     <SpeedInsights />
   </Router>
 );
-
-serviceWorkerRegistration.register();
 
 reportWebVitals();
