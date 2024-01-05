@@ -1,7 +1,7 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
-const path = require("path");
 const webpack = require("webpack");
 
 module.exports = (argv) => {
@@ -65,6 +65,8 @@ module.exports = (argv) => {
 				patterns: [
 					{ from: './public/images', to: 'images' },
 					{ from: './public/favicon', to: 'favicon' },
+					{ from: './public/manifest.json', to: 'manifest.json' },
+					{ from: './public/robots.txt', to: 'robots.txt' },
 				],
 			}),
       new CleanWebpackPlugin()
