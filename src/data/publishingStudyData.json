@@ -1,5 +1,19 @@
 {
   "cards": [
+		{
+			"mdFile": "/images/publishing_study/02/02.md",
+      "image": "/images/publishing_study/02/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 10일",
+      "title": "테스트와 테스트",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
     {
 			"mdFile": "/images/publishing_study/02/02.md",
       "image": "/images/publishing_study/02/main_image.webp",
