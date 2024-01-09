@@ -2,5 +2,19 @@
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
 	@media (max-width: 640px) { padding: 32px; }
 	
-	.blog { width: 100%; max-width: 768px; padding-bottom: 50px; border-bottom: 1px solid #efefef; }
+	.blog { width: 100%; max-width: 768px;
+		.page_url { display: flex; justify-content: space-between; padding: 100px 0; margin: 100px 0; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef;
+			.page_url_prev {
+				.page_url_text {}
+				.prev_page {}
+			}
+			.page_url_next {
+				.page_url_text {}
+				.next_page {}
+			}
+			.page_url_prev, .page_url_next { color: var(--black);
+				&:hover { text-decoration: none; }
+			}
+		}
+	}
 }

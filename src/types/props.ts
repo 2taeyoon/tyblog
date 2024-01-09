@@ -76,14 +76,17 @@ export interface Mapping {
 }
 // 카드 컴포넌트 END!
 
+// 이전, 다음 페이지 URL START!
+export interface PageUrlsProps {
+	hyphenRemoval: string;
+	cards: CardProps[];
+	basePath: string;
+}
+// 이전, 다음 페이지 URL END!
+
 // 슬라이드 컴포넌트 START!
 export interface TypingTextProps {
 	typingText: string;
 	typingText2: string;
-}
-
-export interface getRandomIndexProps {
-	arrayLength: number;
-	count: number;
 }
 // 슬라이드 컴포넌트 END!

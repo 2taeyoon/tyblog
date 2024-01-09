@@ -7,16 +7,17 @@ import { CardProps } from "../../types/props";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
-import { Link } from "react-router-dom";
+import PageUrls from "../../components/utill/PageUrls";
 
 export default function PublishingStudyContent() {
   const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
   const hyphenRemoval = title?.replace(/-/g, " ") ?? ""; // 현재 하이픈이 적용된 URL의 하이픈 제거 후, 공백 추가
 
-	// JSON 파일의 title과 현재 URL을 비교하여 해당하는 객체 가져오기
+	// JSON 파일의 title과 현재 URL을 비교하여 해당하는 객체 가져오기 START!
   const PublishingCardFind = PublishingCard.cards.find(
     (item: CardProps) => item.title === hyphenRemoval
   );
+	// JSON 파일의 title과 현재 URL을 비교하여 해당하는 객체 가져오기 END!
 
 	//마크다운 파일을 랜더링 START!
   const [markdown, setMarkdown] = useState("");
@@ -27,20 +28,6 @@ export default function PublishingStudyContent() {
       .then((text) => setMarkdown(text));
   });
 	//마크다운 파일을 랜더링 END!
-
-	function getNextPageUrl(currentTitle: string, cards: CardProps[]) {
-		const currentIndex = cards.findIndex(card => card.title === currentTitle);
-		const nextIndex = currentIndex + 1;
-	
-		if (nextIndex < cards.length) {
-			const nextTitle = cards[nextIndex].title;
-			return nextTitle?.replace(/\s+/g, '-');
-		}
-	
-		return null; // 다음 페이지가 없을 경우
-	}
-
-	const nextPageUrl = getNextPageUrl(hyphenRemoval, PublishingCard.cards);
 
   return (
     <>
@@ -76,10 +63,8 @@ export default function PublishingStudyContent() {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="publishingstudy"/>
         </div>
-				{nextPageUrl && (
-          <Link to={`/publishingstudy/${nextPageUrl}`} className="next-page">다음 페이지</Link>
-        )}
       </div>
     </>
   );
