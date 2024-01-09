@@ -78,7 +78,7 @@ export default function PublishingStudyContent() {
           </ReactMarkdown>
         </div>
 				{nextPageUrl && (
-          <Link to={`/${nextPageUrl}`} className="next-page">다음 페이지</Link>
+          <Link to={`/publishingstudy/${nextPageUrl}`} className="next-page">다음 페이지</Link>
         )}
       </div>
     </>
