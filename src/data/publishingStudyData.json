@@ -6,10 +6,10 @@
       "profileImage": "/favicon/favicon-48x48.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 5일",
-      "title": "Next.js에서 Swiper 사용하기",
+      "title": "NextJS에서 Swiper 사용하기",
 			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
 			"hashs": [
-				{"name": "#Next.js"},
+				{"name": "#NextJS"},
 				{"name": "#Swiper"}
       ]
     },

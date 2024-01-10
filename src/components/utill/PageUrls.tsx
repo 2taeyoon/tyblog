@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import { CardProps, PageUrlsProps } from "../../types/props";
 
@@ -37,21 +37,21 @@ export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsPro
 	// 현재 페이지의 JSON 배열을 받아 이전 페이지와 다음 페이지 URL 구현 END!
 
 	// 스크롤 초기화 함수 START!
-	const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+	useEffect(()=>{
+		window.scrollTo(0, 0);
+	})
 	// 스크롤 초기화 함수 END!
 
 	return (
 		<div className="page_url">
 			{
-				<Link to={`/${basePath}/${prevPageUrl}`} className="page_url_prev" onClick={scrollToTop}>
+				<Link to={`/${basePath}/${prevPageUrl}`} className="page_url_prev" >
 					<div className="page_url_text">{prevPageUrl && "이전 포스트"}</div>
 					<div className="prev_page">{ prevPageTitle }</div>
 				</Link>
 			}
 			{
-				<Link to={`/${basePath}/${nextPageUrl}`} className="page_url_next" onClick={scrollToTop}>
+				<Link to={`/${basePath}/${nextPageUrl}`} className="page_url_next" >
 					<div className="next_page">{nextPageUrl && "다음 포스트"}</div>
 					<div className="page_url_text">{ nextPageTitle }</div>
 				</Link>
