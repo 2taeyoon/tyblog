@@ -1,10 +1,49 @@
 .card_wrap { display: flex; flex-wrap: wrap; max-width: 1370px; }
 
-.card { width: calc(33.33% - 30px); margin: 15px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer;
+.card { width: calc(33.33% - 30px); margin: 15px; border-radius: 10px; cursor: pointer; box-shadow: 0 0px 5px #ddd; position: relative;
+	&::after, &::before {
+		content: '';
+		position: absolute;
+		z-index: 10;
+		border: 2px solid var(--themabright);
+		box-sizing: border-box;
+	}
+	&::after {
+		top: 0;
+		left: 50%;
+		width: 0;
+		height: 100%;
+		transform: translateX(-50%);
+		border-left: none;
+		border-right: none;
+	}
+	&::before {
+		top: 50%;
+		width: 100%;
+		height: 0;
+		transform: translateY(-50%);
+		border-top: none;
+		border-bottom: none;
+	}
+
+	// 카드 호버 애니메이션 START!
+	&:hover {
+		filter: contrast(.7);
+
+		&::after {
+			animation: expandWidth .5s forwards;
+		}
+		&::before {
+			animation: expandHeight .5s forwards;
+		}
+		.card_top .card_img { transform: scale(1.1); }
+	}
+	// 카드 호버 애니메이션 END!
+
 	@media (max-width: 1280px) { width: calc(50% - 30px); }
 	@media (max-width: 768px) { width: calc(100% - 30px); }
-	.card_top { position: relative; width: 100%; height: 250px; border-bottom: 1px solid var(--line);
-		.card_img { width: 100%; height: 100%; border-radius: 10px 10px 0 0;
+	.card_top { position: relative; width: 100%; height: 250px; border-bottom: 1px solid #eee; border-radius: 10px 10px 0 0; overflow: hidden;
+		.card_img { width: 100%; height: 100%; border-radius: 10px 10px 0 0; transition: .5s;
 			.card_badge { position: absolute; top: 20px; left: 20px; border-radius: 999px; background-color: var(--whitelight);
 				div { padding: 3px 10px; font-size: 1.4rem; }
 			}
@@ -17,7 +56,7 @@
 }
 
 
-//반복 되는 CSS는 빼놓아서 다시 재사용 START!
+//반복 되는 CSS는 빼서 재사용 START!
 .card_bottom_profile { display: flex; align-items: center; padding: 5px 0 5px;
 	.card_profile { width: 32px; height: 32px; border-radius: 999px; }
 	.card_nickname { padding-left: 8px; color: var(--blacklight); }
@@ -36,4 +75,4 @@
 		.hash_text { color: #fff; font-size: 1.2rem; letter-spacing: 0; }
 	}
 }
-//반복 되는 CSS는 빼놓아서 다시 재사용 END!
+//반복 되는 CSS는 빼서 재사용 END!
