@@ -60,15 +60,16 @@ export interface SvgProps {
 
 // 카드 컴포넌트 START!
 export interface CardProps {
-  image: string;
-	badge?: string;
-	skills?: Array<{name: string; color: string; icon: string;}>;
-	hashs?: Array<{name: string;}>;
+	mdFile?: string;
+  badge?: string;
+  image?: string;
   profileImage?: string;
   nickname?: string;
   date?: string;
   title?: string;
   subTitle?: string;
+  skills?: { name: string; color: string; icon: string }[];
+  hashs?: { name: string }[];
 }
 
 export interface Mapping {
@@ -90,3 +91,11 @@ export interface TypingTextProps {
 	typingText2: string;
 }
 // 슬라이드 컴포넌트 END!
+
+// 탭버튼 컴포넌트 START!
+export interface TabsProps {
+  cards: CardProps[];
+  activeTab: number;
+  setActiveTab: (tab: number) => void;
+}
+// 탭버튼 컴포넌트 END!
