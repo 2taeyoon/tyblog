@@ -1,6 +1,8 @@
 import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
+import EtcStudyData from "../../data/etcStudyData.json";
 import SliderFade from "../../components/ui/SliderFade";
+import Card from "../../components/list/Card";
 
 export default function EtcStudy() {
   return (
@@ -13,7 +15,9 @@ export default function EtcStudy() {
 				keywords="TYCODESIGN, 코드 스터디"
 			/>
 			<SliderFade typingText="웹 퍼블리싱 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>2023년부터 퍼블리싱 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
-			<div className="common_wrap">EtcStudy</div>
+			<div className="common_wrap">
+        <Card cards={EtcStudyData.cards} />
+      </div>
 		</>
 	);
 }
