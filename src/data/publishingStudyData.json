@@ -89,6 +89,816 @@
 				{"name": "#TypeScript"},
         {"name": "#JavaScript"}
       ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 9월 11일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 23일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 14일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 3일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 8월 2일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
     }
   ]
 }

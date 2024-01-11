@@ -1,0 +1,29 @@
+{
+  "cards": [
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 5일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#Swiper"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-48x48.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 27일",
+      "title": "Github SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"}
+      ]
+    }
+  ]
+}
