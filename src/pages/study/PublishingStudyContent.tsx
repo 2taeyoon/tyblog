@@ -8,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
 import PageUrls from "../../components/utill/PageUrls";
+import Banner from "../../components/ui/Banner";
 
 export default function PublishingStudyContent() {
   const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
@@ -39,24 +40,7 @@ export default function PublishingStudyContent() {
         keywords={PublishingCardFind?.title}
       />
 			<div className="common_wrap banner_wrap">
-				<div className="banner">
-					<div className="banner_image" style={{ background: `url('${PublishingCardFind?.image}') center center / cover` }}></div>
-					<div className="banner_info">
-						<div className="card_title">{PublishingCardFind?.title}</div>
-						<div className="card_bottom_profile">
-							<div className="card_nickname">{PublishingCardFind?.nickname}</div>
-							<div className="card_date">{PublishingCardFind?.date}</div>
-						</div>
-						{ PublishingCardFind?.hashs ? (
-							<div className="card_hash_wrap">
-								{ PublishingCardFind.hashs.map((hash, hashIndex) => (
-									<div key={hashIndex} className="card_hash">
-										<div className="hash_text">{hash.name}</div>
-									</div>
-								))}
-							</div>	) : null}
-					</div>
-				</div>
+				{PublishingCardFind && <Banner CardFind={PublishingCardFind} />}
 			</div>
       <div className="common_wrap">
         <div className="blog">
