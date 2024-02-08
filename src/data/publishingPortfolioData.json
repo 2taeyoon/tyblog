@@ -1,0 +1,62 @@
+{
+  "cards": [
+		{
+			"mdFile": "/images/publishing_study/2/2.md",
+      "badge": "콘테스트 1등",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-32x32.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 10일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+      "skills": [
+        {"name": "HTML", "color": "#E34F26", "icon": "./images/skill/html5.svg"},
+        {"name": "CSS3", "color": "#1572B6", "icon": "./images/skill/css3.svg"},
+				{"name": "Sass", "color": "#CC6699", "icon": "./images/skill/sass.svg"},
+				{"name": "Tailwind CSS", "color": "#06B6D4", "icon": "./images/skill/tailwindcss.svg"},
+				{"name": "JavaScript", "color": "#C5B002", "icon": "./images/skill/javascript.svg"},
+				{"name": "TypeScript", "color": "#3178C6", "icon": "./images/skill/typescript.svg"},
+				{"name": "React", "color": "#31A8FF", "icon": "./images/skill/react.svg"},
+				{"name": "Next.js", "color": "#000000", "icon": "./images/skill/nextjs.svg"},
+				{"name": "Webpack", "color": "#4285F4", "icon": "./images/skill/html5.svg"},
+				{"name": "Photoshop", "color": "#31A8FF", "icon": "./images/skill/adobephotoshop.svg"},
+				{"name": "Illustrator", "color": "#FF9A00", "icon": "./images/skill/adobeillustrator.svg"},
+				{"name": "InDesign", "color": "#FF3366", "icon": "./images/skill/adobeindesign.svg"},
+				{"name": "Figma", "color": "#F24E1E", "icon": "./images/skill/figma.svg"}
+      ],
+			"hashs": [
+        {"name": "#JavaScript"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/2/2.md",
+      "badge": "콘테스트 1등",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-32x32.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 10일",
+      "title": "React.FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+      "skills": [
+        {"name": "HTML", "color": "#E34F26", "icon": "./images/skill/html5.svg"},
+        {"name": "CSS3", "color": "#1572B6", "icon": "./images/skill/css3.svg"},
+				{"name": "Sass", "color": "#CC6699", "icon": "./images/skill/sass.svg"},
+				{"name": "Tailwind CSS", "color": "#06B6D4", "icon": "./images/skill/tailwindcss.svg"},
+				{"name": "JavaScript", "color": "#C5B002", "icon": "./images/skill/javascript.svg"},
+				{"name": "TypeScript", "color": "#3178C6", "icon": "./images/skill/typescript.svg"},
+				{"name": "React", "color": "#31A8FF", "icon": "./images/skill/react.svg"},
+				{"name": "Next.js", "color": "#000000", "icon": "./images/skill/nextjs.svg"},
+				{"name": "Webpack", "color": "#4285F4", "icon": "./images/skill/html5.svg"},
+				{"name": "Photoshop", "color": "#31A8FF", "icon": "./images/skill/adobephotoshop.svg"},
+				{"name": "Illustrator", "color": "#FF9A00", "icon": "./images/skill/adobeillustrator.svg"},
+				{"name": "InDesign", "color": "#FF3366", "icon": "./images/skill/adobeindesign.svg"},
+				{"name": "Figma", "color": "#F24E1E", "icon": "./images/skill/figma.svg"}
+      ],
+			"hashs": [
+        {"name": "#JavaScript"},
+				{"name": "#TypeScript"}
+      ]
+    }
+	]
+}

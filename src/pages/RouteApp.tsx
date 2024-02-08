@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
 import "../styles/css/TTTtangsbudaejjigae.css";
@@ -26,22 +26,32 @@ const NotFound = lazy(() => import("./NotFound"));
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/publishingportfolio", element: <PublishingPortfolio /> },
-  { path: "/publishingportfolio/:title", element: <PublishingPortfolioContent /> },
   { path: "/designportfolio", element: <DesignPortfolio /> },
   { path: "/designportfolio/:title", element: <DesignPortfolioContent /> },
+	{ path: "/publishingportfolio", element: <PublishingPortfolio /> },
+  { path: "/publishingportfolio/:title", element: <PublishingPortfolioContent /> },
+	{ path: "/designstudy", element: <DesignStudy /> },
+  { path: "/designstudy/:title", element: <DesignStudyContent /> },
   { path: "/publishingstudy", element: <PublishingStudy /> },
   { path: "/publishingstudy/:title", element: <PublishingStudyContent /> },
-  { path: "/designstudy", element: <DesignStudy /> },
-  { path: "/designstudy/:title", element: <DesignStudyContent /> },
   { path: "/etcstudy", element: <EtcStudy /> },
   { path: "/etcstudy/:title", element: <EtcStudyContent /> }
 ];
 
 export default function RouteApp() {
+  const location = useLocation();
+  const [showAside, setShowAside] = useState(true);
+
+	useEffect(() => {
+    // 현재 경로가 /designportfolio/:title 또는 /publishingportfolio/:title 인지 확인
+    const hideAsideForPaths = ['/designportfolio/', '/publishingportfolio/'];
+    const shouldHideAside = hideAsideForPaths.some(path => location.pathname.includes(path));
+    setShowAside(!shouldHideAside);
+  }, [location]);
+
   return (
     <div className="RouteApp">
-      <Aside />
+      {showAside && <Aside />}
       <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
         <Routes>
           {routes.map((route, index) => {
