@@ -14,7 +14,7 @@ export default function DesignPortfolioContent() {
   const hyphenRemoval = title?.replace(/-/g, " ") ?? ""; // 현재 하이픈이 적용된 URL의 하이픈 제거 후, 공백 추가
 
 	// JSON 파일의 title과 현재 URL을 비교하여 해당하는 객체 가져오기 START!
-  const PublishingCardFind = DesignCard.cards.find(
+  const DesignCardFind = DesignCard.cards.find(
     (item: CardProps) => item.title === hyphenRemoval
   );
 	// JSON 파일의 title과 현재 URL을 비교하여 해당하는 객체 가져오기 END!
@@ -23,7 +23,7 @@ export default function DesignPortfolioContent() {
   const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
-    fetch(`${PublishingCardFind?.mdFile}`)
+    fetch(`${DesignCardFind?.mdFile}`)
       .then((response) => response.text())
       .then((text) => setMarkdown(text));
   });
@@ -32,13 +32,25 @@ export default function DesignPortfolioContent() {
   return (
     <>
       <CommonHelmet
-        title={PublishingCardFind?.title}
-        description={PublishingCardFind?.subTitle}
-        ogTitle={PublishingCardFind?.title}
-        ogDescription={PublishingCardFind?.subTitle}
-        keywords={PublishingCardFind?.title}
+        title={DesignCardFind?.title}
+        description={DesignCardFind?.subTitle}
+        ogTitle={DesignCardFind?.title}
+        ogDescription={DesignCardFind?.subTitle}
+        keywords={DesignCardFind?.title}
       />
-      <div className="common_wrap">
+			<div className="common_pf common_info">
+				<div className="card_top">
+					<div className="card_profile" style={{ background: `url('${DesignCardFind?.profileImage}') center center / cover` }}></div>
+					<div className="card_text">
+						<div className="card_title">{DesignCardFind?.title}</div>
+						<div className="card_nickname_date">
+							<div>{DesignCardFind?.nickname}</div>
+							<div>{DesignCardFind?.date}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      <div className="common_wrap common_pf">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}

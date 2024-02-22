@@ -38,7 +38,7 @@ export default function PublishingPortfolioContent() {
         ogDescription={PublishingCardFind?.subTitle}
         keywords={PublishingCardFind?.title}
       />
-      <div className="common_wrap">
+      <div className="common_wrap common_pf">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
