@@ -15,7 +15,7 @@ export const asideLinks = [
     linkTo: "https://tydesign.tistory.com/",
     baseClass: "tistory",
     ariaLabel: "tistory 블로그로 이동",
-    image: "/images/velog_logo.png",
+    image: "/images/tistory_logo.png",
   },
   {
     linkTo: "https://github.com/2taeyoon",

@@ -14,7 +14,9 @@ $shadow: #e5efff;
 $black: #232323;
 $blacklight: #555;
 $blackmute: #8e95a1;
+$silverlight: #dddddd;
 $whitelight: #f9f9f9;
+$white: #fff;
 
 :root {
   --thema: #{$thema};
@@ -25,5 +27,7 @@ $whitelight: #f9f9f9;
 	--black: #{$black};
 	--blacklight: #{$blacklight};
 	--blackmute: #{$blackmute};
+	--silverlight: #{$silverlight};
 	--whitelight: #{$whitelight};
+	--white: #{$white};
 }

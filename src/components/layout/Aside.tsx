@@ -14,7 +14,7 @@ export default function Aside() {
             to="/"
             className="all_post"
           >
-            ALL POST
+            RESUME
           </Link>
 					{categories.map((category, index) => (
 						<CategoryLinks
