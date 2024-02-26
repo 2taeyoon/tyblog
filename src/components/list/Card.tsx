@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ cards }: Mapping) {
 	return (
-		<div className="card_wrap">
+		<>
 			{ cards.map((card, index) => (
 				<Link to={`${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
@@ -46,6 +46,6 @@ export default function Card({ cards }: Mapping) {
 					</div>
 				</Link>
 			))}
-	</div>
+	</>
 	)
 }

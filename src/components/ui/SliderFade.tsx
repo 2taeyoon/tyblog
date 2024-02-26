@@ -13,7 +13,7 @@ import { TypingTextProps } from "../../types/props";
 import { SlidesData } from "../../data/slideData";
 
 
-export default function SliderFade({ typingText, typingText2 }: TypingTextProps) {
+export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps) {
 
 	//이미지 미리 로드하는 함수 START!
 	useEffect(() => {
@@ -85,3 +85,6 @@ export default function SliderFade({ typingText, typingText2 }: TypingTextProps)
     </div>
   );
 }
+
+const SliderFade = React.memo(SliderFadeComponent);
+export default SliderFade;

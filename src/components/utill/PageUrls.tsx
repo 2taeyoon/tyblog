@@ -48,7 +48,7 @@ export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsPro
 
 	return (
 		<div className="page_url">
-			{
+			{ prevPageUrl ?
 				<Link to={`/${basePath}/${prevPageUrl}`} className="page_url_wrap page_url_wrap1">
 					<div className="page_url_prev" style={{ background: `url('${prevPageImage}') center center / cover` }}></div>
 					<div className="page_url_item">
@@ -59,18 +59,22 @@ export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsPro
 						</div>
 					</div>
 				</Link>
+				:
+				<div></div>
 			}
-			{
+			{ nextPageUrl ?
 				<Link to={`/${basePath}/${nextPageUrl}`} className="page_url_wrap page_url_wrap2">
 					<div className="page_url_next" style={{ background: `url('${nextPageImage}') center center / cover` }}></div>
 					<div className="page_url_item">
-						<div className="page_url_item_text">
+						<div className="page_url_item_text page_url_item_text2">
 							<div className="next_post">{nextPageUrl && "다음 포스트"}</div>
 							<div className="page_url_text">{ nextPageTitle }</div>
 						</div>
-						<div className="page_url_item_arrow2" style={{ background: `url('/images/arrow.png') center center / cover` }}></div>
+						<div className="page_url_item_arrow2" style={{ background: `url('/images/arrow2.png') center center / cover` }}></div>
 					</div>
 				</Link>
+				:
+				<div></div>
 			}
 		</div>
 	)

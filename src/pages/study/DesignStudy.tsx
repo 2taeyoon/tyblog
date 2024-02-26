@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import DesignStudyData from "../../data/designStudyData.json";
 import SliderFade from "../../components/ui/SliderFade";
 import Card from "../../components/list/Card";
+import { CardProps } from "../../types/props";
 
 export default function DesignStudy() {
+	const [selectedHash, setSelectedHash] = useState<string | null>(null);
+  const [filteredCards, setFilteredCards] = useState<CardProps[]>([]);
+
+  useEffect(() => {
+    if (selectedHash) {
+      const newFilteredCards = DesignStudyData.cards.filter(card =>
+        card.hashs.some(hash => hash.name === selectedHash)
+      );
+      setFilteredCards(newFilteredCards);
+    } else {
+      setFilteredCards(DesignStudyData.cards);
+    }
+  }, [selectedHash]);
+
+	const uniqueHashs = Array.from(new Set(DesignStudyData.cards.flatMap(card => card.hashs.map(hash => hash.name))));
   return (
     <>
       <CommonHelmet
@@ -15,8 +31,20 @@ export default function DesignStudy() {
         keywords="TYCODESIGN, 디자인 스터디"
       />
 			<SliderFade typingText="디자인 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>디자인 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
-      <div className="common_wrap">
-        <Card cards={DesignStudyData.cards} />
+			<div className="hashs_wrap">
+				<button onClick={() => setSelectedHash(null)}>모든 게시물</button>
+				{uniqueHashs.map(hash => (
+					<button key={hash} onClick={() => setSelectedHash(hash)}>
+						{hash}
+					</button>
+				))}
+			</div>
+			<div className="common_wrap">
+				<div className="card_wrap">
+					{filteredCards.map(card => (
+						<Card key={card.title} cards={[card]} />
+					))}
+				</div>
       </div>
     </>
   );

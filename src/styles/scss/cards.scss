@@ -1,4 +1,4 @@
-.card_wrap { display: flex; flex-wrap: wrap; max-width: 1370px; position: relative; }
+.card_wrap { display: flex; flex-wrap: wrap; position: relative; width: 100%; max-width: 1370px; }
 
 .card { position: relative; width: calc(33.33% - 30px); margin: 15px; border-radius: 10px; cursor: pointer; box-shadow: 0 0 5px #ddd; transition: .5s;
 	&::after, &::before {
@@ -47,7 +47,7 @@
 
 	.card_top { position: relative; width: 100%; height: 250px; border-bottom: 1px solid #eee; border-radius: 10px 10px 0 0; overflow: hidden;
 		.card_img { width: 100%; height: 100%; border-radius: 10px 10px 0 0; transition: .5s;
-			.card_badge { position: absolute; top: 20px; left: 25px; border-radius: 999px; background-color: var(--whitelight);
+			.card_badge { position: absolute; top: 20px; left: 27px; border-radius: 999px; background-color: var(--whitelight);
 				div { padding: 3px 10px; font-size: 1.4rem; }
 			}
 		}

@@ -44,3 +44,23 @@
   }
 }
 // 카드 컴포넌트에 사용되는 애니메이션 END!
+
+// PageUrls에 사용되는 버튼 애니메이션 START!
+@keyframes arrowAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    left: -5px;
+  }
+}
+
+@keyframes arrowAnimate2 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -5px;
+  }
+}
+// PageUrls에 사용되는 버튼 애니메이션 END!
