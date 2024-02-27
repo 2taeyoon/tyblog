@@ -14,7 +14,7 @@ export default function Home() {
       />
       <SliderFade typingText="안녕하세요.<br/>1년차 웹 디자이너<br/>이태윤입니다." typingText2="<br/><p class='sub_text'>나만의 공간을 만들고 싶어, 부족한 실력으로 제작한 웹사이트입니다.</p>"/>
       <div className="common_wrap">
-				홈페이지
+				어캐할까..
 			</div>
     </>
   );
