@@ -35,7 +35,7 @@ export default function PublishingPortfolio() {
         keywords="TYCODESIGN, 퍼블리싱 포트폴리오"
       />
 			<SliderFade typingText="웹 퍼블리싱 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 퍼블리싱 스타일을 보실 수 있습니다.</p>"/>
-			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudyHashs"/>
+			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingPortfolioHashs"/>
 			<div className="common_wrap">
 				<div className="card_wrap">
 					{filteredCards.map(card => (
