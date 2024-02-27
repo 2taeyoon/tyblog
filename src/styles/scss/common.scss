@@ -4,6 +4,10 @@
 	@media (max-width: 640px) { padding: 16px 32px 0; }
 	button { padding: 5px 12px; margin: 5px; border-radius: 999px; background-color: var(--thema); color: var(--white); letter-spacing: 0; font-size: 1.6rem; transition: .3s;
 		&:hover { transform: scale(1.05); filter: brightness(.7); }
+
+		&.active { background-color: var(--themabright);
+			&:hover { transform: none; filter: none; }
+		}
 	}
 }
 

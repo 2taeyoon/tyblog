@@ -92,6 +92,15 @@ export interface TypingTextProps {
 }
 // 슬라이드 컴포넌트 END!
 
+// 해쉬 필터링 START!
+export interface HashsProps {
+  selectedHash: string | null;
+  setSelectedHash: React.Dispatch<React.SetStateAction<string | null>>;
+  uniqueHashs: string[];
+  sessionName: string;
+}
+// 해쉬 필터링 END!
+
 // 탭버튼 컴포넌트 START!
 export interface TabsProps {
   cards: CardProps[];
