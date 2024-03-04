@@ -50,20 +50,39 @@
 
 .common_info { display: flex; justify-content: center; padding: 32px 64px 32px;
 	@media (max-width: 640px) { padding: 16px 32px 16px; }
-	.info { display: flex; align-items: center; justify-content: space-between; max-width: 1440px; width: 100%;
-		.info_left { display: flex;
-			.info_profile { width: 50px; height: 50px; border-radius: 999px; }
-			.info_text { display: flex; flex-direction: column; margin-left: 16px;
-				.info_title { font-size: 20px; font-weight: 700; }
-				.info_nickname_date { display: flex;
-					div:nth-of-type(1) { font-size: 14px; }
-					div:nth-of-type(2) { font-size: 14px; margin-left: 16px; }
+	.info_wrap { display: flex; flex-direction: column; max-width: 1440px; width: 100%;
+		.info { display: flex; align-items: center; justify-content: space-between; max-width: 1440px; width: 100%;
+			.info_left { display: flex;
+				.info_profile { width: 50px; height: 50px; border-radius: 999px;
+					@media (max-width: 640px) { width: 45px; height: 45px; }
+				}
+				.info_text { display: flex; flex-direction: column; justify-content: center; margin-left: 16px;
+					@media (max-width: 640px) { margin-left: 8px; }
+					.info_title { font-size: 2.0rem; font-weight: 700; line-height: 1.2;
+						@media (max-width: 640px) { padding-top: 4px; line-height: 1; }
+					}
+					.info_nickname_date { display: flex; line-height: 1.2;
+						@media (max-width: 640px) { line-height: 1; }
+						div:nth-of-type(1) { font-size: 1.4rem; }
+						div:nth-of-type(2) { font-size: 1.4rem; margin-left: 16px;
+							@media (max-width: 640px) { margin-left: 8px; }
+						}
+					}
+				}
+			}
+			.info_right { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer;
+				&:hover > div { transform: scale(1.2); }
+				> div { width: 25px; height: 25px; transition: .3s;
+					@media (max-width: 640px) { width: 20px; height: 20px; }
 				}
 			}
 		}
-		.info_right { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer;
-			&:hover > div { transform: scale(1.2); }
-			> div { transition: .3s; }
+		.card_skill_wrap { padding-top: 16px;
+			.card_skill .skill_img { width: 15px; height: 15px; }
+			.card_skill .skill_text { font-size:1.4rem; }
+		}
+		.card_hash_wrap { padding-top: 8px;
+			.card_hash .hash_text { font-size:1.4rem; }
 		}
 	}
 }
