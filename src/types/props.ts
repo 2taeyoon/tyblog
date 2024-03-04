@@ -72,6 +72,10 @@ export interface CardProps {
   hashs?: { name: string }[];
 }
 
+export interface CardUndefined {
+  cards: CardProps | undefined;
+}
+
 export interface Mapping {
   cards: CardProps[];
 }

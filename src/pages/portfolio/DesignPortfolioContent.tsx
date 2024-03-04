@@ -8,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
 import PageUrls from "../../components/utill/PageUrls";
+import Info from "../../components/ui/Info";
 
 export default function DesignPortfolioContent() {
 	const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
@@ -28,7 +29,6 @@ export default function DesignPortfolioContent() {
       .then((text) => setMarkdown(text));
   });
 	//마크다운 파일을 랜더링 END!
-
   return (
     <>
       <CommonHelmet
@@ -39,23 +39,14 @@ export default function DesignPortfolioContent() {
         keywords={DesignCardFind?.title}
       />
 			<div className="common_pf common_info">
-				<div className="card_top">
-					<div className="card_profile" style={{ background: `url('${DesignCardFind?.profileImage}') center center / cover` }}></div>
-					<div className="card_text">
-						<div className="card_title">{DesignCardFind?.title}</div>
-						<div className="card_nickname_date">
-							<div>{DesignCardFind?.nickname}</div>
-							<div>{DesignCardFind?.date}</div>
-						</div>
-					</div>
-				</div>
+				<Info cards={DesignCardFind}/>
 			</div>
       <div className="common_wrap common_pf">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={hyphenRemoval} cards={DesignCard.cards} basePath="publishingstudy"/>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={DesignCard.cards} basePath="designportfolio"/>
         </div>
       </div>
     </>
