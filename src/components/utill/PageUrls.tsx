@@ -7,31 +7,31 @@ export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsPro
 	// 현재 페이지의 JSON 배열을 받아 이전 페이지와 다음 페이지 URL 구현 START!
 	function getPageUrls(currentTitle: string, cards: CardProps[]) {
 		const currentIndex = cards.findIndex(card => card.title === currentTitle); // 현재 페이지의 Index 찾기
-		const nextIndex = currentIndex + 1; // 다음 페이지 인덱스
-		const prevIndex = currentIndex - 1; // 이전 페이지 인덱스
-
-		let nextPageUrl = null; // 다음 페이지 URL을 null로 초기화
-		let nextPageTitle = null; // 다음 페이지 타이틀을 null로 초기화
-		let nextPageImage = null; // 다음 페이지 이미지 초기화
+		const prevIndex = currentIndex + 1; // 이전 페이지 인덱스
+		const nextIndex = currentIndex - 1; // 다음 페이지 인덱스
 
 		let prevPageUrl = null; // 이전 페이지 URL을 null로 초기화
 		let prevPageTitle = null; // 이전 페이지 타이틀을 null로 초기화
 		let prevPageImage = null; // 이전 페이지 이미지 초기화
-	
-		// 다음 페이지가 존재하는 경우
-		if (nextIndex < cards.length) {
-      const nextCard = cards[nextIndex];
-      nextPageUrl = nextCard?.title?.replace(/\s+/g, '-'); // URL 형식으로 변환
-      nextPageTitle = nextCard.title; // 제목 설정
-      nextPageImage = nextCard.image; // 이미지 설정
-		}
+
+		let nextPageUrl = null; // 다음 페이지 URL을 null로 초기화
+		let nextPageTitle = null; // 다음 페이지 타이틀을 null로 초기화
+		let nextPageImage = null; // 다음 페이지 이미지 초기화
 	
 		// 이전 페이지가 존재하는 경우
-		if (prevIndex >= 0) {
+		if (prevIndex < cards.length) {
       const prevCard = cards[prevIndex];
       prevPageUrl = prevCard?.title?.replace(/\s+/g, '-'); // URL 형식으로 변환
       prevPageTitle = prevCard.title; // 제목 설정
       prevPageImage = prevCard.image; // 이미지 설정
+		}
+	
+		// 다음 페이지가 존재하는 경우
+		if (nextIndex >= 0) {
+      const nextCard = cards[nextIndex];
+      nextPageUrl = nextCard?.title?.replace(/\s+/g, '-'); // URL 형식으로 변환
+      nextPageTitle = nextCard.title; // 제목 설정
+      nextPageImage = nextCard.image; // 이미지 설정
 		}
 	
 		return { nextPageUrl, prevPageUrl, nextPageTitle, prevPageTitle, nextPageImage, prevPageImage }; // 다음 페이지와 이전 페이지의 URL을 반환

@@ -40,7 +40,7 @@ export default function PublishingStudy() {
         ogDescription="TYCODESIGN의 퍼블리싱 스터디 페이지입니다."
         keywords="TYCODESIGN, 퍼블리싱 스터디"
       />
-			<SliderFade typingText="웹 퍼블리싱 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>퍼블리싱 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
+			<SliderFade typingText="퍼블리싱 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>퍼블리싱 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
 			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudyHashs"/>
 			<div className="common_wrap">
 				<div className="card_wrap">

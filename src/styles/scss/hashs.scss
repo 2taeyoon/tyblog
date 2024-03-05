@@ -1,0 +1,12 @@
+.hashs_wrap {
+	display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: calc(100% - 250px); max-width: 100vw; padding: 32px 64px 0; margin-left: 250px;
+	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
+	@media (max-width: 640px) { padding: 8px 8px 0; }
+	button { padding: 4px 12px; margin: 4px; border-radius: 999px; background-color: var(--thema); color: var(--white); letter-spacing: 0; font-size: 1.6rem; transition: .3s;
+		&:hover { transform: scale(1.05); filter: brightness(.7); }
+
+		&.active { background-color: var(--themabright);
+			&:hover { transform: none; filter: none; }
+		}
+	}
+}

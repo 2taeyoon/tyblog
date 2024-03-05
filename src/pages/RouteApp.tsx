@@ -3,10 +3,11 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
 import "../styles/css/TTTtangsbudaejjigae.css";
+import "../styles/css/MaplestoryOTFBold.css";
 import "../styles/css/global.css";
 import "../styles/scss/style.scss";
 
-import "../styles/css/markdown.css";
+import "../styles/css/markdown.scss";
 import "../styles/css/markdownAtom.css";
 
 import Aside from "../components/layout/Aside";

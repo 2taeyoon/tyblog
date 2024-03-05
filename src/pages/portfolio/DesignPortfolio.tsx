@@ -35,6 +35,10 @@ export default function DesignPortfolio() {
         keywords="TYCODESIGN, 디자인 포트폴리오"
       />
 			<SliderFade typingText="디자인 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 디자인 스타일을 보실 수 있습니다.</p>"/>
+			<div className="category_wrap">
+				<div className="category_text">DESIGN PORTFOLIO</div>
+				<div className="category_subtext">공부한 내용은 기록해야 제맛</div>
+			</div>
 			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignPortfolioHashs"/>
 			<div className="common_wrap">
 				<div className="card_wrap">
