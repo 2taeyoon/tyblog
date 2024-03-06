@@ -1,9 +1,23 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/14/14.md",
+      "image": "/images/publishing_study/14/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 1월 31일",
+      "title": "React에서 Webpack Image 로드하기",
+			"subTitle": "웹팩 설정을 마치고 프로젝트를 진행하다가 문제가 하나 생겼습니다. 개발 모드에서는 이미지가 로드되었는데 빌드된 파일에서는 이미지 로드가 되지 않는 문제가 있었죠..",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
 			"mdFile": "/images/publishing_study/13/13.md",
       "image": "/images/publishing_study/13/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 1월 23일",
       "title": "React에서 Webpack 사용하기(Typescript)",
@@ -11,28 +25,13 @@
 			"hashs": [
 				{"name": "#React"},
 				{"name": "#Webpack"},
-				{"name": "#TypeScript"},
-				{"name": "#12345"},
-				{"name": "#fdghfdbfdbdfb"},
-				{"name": "#jhjfjf"},
-				{"name": "#fgfdgdf"},
-				{"name": "#fdfgfd"},
-				{"name": "#qeqeg"},
-				{"name": "#brgtnf"},
-				{"name": "#sdrgdsg"},
-				{"name": "#klil"},
-				{"name": "#dsgdsgsdf"},
-				{"name": "#tgrjrytktrfkfjsr"},
-				{"name": "#ertheber"},
-				{"name": "#dtjkytkg"},
-				{"name": "#dfjfj"},
-				{"name": "#4t64ty6wy"}
+				{"name": "#TypeScript"}
       ]
     },
 		{
 			"mdFile": "/images/publishing_study/12/12.md",
       "image": "/images/publishing_study/12/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 1월 18일",
       "title": "Prettier로 코드 포맷 통일시키기",
@@ -44,7 +43,7 @@
 		{
 			"mdFile": "/images/publishing_study/11/11.md",
       "image": "/images/publishing_study/11/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 1월 10일",
       "title": "NextJS에서 mouse hover시 특정 텍스트 변경",
@@ -56,7 +55,7 @@
 		{
 			"mdFile": "/images/publishing_study/10/10.md",
       "image": "/images/publishing_study/10/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 12월 21일",
       "title": "Github Pages로 정적파일 자동 배포하기",
@@ -68,7 +67,7 @@
 		{
 			"mdFile": "/images/publishing_study/9/9.md",
       "image": "/images/publishing_study/9/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 12월 12일",
       "title": "NextJS에서 AOS 라이브러리 사용하기",
@@ -81,7 +80,7 @@
 		{
 			"mdFile": "/images/publishing_study/8/8.md",
       "image": "/images/publishing_study/8/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 12월 4일",
       "title": "NextJS에서 카카오지도 넣기",
@@ -94,7 +93,7 @@
 		{
 			"mdFile": "/images/publishing_study/7/7.md",
       "image": "/images/publishing_study/7/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 30일",
       "title": "NextJS에서 Swiper 사용하기",
@@ -107,7 +106,7 @@
 		{
 			"mdFile": "/images/publishing_study/5/5.md",
       "image": "/images/publishing_study/5/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 15일",
       "title": "Firebase로 React App 배포하기",
@@ -120,7 +119,7 @@
 		{
 			"mdFile": "/images/publishing_study/4/4.md",
       "image": "/images/publishing_study/4/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 9일",
       "title": "TypeScript Class",
@@ -133,7 +132,7 @@
 		{
 			"mdFile": "/images/publishing_study/3/3.md",
       "image": "/images/publishing_study/3/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 3일",
       "title": "TypeScript 함수",
@@ -146,7 +145,7 @@
     {
 			"mdFile": "/images/publishing_study/2/2.md",
       "image": "/images/publishing_study/2/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 10월 31일",
       "title": "React FC와 타입 직접 선언",
@@ -159,7 +158,7 @@
 		{
 			"mdFile": "/images/publishing_study/1/1.md",
       "image": "/images/publishing_study/1/main_image.webp",
-      "profileImage": "/favicon/favicon-48x48.png",
+      "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 10월 24일",
       "title": "TypeScript를 사용하는 이유",
