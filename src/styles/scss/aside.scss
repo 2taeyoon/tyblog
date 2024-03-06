@@ -27,7 +27,7 @@
 }
 
 .nav { width: 100%; padding: 16px 0; border-top: 1px solid var(--line);
-	.all_post { display: inline-block; width: 100%; padding: 10px 36px; transition: all .3s;
+	.resume { display: inline-block; width: 100%; padding: 10px 36px; transition: all .3s;
 		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700;
 		&:hover { transform: scale(1.05); animation: hueRotate 2s ease-in infinite alternate; }
 	}

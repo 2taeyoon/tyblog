@@ -12,7 +12,7 @@ export default function Aside() {
         <nav className="nav">
           <Link
             to="/"
-            className="all_post"
+            className="resume"
           >
             RESUME
           </Link>
