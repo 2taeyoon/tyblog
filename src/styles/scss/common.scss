@@ -35,7 +35,7 @@
 .common_pf { width: 100%; padding: 0 64px 64px; margin-left: 0; background: var(--whitelight);
 	@media (max-width: 640px) { padding: 0 8px 32px; }
 	.blog { width: 100%; max-width: 1440px; margin-top: 16px; background: var(--whitelight); line-height: 0;
-		.page_url { padding: 100px 64px; margin: 100px 0 0 0;
+		.page_url { padding: 100px 0; margin: 100px 0 0 0;
 		}
 	}
 }

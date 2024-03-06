@@ -1,79 +1,69 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { HashsProps } from "../../types/props";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Swiper as SwiperClass } from 'swiper/types';
 
 export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessionName}: HashsProps) {
-	// 마우스 드래그시 해시태그 스크롤 좌우로 이동 START!
-  const isDragging = useRef(false); // 마우스 드래그 상태 확인
-  const startPos = useRef(0); // 드래그 시작점 X 좌표 저장값
-  const scrollLeft = useRef(0); // 드래그 시작 시의 스크롤 위치 저장값
-  const sliderRef = useRef<HTMLDivElement>(null); // 슬라이드할 요소를 DOM 값으로 저장
+	const scrollSessionName = `${sessionName}-scroll`; // 스크롤 위치를 저장하는 세션 스토리지 키 이름
+	const swiperRef = useRef<SwiperClass | null>(null); // Swiper 인스턴스를 저장하기 위한 ref 생성
 
-	// 마우스를 누를 때 드래그를 시작하는 함수입니다.
-  const startDragging = (e: React.MouseEvent<HTMLDivElement>) => {
-    isDragging.current = true; // 드래그 상태가 true일 때
-    startPos.current = e.pageX - sliderRef.current!.offsetLeft; // 드래그 시작 지점 저장
-    scrollLeft.current = sliderRef.current!.scrollLeft; // 스크롤 시작 지점 저장
-  };
+// 해시태그 선택 상태를 세션 스토리지에서 로드하는 useEffect START!
+useEffect(() => {
+	const savedHash = sessionStorage.getItem(sessionName); // 세션 스토리지에서 저장된 해시태그를 가져옴
+	if (savedHash) {
+		setSelectedHash(savedHash); // 저장된 해시태그가 있으면 상태를 업데이트
+	}
+}, [sessionName, setSelectedHash]);
+// 해시태그 선택 상태를 세션 스토리지에서 로드하는 useEffect END!
 
-	// 드래그 종료 시 상태 false
-  const stopDragging = () => {
-    isDragging.current = false;
-  };
+// 선택된 해시태그를 세션 스토리지에 저장하거나 제거하는 useEffect START!
+useEffect(() => {
+	if (selectedHash) {
+		sessionStorage.setItem(sessionName, selectedHash); // 선택된 해시태그가 있으면 세션 스토리지에 저장
+	} else {
+		sessionStorage.removeItem(sessionName); // 선택된 해시태그가 없다면 세션 스토리지 제거합니다.
+	}
+}, [sessionName, selectedHash]);
+// 선택된 해시태그를 세션 스토리지에 저장하거나 제거하는 useEffect END!
 
-	// 실제 드래그를 처리
-  const onDrag = (e: MouseEvent) => {
-    if (!isDragging.current) return; // 드래그 중이 아니라면 그대로 반환
-    e.preventDefault(); // 기본 동작 제거
-    const x = e.pageX - sliderRef.current!.offsetLeft;
-    const walk = (x - startPos.current) * 2; // 드래그 거리를 계산하여 스피드 조절
-    sliderRef.current!.scrollLeft = scrollLeft.current - walk; // 스크롤 위치를 업데이트합니다.
-  };
+// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect START!
+useEffect(() => {
+			const swiper = swiperRef.current; // 현재 Swiper 인스턴스를 참조
 
-	// 마우스 이벤트 리스너를 추가 및 제거
-  useEffect(() => {
-    const slider = sliderRef.current;
-    if (slider) {
-      slider.addEventListener('mousemove', onDrag);
-      slider.addEventListener('mouseleave', stopDragging);
-      slider.addEventListener('mouseup', stopDragging);
-    }
-    return () => {
-      if (slider) {
-        slider.removeEventListener('mousemove', onDrag);
-        slider.removeEventListener('mouseleave', stopDragging);
-        slider.removeEventListener('mouseup', stopDragging);
-      }
-    };
-  }, []);
-	// 마우스 드래그시 해시태그 스크롤 좌우로 이동 END!
+			const savedScroll = sessionStorage.getItem(scrollSessionName); // 세션 스토리지에서 저장된 스크롤 위치를 가져옴
+			if (savedScroll) {
+					const scrollPosition = parseInt(savedScroll, 10); // 스크롤 위치를 정수로 변환
+					swiper?.slideTo(scrollPosition, 0); // 저장된 스크롤 위치로 슬라이드를 이동
+			}
 
-	// 해시태그 클릭시 세션스토리지 저장 START!
-	useEffect(() => { // 컴포넌트 로드 시 sessionStorage에서 selectedHash 상태를 로드
-		const savedHash = sessionStorage.getItem(sessionName);
-		if (savedHash) {
-			setSelectedHash(savedHash);
-		}
-	}, [sessionName, setSelectedHash]);
+			swiper?.on('slideChange', () => { // 슬라이드가 변경될 때마다 실행(swiper에 내장된 옵셔널 체이닝)
+					sessionStorage.setItem(scrollSessionName, swiper.activeIndex.toString()); // 현재 슬라이드 인덱스를 세션 스토리지에 저장
+			});
 
-	useEffect(() => { // selectedHash가 null이 아닌 경우에만 sessionStorage에 저장
-		if (selectedHash) {
-			sessionStorage.setItem(sessionName, selectedHash);
-		} else {
-			sessionStorage.removeItem(sessionName); // 선택된 해시가 없는 경우, 세션스토리지 제거
-		}
-	}, [sessionName, selectedHash]);
-	// 해시태그 클릭시 세션스토리지 저장 END!
+	}, [scrollSessionName]);
+// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect END!
 
 	return (
-		<div className="hashs_wrap" >
-			<div className="hashs" ref={sliderRef} onMouseDown={startDragging} onMouseLeave={stopDragging} onMouseUp={stopDragging}>
-				<div className={!selectedHash ? 'active' : ''} onClick={() => setSelectedHash(null)}>전체</div>
+		<div className="hashs_wrap">
+			<Swiper
+				slidesPerView={'auto'}
+				freeMode={true}
+				className="hashs_slider"
+				onSwiper={(swiper: SwiperClass) => (swiperRef.current = swiper)} // Swiper 인스턴스를 ref에 할당
+			>
+				<SwiperSlide className={!selectedHash ? 'active' : ''} onClick={() => setSelectedHash(null)} style={{width: 'auto'}}>전체보기</SwiperSlide>
 				{uniqueHashs.map((hash: string) => (
-					<div key={hash} className={selectedHash === hash ? 'active' : ''} onClick={() => setSelectedHash(hash)}>
+					<SwiperSlide style={{width: 'auto'}} key={hash} className={selectedHash === hash ? 'active' : ''} onClick={() => setSelectedHash(hash)}>
 						{hash}
-					</div>
+					</SwiperSlide>
 				))}
-			</div>
+			</Swiper>
 		</div>
 	)
 }
+
+
