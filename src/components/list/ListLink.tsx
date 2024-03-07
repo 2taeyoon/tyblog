@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ListLinkProps } from "../../types/props";
 import SvgList from "./SvgList";
 
-export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, svgColor, path, svgWH }: ListLinkProps) {
+export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, svgColor, svgWH, path }: ListLinkProps) {
 	const linkStyle = image ? { background: `url(${image}) center center / cover` } : {};
 
   return (

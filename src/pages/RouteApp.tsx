@@ -11,6 +11,7 @@ import "../styles/css/markdown.scss";
 import "../styles/css/markdownAtom.css";
 
 import Aside from "../components/layout/Aside";
+import Header from "../components/layout/Header";
 
 const Home = lazy(() => import("./home/Home"));
 const PublishingPortfolio = lazy(() => import("./portfolio/PublishingPortfolio"));
@@ -52,6 +53,7 @@ export default function RouteApp() {
 
   return (
     <div className="RouteApp">
+			<Header showAside={showAside}/>
       {showAside && <Aside />}
       <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
         <Routes>

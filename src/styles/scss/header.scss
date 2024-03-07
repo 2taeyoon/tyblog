@@ -1,0 +1,24 @@
+.header { position: fixed; z-index: 50; top: 0; width: 100vw;
+	.header_wrap { display: flex; width: 100%; max-width: 100vw; padding: 0 128px; margin-top: 40px; transition: .3s;
+		&.aside_on { width: calc(100% - 250px); margin-left: 250px; }
+		&.scroll { margin-top: 16px;
+			.nav { background-color: var(--white);
+				.resume, .nav_wrap .category { color: var(--black); }
+			}
+		}
+		.nav { display: flex; align-items: center; width: 100%; height: 80px; border-top: none; border-radius: 999px; transition: all 1s;
+			.resume { width: 145px; margin: 0 8px; background-image: none; background-clip: unset; -webkit-background-clip: unset; color: var(--silverlight);
+				&:hover { animation: none; }
+			}
+			.nav_wrap { width: 145px; position: relative; margin: 0 8px;
+				.category { padding: 10px 36px; cursor: pointer; color: var(--silverlight); font-weight: 700; font-size: 16px; transition: all .3s;
+					&:hover { transform: scale(1.05); }
+				}
+				ul { position: absolute; z-index: 60; top: 48px; background-color: #da4747; border-radius: 8px;
+					li:first-child > a { border-radius: 8px 8px 0 0; }
+					li:last-child > a {	border-radius: 0 0 8px 8px; }
+				}
+			}
+		}
+	}
+}

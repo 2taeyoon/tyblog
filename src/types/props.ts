@@ -30,22 +30,26 @@ export interface ListLinkProps {
 	svgWH?: string;
 	svgColor?: string;
 	path?: string;
-	path2?: string;
 }
 // 링크 컴포넌트 END!
 
 // 카테고리 링크 컴포넌트 START!
 export interface CategoryLinksProps {
-  category: string;
-	categoryClass: string;
+  category?: string;
+	categoryClass?: string;
   links: {
-    linkTo: string;
-    title?: string;
-		svgWH?: string;
-		svgColor?: string;
-		path?: string;
-		path2?: string;
+    linkInfo: {
+      linkTo: string;
+      title?: string;
+    };
+    svgInfo?: {
+      svgWH?: string;
+      svgColor?: string;
+      path?: string;
+    };
   }[];
+	icons?: boolean;
+	categoryCapital?: boolean;
 }
 // 카테고리 링크 컴포넌트 END!
 
@@ -96,14 +100,14 @@ export interface TypingTextProps {
 }
 // 슬라이드 컴포넌트 END!
 
-// 해쉬 필터링 START!
+// 해시태그 필터링 START!
 export interface HashsProps {
   selectedHash: string | null;
   setSelectedHash: React.Dispatch<React.SetStateAction<string | null>>;
   uniqueHashs: string[];
   sessionName: string;
 }
-// 해쉬 필터링 END!
+// 해시태그 필터링 END!
 
 // 탭버튼 컴포넌트 START!
 export interface TabsProps {
@@ -112,3 +116,10 @@ export interface TabsProps {
   setActiveTab: (tab: number) => void;
 }
 // 탭버튼 컴포넌트 END!
+
+// 헤더 컴포넌트 START!
+export interface HeaderProps {
+  showAside: boolean;
+}
+
+// 헤더 컴포넌트 END!

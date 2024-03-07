@@ -22,6 +22,7 @@ export default function Aside() {
 							category={category.category}
 							categoryClass="category"
 							links={category.links}
+							icons={true}
 						/>
 					))}
         </nav>
