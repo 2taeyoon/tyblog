@@ -42,19 +42,19 @@ const routes = [
 
 export default function RouteApp() {
   const location = useLocation();
-  const [showAside, setShowAside] = useState(true);
+  const [showAsideHeader, setShowAsideHeader] = useState(true);
 
 	useEffect(() => {
     // 현재 경로가 /designportfolio/:title 또는 /publishingportfolio/:title 인지 확인
     const hideAsideForPaths = ['/designportfolio/', '/publishingportfolio/'];
     const shouldHideAside = hideAsideForPaths.some(path => location.pathname.includes(path));
-    setShowAside(!shouldHideAside);
+    setShowAsideHeader(!shouldHideAside);
   }, [location]);
 
   return (
     <div className="RouteApp">
-			<Header showAside={showAside}/>
-      {showAside && <Aside />}
+			{showAsideHeader && <Header />}
+      {showAsideHeader && <Aside />}
       <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
         <Routes>
           {routes.map((route, index) => {

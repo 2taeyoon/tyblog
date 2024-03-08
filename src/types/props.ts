@@ -116,10 +116,3 @@ export interface TabsProps {
   setActiveTab: (tab: number) => void;
 }
 // 탭버튼 컴포넌트 END!
-
-// 헤더 컴포넌트 START!
-export interface HeaderProps {
-  showAside: boolean;
-}
-
-// 헤더 컴포넌트 END!

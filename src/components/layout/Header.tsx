@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { categories } from "../../data/asideList";
 import CategoryLinks from "../ui/CategoryLinks";
-import { HeaderProps } from "../../types/props";
 
-export default function Header({showAside}: HeaderProps) {
+export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,24 +17,31 @@ export default function Header({showAside}: HeaderProps) {
 
   return (
     <header className="header">
-			<div className={`header_wrap ${showAside ? 'aside_on' : ''} ${isScrolled ? 'scroll' : ''}`}>
+			<div className={`header_wrap ${isScrolled ? 'scroll' : ''}`}>
 				<nav className="nav">
-					<Link
-						to="/"
-						className="resume"
-					>
-						RESUME
-					</Link>
-					{categories.map((category, index) => (
-						<CategoryLinks
-							key={index}
-							category={category.category}
-							categoryClass="category"
-							links={category.links}
-							icons={false}
-							categoryCapital={true}
-						/>
-					))}
+					<div className="nav_header">
+						<Link
+							to="/"
+							className="resume"
+						>
+							RESUME
+						</Link>
+						{categories.map((category, index) => (
+							<CategoryLinks
+								key={index}
+								category={category.category}
+								categoryClass="category"
+								links={category.links}
+								icons={false}
+								categoryCapital={true}
+							/>
+						))}
+					</div>
+					<div className="ham_btn">
+						<span></span>
+						<span></span>
+						<span></span>
+          </div>
 				</nav>
 			</div>
     </header>
