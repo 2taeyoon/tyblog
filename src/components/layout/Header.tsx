@@ -37,11 +37,13 @@ export default function Header() {
 							/>
 						))}
 					</div>
-					<div className="ham_btn">
-						<span></span>
-						<span></span>
-						<span></span>
-          </div>
+					<div className="ham_btn_wrap">
+						<div className="ham_btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 				</nav>
 			</div>
     </header>
