@@ -109,10 +109,14 @@ export interface HashsProps {
 }
 // 해시태그 필터링 END!
 
-// 탭버튼 컴포넌트 START!
-export interface TabsProps {
-  cards: CardProps[];
-  activeTab: number;
-  setActiveTab: (tab: number) => void;
-}
-// 탭버튼 컴포넌트 END!
+// 명언 컴포넌트 START!
+export interface SayingProps {
+  saying: string;
+  writer: string;
+	job: string;
+};
+
+export interface SayingComponentProps {
+  sessionName: string;
+};
+// 명언 컴포넌트 END!

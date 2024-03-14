@@ -5,6 +5,7 @@ import Card from "../../components/list/Card";
 import SliderFade from "../../components/ui/SliderFade";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
+import Saying from "../../components/ui/Saying";
 
 export default function DesignPortfolio() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -37,7 +38,9 @@ export default function DesignPortfolio() {
 			<SliderFade typingText="디자인 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 디자인 스타일을 보실 수 있습니다.</p>"/>
 			<div className="category_wrap">
 				<div className="category_text">DESIGN PORTFOLIO</div>
-				<div className="category_subtext">공부한 내용은 기록해야 제맛</div>
+				<div className="category_sub">
+					<Saying sessionName="DesignPortfolio"/>
+				</div>
 			</div>
 			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignPortfolioHashs"/>
 			<div className="common_wrap">

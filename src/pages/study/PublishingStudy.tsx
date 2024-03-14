@@ -5,14 +5,8 @@ import Card from "../../components/list/Card";
 import SliderFade from "../../components/ui/SliderFade";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
-//import Tabs from "../../components/list/Tabs";
 
 export default function PublishingStudy() {
-	//const [activeTab, setActiveTab] = useState(1);
-
-  //현재 활성화된 탭에 따라 카드를 필터링하는 상수
-  //const filteredCards = PublishingCard.cards.slice((activeTab - 1) * 6, activeTab * 6);
-
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
   const [filteredCards, setFilteredCards] = useState<CardProps[]>([]); // 필터링 카드를 상태로 관리
 
@@ -49,7 +43,6 @@ export default function PublishingStudy() {
 					))}
 				</div>
       </div>
-			{/* <Tabs cards={PublishingStudyCard.cards} activeTab={activeTab} setActiveTab={setActiveTab}/> */}
     </>
   );
 }

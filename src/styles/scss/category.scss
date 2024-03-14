@@ -1,6 +1,14 @@
 .category_wrap { display: flex; flex-direction: column; align-items: center; width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 0; margin-left: 250px;
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
-	//@media (max-width: 1280px) { padding: 32px 32px 0; }
 	@media (max-width: 640px) { padding: 16px 8px 0; }
-	.category_text { font-size: 3.2rem; font-weight: 700; font-family: "MaplestoryOTFBold", "Malgun Gothic", sans-serif; }
+	.category_text { font-size: 3.8rem; font-weight: 700; font-family: "MaplestoryOTFBold", "Malgun Gothic", sans-serif;
+		@media (max-width: 1024px) { font-size: 3.2rem; }
+		@media (max-width: 640px) { font-size: 2.8rem; }
+	}
+}
+
+.category_sub { width: 50%;
+	@media (max-width: 1536px) { width: 60%	}
+	@media (max-width: 1024px) { width: 80%	}
+	@media (max-width: 640px) { width: 90%; }
 }

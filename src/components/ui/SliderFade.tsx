@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 import Typewriter from 'typewriter-effect';
 import { TypingTextProps } from "../../types/props";
-import { SlidesData } from "../../data/slideData";
+import { SlidesData } from "../../data/slideList";
 
 
 export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps) {
