@@ -37,12 +37,11 @@ export default function Header() {
 							/>
 						))}
 					</div>
-					<div className="ham_btn_wrap">
-						<div className="ham_btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
+					<div className="nav_designer">
+						<Link to="/" className="category">심오한 디자이너</Link>
+					</div>
+					<div className="side_menu_wrap">
+						<div className="side_menu"></div>
 					</div>
 				</nav>
 			</div>

@@ -26,7 +26,7 @@ export default function PublishingPortfolioContent() {
     fetch(`${PublishingCardFind?.mdFile}`)
       .then((response) => response.text())
       .then((text) => setMarkdown(text));
-  });
+  }, [PublishingCardFind?.mdFile, title]);
 	//마크다운 파일을 랜더링 END!
 
   return (

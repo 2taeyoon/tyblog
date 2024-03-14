@@ -27,7 +27,7 @@ export default function DesignPortfolioContent() {
     fetch(`${DesignCardFind?.mdFile}`)
       .then((response) => response.text())
       .then((text) => setMarkdown(text));
-  });
+		}, [DesignCardFind?.mdFile, title]);
 	//마크다운 파일을 랜더링 END!
   return (
     <>

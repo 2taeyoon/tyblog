@@ -17,9 +17,11 @@ $shadow: #e5efff;
 $black: #232323;
 $blacklight: #555;
 $blackmute: #8e95a1;
-$silverbright: #cccccc;
-$silverlight: #dddddd;
-$whitelight: #f9f9f9;
+$whiteCCC: #cccccc;
+$whiteDDD: #dddddd;
+$whiteEEE: #eeeeee;
+$whiteFD: #fdfdfd;
+$whiteF9: #f9f9f9;
 $white: #fff;
 
 :root {
@@ -31,8 +33,10 @@ $white: #fff;
 	--black: #{$black};
 	--blacklight: #{$blacklight};
 	--blackmute: #{$blackmute};
-	--silverbright: #{$silverbright};
-	--silverlight: #{$silverlight};
-	--whitelight: #{$whitelight};
+	--whiteCCC: #{$whiteCCC};
+	--whiteDDD: #{$whiteDDD};
+	--whiteEEE: #{$whiteEEE};
+	--whiteFD: #{$whiteFD};
+	--whiteF9: #{$whiteF9};
 	--white: #{$white};
 }

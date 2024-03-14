@@ -27,7 +27,7 @@ export default function EtcStudyContent() {
     fetch(`${EtcCardFind?.mdFile}`)
       .then((response) => response.text())
       .then((text) => setMarkdown(text));
-  });
+	}, [EtcCardFind?.mdFile, title]);
 	//마크다운 파일을 랜더링 END!
   return (
     <>

@@ -1,6 +1,6 @@
 .aside { position: fixed; z-index: 50; top: 0; bottom: 0; width: 250px; background-color: var(--white); box-shadow: 0 0 3px var(--shadow);
 	@media (max-width: 1536px) {
-    display: none;
+    visibility: hidden;
   }
 }
 .aside_wrap { display: flex; flex-direction: column; align-items: center; padding: 50px 0; }
@@ -8,7 +8,7 @@
 .profile_wrap { display: flex; flex-direction: column; align-items: center;
 	.profile { width: 150px; height: 150px; border-radius: 50%; background-color: var(--thema); overflow: hidden; cursor: pointer;
 		&:hover { animation: hueRotate 2s ease-in infinite alternate; }
-		img { width: 100%; height: 100%; border-radius: 50%; transition: all .3s;
+		img { width: 100%; height: 100%; border-radius: 50%; transition: transform .3s;
 			&:hover { transform: scale(1.1); }
 		}
 	}
@@ -16,8 +16,8 @@
 	.nickname { font-size: 1.4rem; font-weight: 400; }
 }
 
-.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: #fdfdfd; border: 1px solid var(--line);
-	a { display: block; margin: 0 10px; transition: all .3s;
+.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: var(--whiteFD); border: 1px solid var(--line);
+	a { display: block; margin: 0 10px; transition: transform .3s;
 		&:hover { transform: scale(1.1); }
 	}
 	.notefolio { width: 25px; height: 25px; }
@@ -27,18 +27,18 @@
 }
 
 .nav { width: 100%; padding: 16px 0; border-top: 1px solid var(--line);
-	.resume { display: inline-block; width: 100%; padding: 10px 36px; transition: all .3s;
+	.resume { display: inline-block; width: 100%; padding: 10px 36px; transition: transform .3s;
 		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700;
 		&:hover { transform: scale(1.05); animation: hueRotate 2s ease-in infinite alternate; }
 	}
 	.nav_wrap { width: 100%;
 		.category { padding: 20px 36px; color: var(--blacklight);; font-size: 1.5rem; }
-		.item { display: flex; align-items: center; position: relative; width: 100%; padding: 12px 36px; color: var(--black); transition: all .3s; overflow: hidden; transition: all .3s;
+		.item { display: flex; align-items: center; position: relative; width: 100%; padding: 12px 36px; color: var(--black); transition: transform .3s, color .3s, background-color .3s; overflow: hidden;
 			&:hover { transform: scale(1.05); color: var(--thema); background-color: var(--themalight); }
 			&::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background-color: var(--themabright); transition: .5s ease-in-out; }
 			&:hover::after { right: 0; }
 
-			svg { padding-right: 12px; transition: all .3s; }
+			svg { padding-right: 12px; transition: fill .3s; }
 			&:hover svg { fill: var(--thema); }
 		}
 	}

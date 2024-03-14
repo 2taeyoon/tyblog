@@ -1,29 +1,44 @@
-.common_wrap { position: relative; display: flex; flex-wrap: wrap; justify-content: center; width: calc(100% - 250px); max-width: 100vw; padding: 32px 64px 64px; margin-left: 250px;
+.common_wrap { position: relative; display: flex; flex-wrap: wrap; justify-content: center; width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 64px; margin-left: 250px;
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
 	@media (max-width: 640px) { padding: 8px; }
 	
 	.blog { width: 100%; max-width: 768px;
-		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0; margin: 100px 0; border-top: 1px solid var(--silverlight);
-			@media (max-width: 1024px) { padding: 64px 16px; margin: 64px 0 0 0; }
-			@media (max-width: 768px) { flex-direction: column-reverse; align-items: center; padding: 32px 8px; margin: 32px 0 0 0; }
+		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 100px 0 0; border-top: 1px solid var(--whiteDDD);
+			@media (max-width: 1280px) { padding: 64px 16px 0; margin: 64px 0 0 0; }
+			@media (max-width: 768px) { flex-direction: column-reverse; align-items: center; padding: 32px 8px 0; margin: 32px 0 0 0; }
 
 			.page_url_wrap1 { justify-content: flex-start; }
 			.page_url_wrap2 { justify-content: flex-end; }
 
-			.page_url_wrap { display: flex; align-items: center; position: relative; width: 290px; height: 120px; transition: .3s;
+			.page_url_wrap { display: flex; align-items: center; position: relative; width: calc(50% - 16px); height: 120px; transition: .3s;
+				@media (max-width: 768px) { width: 100%; }
+
+				// 포스트 URL 애니메이션 START!
 				@media (max-width: 768px) { margin: 8px 0; }
 				&:hover { transform: scale(1.03); filter: contrast(.7);
 					.page_url_item_arrow1 { animation: arrowAnimate .5s ease-out infinite alternate; }
 					.page_url_item_arrow2 { animation: arrowAnimate2 .5s ease-out infinite alternate; }
 				}
-				.page_url_prev, .page_url_next { display: block; position: relative; width: 100%; height: 100%; border-radius: 16px; filter: brightness(0.3); }
-				.page_url_item { display: flex; align-items: center; justify-content: center; position: absolute; width: 100%; color: var(--white);
-					.page_url_item_arrow1, .page_url_item_arrow2 { position: relative; width: 35px; height: 35px; filter: invert(1) brightness(.7); }
-					.page_url_item_arrow1 { margin-right: 8px; }
-					.page_url_item_arrow2 { margin-left: 8px; }
-					.page_url_item_text { width: 220px;
-						.prev_post, .next_post { color: var(--themabright); }
-						.page_url_text { color: var(--silverlight); font-size: 18px; font-weight: 600; }
+				@media (max-width: 640px) {
+					&:hover { transform: none; filter: none;
+						.page_url_item_arrow1 { animation: none; }
+						.page_url_item_arrow2 { animation: none; }
+					}
+				}
+				// 포스트 URL 애니메이션 END!
+
+				.page_url_prev, .page_url_next { display: block; position: relative; width: 100%; height: 100%; border-radius: 16px; filter: brightness(0.3);
+					@media (max-width: 640px) { border-radius: 12px; }
+				}
+				.page_url_item { display: flex; align-items: center; justify-content: center; position: absolute; width: 100%; padding: 0 16px; color: var(--white);
+					@media (max-width: 768px) { padding: 0 32px; }
+					.page_url_item_arrow1, .page_url_item_arrow2 { position: relative; width: 30px; height: 30px; filter: invert(1) brightness(.7); }
+					.page_url_item_arrow1 { margin-right: 16px; }
+					.page_url_item_arrow2 { margin-left: 16px; }
+					.page_url_item_text { width: calc(100% - 46px);
+						@media (max-width: 768px) { width: calc(100% - 36px); }
+						.prev_post, .next_post { color: var(--themabright); font-size: 16px; }
+						.page_url_text { color: var(--whiteDDD); font-size: 16px; font-weight: 600; }
 					}
 					.page_url_item_text2 { text-align: end; }
 				}
@@ -32,12 +47,9 @@
 	}
 }
 
-.common_pf { width: 100%; padding: 0 64px 64px; margin-left: 0; background: var(--whitelight);
+.common_pf { width: 100%; padding: 0 64px 64px; margin-left: 0; background: var(--white);
 	@media (max-width: 640px) { padding: 0 8px 32px; }
-	.blog { width: 100%; max-width: 1440px; margin-top: 16px; background: var(--whitelight); line-height: 0;
-		.page_url { padding: 100px 0; margin: 100px 0 0 0;
-		}
-	}
+	.blog { width: 100%; max-width: 1440px; margin-top: 16px; background: var(--white); line-height: 0;	}
 }
 
 .common_info { display: flex; justify-content: center; padding: 32px 64px 32px;

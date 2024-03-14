@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { categories } from "../../data/asideList";
 import CategoryLinks from "../ui/CategoryLinks";
 import Profile from "../ui/Profile";
+import AnotherSite from "../ui/AnotherSite";
 
 export default function Aside() {
   return (
     <aside className="aside">
       <div className="aside_wrap">
 				<Profile/>
+				<AnotherSite/>
         <nav className="nav">
           <Link
             to="/"
