@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<Router>
     <HelmetProvider>
-      <RouteApp />
+			<RouteApp />
     </HelmetProvider>
     <Analytics />
     <SpeedInsights />

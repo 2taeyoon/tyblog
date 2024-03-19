@@ -7,17 +7,17 @@ import AnotherSite from "../ui/AnotherSite";
 
 export default function Aside() {
   return (
-    <aside className="aside">
-      <div className="aside_wrap">
+		<div className="aside_wrap">
+			<div className="aside">
 				<Profile/>
 				<AnotherSite/>
-        <nav className="nav">
-          <Link
-            to="/"
-            className="resume"
-          >
-            RESUME
-          </Link>
+				<nav className="nav">
+					<Link
+						to="/"
+						className="resume"
+					>
+						RESUME
+					</Link>
 					{categories.map((category, index) => (
 						<CategoryLinks
 							key={index}
@@ -27,8 +27,8 @@ export default function Aside() {
 							icons={true}
 						/>
 					))}
-        </nav>
-      </div>
-    </aside>
+				</nav>
+			</div>
+		</div>
   );
 }

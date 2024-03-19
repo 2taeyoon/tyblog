@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { categories } from "../../data/asideList";
 import CategoryLinks from "../ui/CategoryLinks";
+import { AsideContextProps } from "../../types/props";
 
-export default function Header() {
+export default function Header({trueActive}: AsideContextProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function Header() {
 					<div className="nav_designer">
 						<Link to="/" className="category">심오한 디자이너</Link>
 					</div>
-					<div className="side_menu_wrap">
+					<div className="side_menu_wrap" onClick={trueActive}>
 						<div className="side_menu"></div>
 					</div>
 				</nav>

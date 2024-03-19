@@ -56,27 +56,39 @@ export default function RouteApp() {
 		setShowAsideHeader(pathMatch);
 	}, [location]);
 
+  const [isActive, setIsActive] = useState<boolean>(false);
+
+  const trueActive = () => {
+    setIsActive(true);
+  };
+	const falseActive = () => {
+    setIsActive(false);
+  };
+
   return (
     <div className="RouteApp">
-			{showAsideHeader && <Header />}
-      {showAsideHeader && <Aside />}
-      <Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
-        <Routes>
-          {routes.map((route, index) => {
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                element={route.element}
-              />
-            );
-          })}
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
-        </Routes>
-      </Suspense>
+			<div className={`${ isActive ? 'side_active' : '' }`}>
+				{showAsideHeader && <Header trueActive={trueActive}/>}
+				{showAsideHeader && <Aside />}
+				<Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
+					<Routes>
+						{routes.map((route, index) => {
+							return (
+								<Route
+									key={index}
+									path={route.path}
+									element={route.element}
+								/>
+							);
+						})}
+						<Route
+							path="*"
+							element={<NotFound />}
+						/>
+					</Routes>
+				</Suspense>
+				<div className="bg_active" onClick={falseActive}></div>
+			</div>
     </div>
   );
 }

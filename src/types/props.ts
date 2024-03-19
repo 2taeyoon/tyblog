@@ -120,3 +120,9 @@ export interface SayingComponentProps {
   sessionName: string;
 };
 // 명언 컴포넌트 END!
+
+// 헤더 컴포넌트 START!
+export interface AsideContextProps {
+  trueActive: () => void;
+}
+// 헤더 컴포넌트 END!
