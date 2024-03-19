@@ -1,6 +1,32 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/16/16.md",
+      "image": "/images/publishing_study/16/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 2월 23일",
+      "title": "Vercel에 React 배포하기",
+			"subTitle": "Vercel은 미국의 클라우드 서비스형 플랫폼 회사입니다. 이 회사는 Next.js 웹 개발 프레임워크를 유지 관리하며, 배포는 Git 저장소를 통해 자동으로 처리가 됩니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Vercel"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/15/15.md",
+      "image": "/images/publishing_study/15/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 2월 12일",
+      "title": "React에서 Markdown 랜더링하기",
+			"subTitle": "React에서 Markdown을 랜더링하려면 우선 Markdown을 React 컴포넌트로 변환해야합니다. 예를 들어, Markdown의 헤딩은 html의 h1, h2로 변환하는 작업이 필요합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Markdown"}
+      ]
+    },
+		{
 			"mdFile": "/images/publishing_study/14/14.md",
       "image": "/images/publishing_study/14/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",

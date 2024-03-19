@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
 import "../styles/css/TTTtangsbudaejjigae.css";
-import "../styles/css/MaplestoryOTFBold.css";
+import "../styles/css/Maplestory.css";
 import "../styles/css/global.css";
 import "../styles/scss/style.scss";
 

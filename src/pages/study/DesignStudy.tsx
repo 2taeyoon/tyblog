@@ -5,6 +5,7 @@ import SliderFade from "../../components/ui/SliderFade";
 import Card from "../../components/list/Card";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
+import Saying from "../../components/ui/Saying";
 
 export default function DesignStudy() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -35,7 +36,13 @@ export default function DesignStudy() {
         keywords="TYCODESIGN, 디자인 스터디"
       />
 			<SliderFade typingText="디자인 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>디자인 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
-			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs"/>
+			<div className="common_wrap pd_none_col">
+				<Saying sessionName="DesignStudy"/>
+				<div className="category_wrap">
+					<div className="category_text">DESIGN STUDY</div>
+				</div>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs"/>
+			</div>
 			<div className="common_wrap">
 				<div className="card_wrap">
 					{filteredCards.map(card => (

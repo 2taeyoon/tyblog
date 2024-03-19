@@ -1,11 +1,11 @@
 .swiper_common { position: relative;
-	.swiper { width: calc(100% - 250px); max-width: 100vw; height: 70vh; min-height: 300px; margin-left: 250px; overflow: hidden;
+	.swiper { width: calc(100% - 250px); max-width: 100%; height: 70vh; min-height: 300px; margin-left: 250px; overflow: hidden;
 		@media (max-width: 1536px) { width: 100%; margin-left: 0; }
 		@media (max-width: 1024px) { height: 50vh; }
 		@media (max-width: 640px) { height: 30vh; }
 		.swiper-wrapper { animation: slideScale 18s linear infinite alternate; filter: brightness(.7); }
 		.swiper-slide .swiper_image { width: 100%; height: 100%; }
-		.title { position: absolute; top: calc(50% + 40px); left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whiteF9); text-align: left;
+		.title { position: absolute; top: calc(50% + 32px); left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whiteF9); text-align: left;
 			@media (max-width: 1024px) { top: calc(50% + 16px); }
 			@media (max-width: 640px) { left: 5%; }
 			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.4rem; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif; font-weight: 500;

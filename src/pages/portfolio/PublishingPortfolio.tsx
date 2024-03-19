@@ -5,6 +5,7 @@ import PublishingPortfolioCard from "../../data/publishingPortfolioData.json";
 import Card from "../../components/list/Card";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
+import Saying from "../../components/ui/Saying";
 
 export default function PublishingPortfolio() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -35,7 +36,13 @@ export default function PublishingPortfolio() {
         keywords="TYCODESIGN, 퍼블리싱 포트폴리오"
       />
 			<SliderFade typingText="퍼블리싱 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 퍼블리싱 스타일을 보실 수 있습니다.</p>"/>
-			<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingPortfolioHashs"/>
+			<div className="common_wrap pd_none_col">
+				<Saying sessionName="PublishingPortfolio"/>
+				<div className="category_wrap">
+					<div className="category_text">PUBLISHING PORTFOLIO</div>
+				</div>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingPortfolioHashs"/>
+			</div>
 			<div className="common_wrap">
 				<div className="card_wrap">
 					{filteredCards.map(card => (

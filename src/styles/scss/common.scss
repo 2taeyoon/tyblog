@@ -47,6 +47,8 @@
 	}
 }
 
+.pd_none_col { padding: 0; flex-direction: column; flex-wrap: nowrap; align-items: center; }
+
 .common_pf { width: 100%; padding: 0 64px 64px; margin-left: 0; background: var(--white);
 	@media (max-width: 640px) { padding: 0 8px 32px; }
 	.blog { width: 100%; max-width: 1440px; margin-top: 16px; background: var(--white); line-height: 0;	}
