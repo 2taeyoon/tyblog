@@ -11,6 +11,16 @@ export default function Banner({CardFind} : {CardFind: CardProps}) {
 					<div className="card_nickname">{CardFind?.nickname}</div>
 					<div className="card_date">{CardFind?.date}</div>
 				</div>
+				{ CardFind.skills ?
+					<div className="card_skill_wrap">
+						{ CardFind.skills.map((skill, skillIndex) => (
+							<div key={skillIndex} className="card_skill" style={{ backgroundColor: skill.color }}>
+								<div className="skill_img" style={{ background: `url('${skill.icon}') center center / cover` }}></div>
+								<div className="skill_text">{skill.name}</div>
+							</div>
+						))}
+					</div> : null
+				}
 				{ CardFind?.hashs ? (
 					<div className="card_hash_wrap">
 						{ CardFind.hashs.map((hash, hashIndex) => (
