@@ -8,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
 import PageUrls from "../../components/utill/PageUrls";
+import Banner from "../../components/ui/Banner";
 
 export default function PublishingPortfolioContent() {
 	const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
@@ -38,12 +39,15 @@ export default function PublishingPortfolioContent() {
         ogDescription={PublishingCardFind?.subTitle}
         keywords={PublishingCardFind?.title}
       />
-      <div className="common_wrap common_pf">
+			<div className="common_wrap banner_wrap">
+				{PublishingCardFind && <Banner CardFind={PublishingCardFind} />}
+			</div>
+      <div className="common_pf common_wrap">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="publishingstudy"/>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="designportfolio"/>
         </div>
       </div>
     </>

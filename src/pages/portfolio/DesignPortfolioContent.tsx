@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
 import PageUrls from "../../components/utill/PageUrls";
-import Info from "../../components/ui/Info";
+import Banner from "../../components/ui/Banner";
 
 export default function DesignPortfolioContent() {
 	const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
@@ -38,10 +38,10 @@ export default function DesignPortfolioContent() {
         ogDescription={DesignCardFind?.subTitle}
         keywords={DesignCardFind?.title}
       />
-			<div className="common_pf common_info">
-				<Info cards={DesignCardFind}/>
+			<div className="common_wrap banner_wrap">
+				{DesignCardFind && <Banner CardFind={DesignCardFind} />}
 			</div>
-      <div className="common_wrap common_pf">
+      <div className="common_pf common_wrap">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
