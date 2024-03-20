@@ -43,6 +43,9 @@ export default function Header({trueActive}: AsideContextProps) {
 					</div>
 					<div className="side_menu_wrap" onClick={trueActive}>
 						<div className="side_menu"></div>
+						<div className="tooltip">
+							<div className="text">사이드바 메뉴</div>
+						</div>
 					</div>
 				</nav>
 			</div>
