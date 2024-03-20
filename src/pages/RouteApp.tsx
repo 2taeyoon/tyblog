@@ -1,5 +1,5 @@
-import React, { Suspense, lazy, useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import React, { Suspense, lazy, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
 import "../styles/css/TTTtangsbudaejjigae.css";
@@ -41,20 +41,20 @@ const routes = [
 ];
 
 export default function RouteApp() {
-  const location = useLocation();
-  const [showAsideHeader, setShowAsideHeader] = useState(true);
+  // const location = useLocation();
+  // const [showAsideHeader, setShowAsideHeader] = useState(true);
 
-	useEffect(() => {
-		// 현재 경로가 '/designportfolio/:title' 또는 '/publishingportfolio/:title'와 일치하는지 확인
-		const isPortfolioContent = location.pathname.startsWith("/designportfolio/") || location.pathname.startsWith("/publishingportfolio/");
+	// useEffect(() => {
+	// 	// 현재 경로가 '/designportfolio/:title' 또는 '/publishingportfolio/:title'와 일치하는지 확인
+	// 	const isPortfolioContent = location.pathname.startsWith("/designportfolio/") || location.pathname.startsWith("/publishingportfolio/");
 		
-		// 기존의 pathMatch 로직에 isPortfolioContent 조건을 추가하여 최종적으로 헤더와 사이드바를 보여줄지 결정
-		const pathMatch = routes.some(route => 
-			location.pathname === route.path || location.pathname.startsWith(route.path + "/")
-		) && !isPortfolioContent;
+	// 	// 기존의 pathMatch 로직에 isPortfolioContent 조건을 추가하여 최종적으로 헤더와 사이드바를 보여줄지 결정
+	// 	const pathMatch = routes.some(route => 
+	// 		location.pathname === route.path || location.pathname.startsWith(route.path + "/")
+	// 	) && !isPortfolioContent;
 
-		setShowAsideHeader(pathMatch);
-	}, [location]);
+	// 	setShowAsideHeader(pathMatch);
+	// }, [location]);
 
   const [isActive, setIsActive] = useState<boolean>(false);
 
@@ -68,8 +68,8 @@ export default function RouteApp() {
   return (
     <div className="RouteApp">
 			<div className={`${ isActive ? 'side_active' : '' }`}>
-				{showAsideHeader && <Header trueActive={trueActive}/>}
-				{showAsideHeader && <Aside />}
+				<Header trueActive={trueActive}/>
+				<Aside />
 				<Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
 					<Routes>
 						{routes.map((route, index) => {
