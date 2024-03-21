@@ -30,6 +30,7 @@ export interface ListLinkProps {
 	svgWH?: string;
 	svgColor?: string;
 	path?: string;
+	count?: number;
 }
 // 링크 컴포넌트 END!
 

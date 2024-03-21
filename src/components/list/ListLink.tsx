@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ListLinkProps } from "../../types/props";
 import SvgList from "./SvgList";
 
-export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, svgColor, svgWH, path }: ListLinkProps) {
+export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, count, svgColor, svgWH, path }: ListLinkProps) {
 	const linkStyle = image ? { background: `url(${image}) center center / cover` } : {};
 
   return (
@@ -26,6 +26,7 @@ export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLa
 					</>
         )}
         <div>{title}</div>
+				<div>{count}</div>
       </Link>
     </li>
   );

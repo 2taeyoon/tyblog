@@ -54,7 +54,7 @@
 						.item { justify-content: center; background-color: rgba(255,255,255,.77); color: var(--black);
 							> div { font-weight: 500; }
 							&:hover { background-color: var(--white); box-shadow: 0 0 5px 0 var(--whiteDDD); color: var(--thema); }
-							&::after { display: none; }
+							//&::after { display: none; }
 						}
 					}
 				}

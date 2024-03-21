@@ -33,7 +33,7 @@ export const categories = [
       { 
 				linkInfo: {
 					linkTo: "/designportfolio",
-					title: "Design"
+					title: "Design",
 				},
 				svgInfo: {
 					svgWH: "25px",
@@ -60,7 +60,7 @@ export const categories = [
       { 
 				linkInfo: {
 					linkTo: "/designstudy",
-					title: "Design"
+					title: "Design",
 				},
 				svgInfo: {
 					svgWH: "25px",
@@ -71,7 +71,7 @@ export const categories = [
       { 
 				linkInfo: {
 					linkTo: "/publishingstudy",
-					title: "Publishing"
+					title: "Publishing",
 				},
 				svgInfo: {
 					svgWH: "25px",
@@ -82,7 +82,7 @@ export const categories = [
 			{ 
 				linkInfo: {
 					linkTo: "/etcstudy",
-					title: "Etc"
+					title: "Etc",
 				},
 				svgInfo: {
 					svgWH: "25px",
