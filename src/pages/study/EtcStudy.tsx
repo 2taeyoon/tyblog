@@ -39,7 +39,7 @@ export default function EtcStudy() {
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="EtcStudy"/>
 				<div className="category_wrap">
-					<div className="category_text">ETC PORTFOLIO</div>
+					<div className="category_text">Etc Study</div>
 				</div>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs"/>
 			</div>

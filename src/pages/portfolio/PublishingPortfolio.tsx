@@ -39,7 +39,7 @@ export default function PublishingPortfolio() {
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingPortfolio"/>
 				<div className="category_wrap">
-					<div className="category_text">PUBLISHING PORTFOLIO</div>
+					<div className="category_text">Publishing Portfolio</div>
 				</div>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingPortfolioHashs"/>
 			</div>

@@ -39,7 +39,7 @@ export default function DesignPortfolio() {
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="DesignPortfolio"/>
 				<div className="category_wrap">
-					<div className="category_text">DESIGN PORTFOLIO</div>
+					<div className="category_text">Design Portfolio</div>
 				</div>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignPortfolioHashs"/>
 			</div>
