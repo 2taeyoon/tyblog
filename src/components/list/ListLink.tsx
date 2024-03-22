@@ -25,8 +25,8 @@ export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLa
 						/>
 					</>
         )}
-        <div>{title}</div>
-				<div>{count}</div>
+				<div className="title">{title}</div>
+				<div className="count">{count}</div>
       </Link>
     </li>
   );
