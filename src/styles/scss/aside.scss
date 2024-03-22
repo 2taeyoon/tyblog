@@ -25,8 +25,8 @@
 			img:hover { transform: none; }
 		}
 	}
-	.sitename { padding-top: 6px; font-size: 1.6rem; font-weight: 500; }
-	.nickname { font-size: 1.4rem; font-weight: 400; }
+	.sitename { padding-top: 6px; font-size: 16px; font-weight: 500; }
+	.nickname { font-size: 14px; font-weight: 400; }
 }
 
 .another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: var(--whiteFD); border: 1px solid var(--line);
@@ -44,26 +44,24 @@
 
 .nav { width: 100%; padding: 16px 0; border-top: 1px solid var(--line);
 	.resume { display: inline-block; width: 100%; padding: 10px 36px; transition: transform .3s;
-		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700;
+		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700; font-size: 16px;
 		&:hover { transform: scale(1.05); animation: hueRotate 2s ease-in infinite alternate; }
 		@media (max-width: 640px) {
 			&:hover { transform: none; }
 		}
 	}
 	.nav_wrap { width: 100%;
-		.category { padding: 20px 36px; color: var(--blacklight);; font-size: 1.5rem; }
+		.category { padding: 20px 36px; color: var(--blacklight);; font-size: 15px; }
 		.item { display: flex; align-items: center; position: relative; width: 100%; padding: 12px 36px; background-color: var(--white); color: var(--black); transition: transform .3s, color .3s, background-color .3s; overflow: hidden;
+			@media (max-width: 640px) {
+				&:hover { transform: none; color: var(--black); background-color: var(--white); }
+			}
+			.title { font-size: 16px; }
+			.count { padding: 0 10px; margin-left: 8px; border: 1px var(--thema) solid; border-radius: 999px; color: var(--thema); font-size: 10px; }
 			&:hover { transform: scale(1.05); color: var(--thema); background-color: var(--themalight); }
-			// &::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background-color: var(--themabright); transition: .5s ease-in-out; }
-			// &:hover::after { right: 0; }
 
 			svg { padding-right: 12px; transition: fill .3s; }
 			&:hover svg { fill: var(--thema); }
-
-			@media (max-width: 640px) {
-				&:hover { transform: none; color: var(--black); background-color: var(--white); }
-				//&::after { content: none; }
-			}
 		}
 	}
 }
