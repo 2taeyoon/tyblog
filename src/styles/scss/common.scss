@@ -50,7 +50,12 @@
 
 .pd_none_col { padding: 0; flex-direction: column; flex-wrap: nowrap; align-items: center; }
 
-.common_pf .blog { max-width: 1440px; line-height: 0; }
+.common_pf { padding: 64px;
+	@media (max-width: 1024px) { padding: 16px; }
+	@media (max-width: 640px) { padding: 8px; }
+
+	.blog { max-width: 1440px; line-height: 0; }
+}
 
 .common_info { display: flex; justify-content: center; padding: 32px 64px 32px;
 	@media (max-width: 640px) { padding: 8px; }
