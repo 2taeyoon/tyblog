@@ -10,7 +10,7 @@
 	&::before { top: 50%; width: 100%; height: 0; transform: translateY(-50%); border-top: none; border-bottom: none;	}
 
 	// 카드 호버 애니메이션 START!
-	&:hover { filter: blur(1px); transform: scale(1.02); box-shadow: 0 0 15px var(--whiteCCC);
+	&:hover { transform: scale(1.02); box-shadow: 0 0 15px var(--whiteCCC);
 		.card_top { filter: brightness(.5); }
 
 		&::after { animation: expandWidth .5s forwards; }
