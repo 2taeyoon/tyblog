@@ -41,21 +41,6 @@ const routes = [
 ];
 
 export default function RouteApp() {
-  // const location = useLocation();
-  // const [showAsideHeader, setShowAsideHeader] = useState(true);
-
-	// useEffect(() => {
-	// 	// 현재 경로가 '/designportfolio/:title' 또는 '/publishingportfolio/:title'와 일치하는지 확인
-	// 	const isPortfolioContent = location.pathname.startsWith("/designportfolio/") || location.pathname.startsWith("/publishingportfolio/");
-		
-	// 	// 기존의 pathMatch 로직에 isPortfolioContent 조건을 추가하여 최종적으로 헤더와 사이드바를 보여줄지 결정
-	// 	const pathMatch = routes.some(route => 
-	// 		location.pathname === route.path || location.pathname.startsWith(route.path + "/")
-	// 	) && !isPortfolioContent;
-
-	// 	setShowAsideHeader(pathMatch);
-	// }, [location]);
-
   const [isActive, setIsActive] = useState<boolean>(false);
 
   const trueActive = () => {
