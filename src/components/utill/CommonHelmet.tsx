@@ -31,10 +31,6 @@ const CommonHelmet = ({
       name="robots"
       content="index, nofollow"
     />
-		<meta
-			name="google-site-verification"
-			content="SNFW33Xzy-Ax7158wmUiIFbnjjDZwz_2iRq3ROShcIA"
-		/>
   </Helmet>
 );
 
