@@ -1,7 +1,7 @@
-.common_wrap { position: relative; display: flex; flex-wrap: wrap; justify-content: center; width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 64px; margin-left: 250px;
+.common_wrap { position: relative; display: flex; flex-wrap: wrap; justify-content: center; width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 128px; margin-left: 250px;
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
-	@media (max-width: 1024px) { padding: 16px; }
-	@media (max-width: 640px) { padding: 8px; }
+	@media (max-width: 1024px) { padding: 16px 16px 64px; }
+	@media (max-width: 640px) { padding: 8px 16px 32px; }
 	
 	.blog { width: 100%; max-width: 768px;
 		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 100px 0 0; border-top: 1px solid var(--whiteDDD);
@@ -50,11 +50,15 @@
 
 .pd_none_col { padding: 0; flex-direction: column; flex-wrap: nowrap; align-items: center; }
 
-.common_pf { padding: 64px;
-	@media (max-width: 1024px) { padding: 16px; }
-	@media (max-width: 640px) { padding: 8px; }
+.common_pf { padding: 32px 0 128px;
+	@media (max-width: 1024px) { padding: 16px 0 64px; }
+	@media (max-width: 640px) { padding: 8px 0 32px; }
 
-	.blog { max-width: 1440px; line-height: 0; }
+	.blog { max-width: 100%; line-height: 0;
+		.design_pf { display: flex; justify-content: center;
+			.page_url { max-width: 1440px; }
+		}
+	}
 }
 
 .common_info { display: flex; justify-content: center; padding: 32px 64px 32px;

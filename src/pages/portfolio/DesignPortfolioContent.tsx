@@ -41,7 +41,7 @@ export default function DesignPortfolioContent() {
 			<div className="common_wrap banner_wrap">
 				{DesignCardFind && <Banner CardFind={DesignCardFind} />}
 			</div>
-      <div className="common_pf common_wrap" style={{ background: "rgb(250 250 250)" }}>
+      <div className="common_pf common_wrap">
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
