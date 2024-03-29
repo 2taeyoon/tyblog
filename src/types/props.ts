@@ -67,6 +67,7 @@ export interface SvgProps {
 export interface CardProps {
 	mdFile?: string;
   badge?: string;
+	badge2?: string;
   image?: string;
   profileImage?: string;
   nickname?: string;

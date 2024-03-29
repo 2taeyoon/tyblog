@@ -9,11 +9,18 @@ export default function Card({ cards }: Mapping) {
 				<Link to={`${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
-							{ card.badge ?
-								<div className="card_badge">
-									<div>{card.badge}</div>
-								</div> : null
-							}
+							<div className="card_badge_wrap">
+								{ card.badge ?
+									<div className="card_badge">
+										<div>{card.badge}</div>
+									</div> : null
+								}
+								{ card.badge2 ?
+									<div className="card_badge">
+										<div>{card.badge2}</div>
+									</div> : null
+								}
+							</div>
 						</div>
 					</div>
 					<div className="card_bottom">

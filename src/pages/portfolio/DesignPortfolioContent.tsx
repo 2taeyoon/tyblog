@@ -33,15 +33,15 @@ export default function DesignPortfolioContent() {
     <>
       <CommonHelmet
         title={DesignCardFind?.title}
-        description={DesignCardFind?.subTitle}
+        description={DesignCardFind?.title}
         ogTitle={DesignCardFind?.title}
-        ogDescription={DesignCardFind?.subTitle}
+        ogDescription={DesignCardFind?.title}
         keywords={DesignCardFind?.title}
       />
 			<div className="common_wrap banner_wrap">
 				{DesignCardFind && <Banner CardFind={DesignCardFind} />}
 			</div>
-      <div className="common_pf common_wrap">
+      <div className="common_pf common_wrap" style={{ background: "rgb(250 250 250)" }}>
         <div className="blog">
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}

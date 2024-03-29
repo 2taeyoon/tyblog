@@ -33,8 +33,8 @@
 		@media (max-width: 640px) { height: 200px; }
 	
 		.card_img { width: 100%; height: 100%; border-radius: 10px 10px 0 0; transition: .5s;
-			.card_badge { position: absolute; top: 20px; left: 27px; border-radius: 999px; background-color: var(--whiteDDD);
-				div { padding: 3px 10px; font-size: 1.4rem; }
+			.card_badge_wrap { display: flex; align-items: center; position: absolute; top: 20px; left: 27px;
+				.card_badge { padding: 3px 10px; margin-right: 8px; border-radius: 999px; background-color: var(--whiteDDD); font-size: 1.4rem; }
 			}
 		}
 	}
