@@ -21,6 +21,23 @@
       "image": "/images/design_portfolio/2/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
+      "date": "22년 3월 ~ 22년 6월",
+      "title": "의료 기구의 두 얼굴",
+      "skills": [
+				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
+				{"name": "InDesign", "color": "#FF3366", "icon": "/images/skill/adobeindesign.svg"}
+      ],
+			"hashs": [
+        {"name": "#인포그래픽"},
+				{"name": "#포스터"}
+      ]
+    },
+		{
+			"mdFile": "/images/design_portfolio/3/2.md",
+			"badge": "개인",
+      "image": "/images/design_portfolio/3/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
       "date": "21년 5월 ~ 21년 6월",
       "title": "스위스 모더니즘 포스터",
       "skills": [
