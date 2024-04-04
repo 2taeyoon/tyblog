@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://tycodesign.vercel.app/</loc>
-    </url>
-    <url>
-        <loc>https://tycodesign.vercel.app/designportfolio</loc>
-    </url>
-    <url>
-        <loc>https://tycodesign.vercel.app/publishingportfolio</loc>
-    </url>
-    <url>
-        <loc>https://tycodesign.vercel.app/designstudy</loc>
-    </url>
-    <url>
-        <loc>https://tycodesign.vercel.app/publishingstudy</loc>
-    </url>
-    <url>
-        <loc>https://tycodesign.vercel.app/etcstudy</loc>
-    </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://tycodesign.vercel.app/</loc>
+  <lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
+<url>
+		<loc>https://tycodesign.vercel.app/designportfolio</loc>
+		<lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
+<url>
+		<loc>https://tycodesign.vercel.app/publishingportfolio</loc>
+		<lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
+<url>
+		<loc>https://tycodesign.vercel.app/designstudy</loc>
+		<lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
+<url>
+		<loc>https://tycodesign.vercel.app/publishingstudy</loc>
+		<lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
+<url>
+		<loc>https://tycodesign.vercel.app/etcstudy</loc>
+		<lastmod>2024-04-04T08:29:49+00:00</lastmod>
+</url>
 </urlset>
