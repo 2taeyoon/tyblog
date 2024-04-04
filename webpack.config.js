@@ -52,7 +52,7 @@ module.exports = (argv) => {
       }),
       new HtmlWebpackPlugin({
         template: "./public/index.html",
-				favicon: "./public/favicon/favicon.ico",
+				favicon: "./public/favicon.ico",
         minify:
           process.env.NODE_ENV === "production"
             ? {
