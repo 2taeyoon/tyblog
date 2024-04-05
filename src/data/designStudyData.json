@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/design_study/2/2.md",
+      "image": "/images/design_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "몇월 며칠일지 나중에 설정",
+      "title": "아토믹 디자인 패턴",
+			"subTitle": "컬러는 실제로 개인적인 취향이 가장 크게 반영되는 요소중 하나로, 좋은 컬러란 매우 애매한 정보입니다. 그럼에도 불구하고, 컬러를 선택하는데에 있어 도움이 되는 컬러 선택법이 있습니다.",
+			"hashs": [
+				{"name": "#Atomic Design"}
+      ]
+    },
+		{
 			"mdFile": "/images/design_study/1/1.md",
       "image": "/images/design_study/1/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
