@@ -1,9 +1,25 @@
 {
   "cards": [
 		{
-			"mdFile": "/images/design_portfolio/1/1.md",
+			"mdFile": "/images/design_portfolio/4/4.md",
 			"badge": "개인",
-      "image": "/images/design_portfolio/1/main_image.webp",
+      "image": "/images/design_portfolio/4/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 1월 ~ 23년 1월",
+      "title": "청하다 브랜드 디자인",
+      "skills": [
+				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
+				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"}
+      ],
+			"hashs": [
+        {"name": "#브랜드"}
+      ]
+    },
+		{
+			"mdFile": "/images/design_portfolio/3/3.md",
+			"badge": "개인",
+      "image": "/images/design_portfolio/3/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "22년 9월 ~ 22년 10월",
@@ -33,9 +49,9 @@
       ]
     },
 		{
-			"mdFile": "/images/design_portfolio/3/2.md",
+			"mdFile": "/images/design_portfolio/1/1.md",
 			"badge": "개인",
-      "image": "/images/design_portfolio/3/main_image.webp",
+      "image": "/images/design_portfolio/1/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "21년 5월 ~ 21년 6월",
