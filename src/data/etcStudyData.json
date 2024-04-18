@@ -30,7 +30,7 @@
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 11월 20일",
-      "title": "Gitgub SSH 연결하기",
+      "title": "Github SSH 연결하기",
 			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
 			"hashs": [
 				{"name": "#Github"},
