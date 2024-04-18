@@ -1,8 +1,8 @@
 {
   "cards": [
 		{
-			"mdFile": "/images/etc_study/2/2.md",
-      "image": "/images/etc_study/2/main_image.webp",
+			"mdFile": "/images/etc_study/3/3.md",
+      "image": "/images/etc_study/3/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "24년 1월 5일",
@@ -13,8 +13,8 @@
       ]
     },
 		{
-			"mdFile": "/images/etc_study/1/1.md",
-      "image": "/images/etc_study/1/main_image.webp",
+			"mdFile": "/images/etc_study/2/2.md",
+      "image": "/images/etc_study/2/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "23년 12월 28일",
@@ -22,6 +22,19 @@
 			"subTitle": "Docker는 간단한 명령어로 컨테이너 이미지를 생성하고 저장할 수 있는 서버 가상화 플랫폼입니다. Docker Container는 가상화 기술 중 하나로 기존 가상화와 달리 프로세스를 격리시켜 동작하는 방식을 말합니다.",
 			"hashs": [
 				{"name": "#Docker"}
+      ]
+    },
+		{
+			"mdFile": "/images/etc_study/1/1.md",
+      "image": "/images/etc_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 20일",
+      "title": "Gitgub SSH 연결하기",
+			"subTitle": "SSH(Secure Shell)는 GitHub Repositories에 데이터를 전송할 때 보안 통신을 위해 사용되는 프로토콜입니다. SSH는 데이터 전송 중에 암호화를 사용하여 보안을 유지할 수 있다는 장점이 있습니다.",
+			"hashs": [
+				{"name": "#Github"},
+				{"name": "#SSH"}
       ]
     }
   ]
