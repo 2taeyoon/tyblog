@@ -7,7 +7,7 @@
       "nickname": "2taeyoon",
       "date": "24년 1월 5일",
       "title": "인터넷(Internet) 동작 원리",
-			"subTitle": "Docker는 간단한 명령어로 컨테이너 이미지를 생성하고 저장할 수 있는 서버 가상화 플랫폼입니다. Docker Container는 가상화 기술 중 하나로 기존 가상화와 달리 프로세스를 격리시켜 동작하는 방식을 말합니다.",
+			"subTitle": "인터넷(Internet)은 프로토콜 스위트(TCP/IP)를 기반으로 하여 전 세계적으로 연결되어있는 컴퓨터 네트워크 통신망을 일컫는 말이다.",
 			"hashs": [
 				{"name": "#Internet"}
       ]
