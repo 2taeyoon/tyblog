@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/design_study/3/3.md",
+      "image": "/images/design_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "몇월 며칠일지 나중에 설정",
+      "title": "자연스러운 흐름을 따라가는 웹 디자인 레이아웃 전략",
+			"subTitle": "인터넷에서 사용자가 원하는 정보에 빠르게 도착할 수 있게 하는 것, 바로 이것이 우리가 웹 페이지를 디자인할 때 중요하게 생각해야 할 요지라고 할 수 있습니다. 사용자가 웹사이트 안에서 어디를 읽어야 하는지에 대한 것을 잃지 않고, 원하는 콘텐츠를 손쉽게 찾을 수 있도록 하는 것이야말로 웹디자이너의 몫입니다. 그렇다면 어떻게 하면 이러한 목표를 달성할 수 있을까요?",
+			"hashs": [
+				{"name": "#Layout"}
+      ]
+    },
+		{
 			"mdFile": "/images/design_study/2/2.md",
       "image": "/images/design_study/2/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
