@@ -73,3 +73,42 @@
   }
 }
 // PageUrls에 사용되는 버튼 애니메이션 END!
+
+
+// header에서 bar 클릭시 사용되는 애니메이션 START!
+@keyframes headerAnimate {
+  from {
+    bottom: -75px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+
+@keyframes headerAnimate2 {
+  from {
+		bottom: 10px;
+  }
+  to {
+    bottom: -75px;
+  }
+}
+
+@keyframes headerBarAnimate {
+  from {
+    top: -35px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes headerBarAnimate2 {
+  from {
+    top: 0;
+  }
+  to {
+		top: -35px;
+  }
+}
+// header에서 bar 클릭시 사용되는 애니메이션 END!

@@ -11,15 +11,32 @@ import ListLink from "../list/ListLink";
 
 export default function Header({trueActive}: AsideContextProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [scrollClass, setScrollClass] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
+			//setScrollClass(window.scrollY >= 1000 ? "scroll1000" : "none");
+			if (window.innerWidth > 640) {
+				setScrollClass(window.scrollY >= 1000 ? "scroll1000" : "none");
+			} else {
+				setScrollClass('none'); // 640px 이하에서는 항상 'none'을 유지
+			}
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleBar = () => {
+		if (window.innerWidth > 640) {
+			if (scrollClass === "scroll1000") {
+				setScrollClass("none");
+			} else {
+				setScrollClass("scroll1000");
+			}
+		}
+  };
 
 	const DesignPortfolioCount = DesignPortfolioData.cards.length;
 	const PublishingPortfolioCount = PublishingPortfolioData.cards.length;
@@ -29,7 +46,7 @@ export default function Header({trueActive}: AsideContextProps) {
 
   return (
     <header className="header">
-			<div className={`header_wrap ${isScrolled ? 'scroll' : ''}`}>
+			<div className={`header_wrap ${isScrolled ? 'scroll' : ''} ${scrollClass}`}>
 				<nav className="nav">
 					<div className="nav_header">
 						<Link
@@ -64,6 +81,11 @@ export default function Header({trueActive}: AsideContextProps) {
 						</div>
 					</div>
 				</nav>
+			</div>
+			<div className={`bar ${scrollClass}`} onClick={toggleBar}>
+				<div className="line"></div>
+				<div className="line"></div>
+				<div className="line"></div>
 			</div>
     </header>
   );

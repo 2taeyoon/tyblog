@@ -50,9 +50,9 @@
 
 .pd_none_col { padding: 0; flex-direction: column; flex-wrap: nowrap; align-items: center; }
 
-.common_pf { padding: 32px 0 128px;
-	@media (max-width: 1024px) { padding: 16px 0 64px; }
-	@media (max-width: 640px) { padding: 8px 0 32px; }
+.common_pf { padding: 0 0 128px;
+	@media (max-width: 1024px) { padding: 0 0 64px; }
+	@media (max-width: 640px) { padding: 0 0 32px; }
 
 	.blog { max-width: 100%; line-height: 0;
 		.design_pf { display: flex; justify-content: center;
