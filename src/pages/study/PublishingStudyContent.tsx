@@ -47,7 +47,7 @@ export default function PublishingStudyContent() {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="publishingstudy"/>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="ps"/>
         </div>
       </div>
     </>

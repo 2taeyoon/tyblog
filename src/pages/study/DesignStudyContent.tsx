@@ -46,7 +46,7 @@ export default function DesignStudyContent() {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={hyphenRemoval} cards={DesignCard.cards} basePath="designstudy"/>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={DesignCard.cards} basePath="ds"/>
         </div>
       </div>
     </>

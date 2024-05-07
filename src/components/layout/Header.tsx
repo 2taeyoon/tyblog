@@ -58,16 +58,16 @@ export default function Header({trueActive}: AsideContextProps) {
 					<div className="nav_wrap">
 						<div className="category">PORTFOLIO</div>
 						<ul>
-							<ListLink linkTo="/designportfolio" title="Design" baseClass="item" count={DesignPortfolioCount}/>
-							<ListLink linkTo="/publishingportfolio" title="Publishing" baseClass="item" count={PublishingPortfolioCount}/>
+							<ListLink linkTo="/dp" title="Design" baseClass="item" count={DesignPortfolioCount}/>
+							<ListLink linkTo="/pp" title="Publishing" baseClass="item" count={PublishingPortfolioCount}/>
 						</ul>
 					</div>
 					<div className="nav_wrap">
 						<div className="category">STUDY</div>
 						<ul>
-							<ListLink linkTo="/designstudy" title="Design" baseClass="item" count={DesignStudyCount}/>
-							<ListLink linkTo="/publishingstudy" title="Publishing" baseClass="item" count={PublishingStudyCount}/>
-							<ListLink linkTo="/etcstudy" title="Etc" baseClass="item" count={EtcStudyCount}/>
+							<ListLink linkTo="/ds" title="Design" baseClass="item" count={DesignStudyCount}/>
+							<ListLink linkTo="/ps" title="Publishing" baseClass="item" count={PublishingStudyCount}/>
+							<ListLink linkTo="/es" title="Etc" baseClass="item" count={EtcStudyCount}/>
 						</ul>
 					</div>
 					</div>

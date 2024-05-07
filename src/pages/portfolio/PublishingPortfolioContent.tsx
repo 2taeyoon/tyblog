@@ -47,7 +47,7 @@ export default function PublishingPortfolioContent() {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="designportfolio"/>
+					<PageUrls hyphenRemoval={hyphenRemoval} cards={PublishingCard.cards} basePath="pp"/>
         </div>
       </div>
     </>
