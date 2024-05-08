@@ -10,10 +10,10 @@ export default function PublishingPortfolio() {
     <>
       <CommonHelmet
 				title="퍼블리싱 포트폴리오"
-        description="2taeyoon의 퍼블리싱 포트폴리오 페이지입니다."
+        description="이태윤의 퍼블리싱 포트폴리오 페이지입니다."
         ogTitle="퍼블리싱 포트폴리오"
-        ogDescription="2taeyoon의 퍼블리싱 포트폴리오 페이지입니다."
-        keywords="2taeyoon, 퍼블리싱 포트폴리오"
+        ogDescription="이태윤의 퍼블리싱 포트폴리오 페이지입니다."
+        keywords="2taeyoon,이태윤,포트폴리오,퍼블리싱 포트폴리오"
       />
 			<SliderFade typingText="퍼블리싱 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 퍼블리싱 스타일을 보실 수 있습니다.</p>"/>
 			<div className="common_wrap pd_none_col">
