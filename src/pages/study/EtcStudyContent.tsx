@@ -37,6 +37,8 @@ export default function EtcStudyContent() {
         ogTitle={EtcCardFind?.title}
         ogDescription={EtcCardFind?.subTitle}
         keywords={EtcCardFind?.title}
+				ogImage={`https://www.2taeyoon.com${EtcCardFind?.image}`}
+				ogURL={`https://www.2taeyoon.com/es/${title}`}
       />
 			<div className="common_wrap banner_wrap">
 				{EtcCardFind && <Banner CardFind={EtcCardFind} />}

@@ -7,6 +7,8 @@ export interface MetaProps {
   description: string | undefined;
   ogTitle: string | undefined;
   ogDescription: string | undefined;
+	ogImage: string | undefined;
+	ogURL: string | undefined;
 }
 // 메타 태그 END!
 

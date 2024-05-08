@@ -32,12 +32,14 @@ export default function PublishingPortfolioContent() {
 
   return (
     <>
-      <CommonHelmet
+			<CommonHelmet
         title={PublishingCardFind?.title}
-        description={PublishingCardFind?.subTitle}
+        description={`퍼블리싱 포트폴리오입니다.`}
         ogTitle={PublishingCardFind?.title}
-        ogDescription={PublishingCardFind?.subTitle}
+        ogDescription={`퍼블리싱 포트폴리오입니다.`}
         keywords={PublishingCardFind?.title}
+				ogImage={`https://www.2taeyoon.com${PublishingCardFind?.image}`}
+				ogURL={`https://www.2taeyoon.com/pp/${title}`}
       />
 			<div className="common_wrap banner_wrap">
 				{PublishingCardFind && <Banner CardFind={PublishingCardFind} />}

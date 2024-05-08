@@ -31,12 +31,14 @@ export default function DesignPortfolioContent() {
 	//마크다운 파일을 랜더링 END!
   return (
     <>
-      <CommonHelmet
+			<CommonHelmet
         title={DesignCardFind?.title}
-        description={DesignCardFind?.title}
+        description={`디자인 포트폴리오입니다.`}
         ogTitle={DesignCardFind?.title}
-        ogDescription={DesignCardFind?.title}
+        ogDescription={`디자인 포트폴리오입니다.`}
         keywords={DesignCardFind?.title}
+				ogImage={`https://www.2taeyoon.com${DesignCardFind?.image}`}
+				ogURL={`https://www.2taeyoon.com/dp/${title}`}
       />
 			<div className="common_wrap banner_wrap">
 				{DesignCardFind && <Banner CardFind={DesignCardFind} />}

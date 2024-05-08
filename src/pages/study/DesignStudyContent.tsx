@@ -37,6 +37,8 @@ export default function DesignStudyContent() {
         ogTitle={DesignCardFind?.title}
         ogDescription={DesignCardFind?.subTitle}
         keywords={DesignCardFind?.title}
+				ogImage={`https://www.2taeyoon.com${DesignCardFind?.image}`}
+				ogURL={`https://www.2taeyoon.com/ds/${title}`}
       />
 			<div className="common_wrap banner_wrap">
 				{DesignCardFind && <Banner CardFind={DesignCardFind} />}

@@ -7,30 +7,18 @@ const CommonHelmet = ({
   keywords,
   description,
   ogTitle,
-  ogDescription
+  ogDescription,
+	ogImage,
+	ogURL
 }: MetaProps) => (
   <Helmet>
     <title>{title}</title>
-    <meta
-      name="keywords"
-      content={keywords}
-    />
-    <meta
-      name="description"
-      content={description}
-    />
-    <meta
-      property="og:title"
-      content={ogTitle}
-    />
-    <meta
-      property="og:description"
-      content={ogDescription}
-    />
-    <meta
-      name="robots"
-      content="index, nofollow"
-    />
+    <meta name="keywords" content={keywords}/>
+    <meta name="description" content={description}/>
+    <meta property="og:title" content={ogTitle}/>
+    <meta property="og:description" content={ogDescription}/>
+		<meta property="og:image" content={ogImage}/>
+		<meta property="og:url" content={ogURL}/>
   </Helmet>
 );
 

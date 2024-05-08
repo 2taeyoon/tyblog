@@ -34,6 +34,8 @@ export default function DesignStudy() {
         ogTitle="디자인 스터디"
         ogDescription="이태윤의 디자인 스터디 페이지입니다."
         keywords="2taeyoon,이태윤,포트폴리오,디자인 스터디"
+				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
+				ogURL="https://www.2taeyoon.com/ds"
       />
 			<SliderFade typingText="디자인 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>디자인 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
 			<div className="common_wrap pd_none_col">

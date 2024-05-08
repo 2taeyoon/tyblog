@@ -38,6 +38,8 @@ export default function PublishingStudyContent() {
         ogTitle={PublishingCardFind?.title}
         ogDescription={PublishingCardFind?.subTitle}
         keywords={PublishingCardFind?.title}
+				ogImage={`https://www.2taeyoon.com${PublishingCardFind?.image}`}
+				ogURL={`https://www.2taeyoon.com/ps/${title}`}
       />
 			<div className="common_wrap banner_wrap">
 				{PublishingCardFind && <Banner CardFind={PublishingCardFind} />}
