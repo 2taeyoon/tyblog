@@ -1,7 +1,8 @@
 .blog {
 	pre > code > span, span, pre, code, li, strong, s, a, p	{ 
 		font-size: 1.8rem;
-		@media (max-width: 640px) { line-height: 170%; }
+		line-height: 170%;
+		@media (max-width: 640px) { line-height: 180%; }
 	}
 
 	h1 {
@@ -72,7 +73,7 @@
 	}
 
 	blockquote > ol, blockquote > ul { 
-		width: calc(100% - 18px); margin: 0 0 0 18px;	
+		width: calc(100% - 24px); margin: 0 0 0 24px;
 	}
 
 	ol {
