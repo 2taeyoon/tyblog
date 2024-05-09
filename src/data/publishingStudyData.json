@@ -181,6 +181,188 @@
 				{"name": "#TypeScript"},
         {"name": "#JavaScript"}
       ]
+    },
+		{
+			"mdFile": "/images/publishing_study/14/14.md",
+      "image": "/images/publishing_study/14/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 2월 23일",
+      "title": "Vercel에 React 배포하기",
+			"subTitle": "Vercel은 미국의 클라우드 서비스형 플랫폼 회사입니다. 이 회사는 Next.js 웹 개발 프레임워크를 유지 관리하며, 배포는 Git 저장소를 통해 자동으로 처리가 됩니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Vercel"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/13/13.md",
+      "image": "/images/publishing_study/13/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 2월 12일",
+      "title": "React에서 Markdown 랜더링하기",
+			"subTitle": "React에서 Markdown을 랜더링하려면 우선 Markdown을 React 컴포넌트로 변환해야합니다. 예를 들어, Markdown의 헤딩은 html의 h1, h2로 변환하는 작업이 필요합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Markdown"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/12/12.md",
+      "image": "/images/publishing_study/12/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 1월 31일",
+      "title": "React에서 Webpack Image 로드하기",
+			"subTitle": "웹팩 설정을 마치고 프로젝트를 진행하다가 문제가 하나 생겼습니다. 개발 모드에서는 이미지가 로드되었는데 빌드된 파일에서는 이미지 로드가 되지 않는 문제가 있었죠..",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/11/11.md",
+      "image": "/images/publishing_study/11/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 1월 23일",
+      "title": "React에서 Webpack 사용하기(Typescript)",
+			"subTitle": "웹 페이지를 구성하는 Module(HTML, CSS, JavaScript, 이미지 등)을 결합하여 병합된 하나의 결과물을 생성하는 라이브러리를 Module Bundler라고 합니다. 그러한 라이브러리가 바로 Webpack입니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/10/10.md",
+      "image": "/images/publishing_study/10/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 1월 18일",
+      "title": "Prettier로 코드 포맷 통일시키기",
+			"subTitle": "혼자 진행하는 프로젝트에서는 코드 포맷이 큰 문제가 되지 않을 수 있습니다. 그러나 여러 명의 개발자가 함께 협업하여 서비스를 개발할 때, 각자가 사용하는 코드 포맷이 서로 다를 수 있습니다.",
+			"hashs": [
+				{"name": "#Prettier"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/9/9.md",
+      "image": "/images/publishing_study/9/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 1월 10일",
+      "title": "NextJS에서 mouse hover시 특정 텍스트 변경",
+			"subTitle": "Next.js 환경에서 했던 것이니 Next 태그를 넣긴 했지만 이 녀석은 거진 React..회사 프로젝트를 진행하다가 어려웠던 부분이 있었는데 그거를 집에서 혼자 해보고 싶었습니다..",
+			"hashs": [
+				{"name": "#NextJS"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/8/8.md",
+      "image": "/images/publishing_study/8/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 12월 12일",
+      "title": "NextJS에서 AOS 라이브러리 사용하기",
+			"subTitle": "터미널에서 AOS를 설치해줍니다. npm install --save aos@next 또는 yarn add aos@next 정상적으로 설치가 완료된 것을 확인하기 위해 setting.json 파일에서 aos: ^3.0.0-beta.6를 확인합니다.",
+			"hashs": [
+				{"name": "#API"},
+				{"name": "#NextJS"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/7/7.md",
+      "image": "/images/publishing_study/7/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 12월 4일",
+      "title": "NextJS에서 카카오지도 넣기",
+			"subTitle": "터미널에서 지도 SDK를 설치해줍니다. npm install react-kakao-maps-sdk 또는 yarn add react-kakao-maps-sdk 정상적으로 설치가 완료된 것을 확인하기 위해 setting.json 파일에서 react-kakao-maps-sdk를 확인합니다.",
+			"hashs": [
+				{"name": "#API"},
+				{"name": "#NextJS"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/6/6.md",
+      "image": "/images/publishing_study/6/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 30일",
+      "title": "NextJS에서 Swiper 사용하기",
+			"subTitle": "Swiper는 자바스크립트로 제작되어 터치, 마우스 드래그, 키보드 등 다양한 입력 방식을 지원하며 반응형 웹에 적합합니다. 이 라이브러리는 다양한 애니메이션 효과, 루프, 자동 재생 등의 기능을 제공하고 있습니다.",
+			"hashs": [
+				{"name": "#API"},
+				{"name": "#NextJS"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/5/5.md",
+      "image": "/images/publishing_study/5/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 15일",
+      "title": "Firebase로 React App 배포하기",
+			"subTitle": "Github을 통해 build된 파일을 배포해 본 적은 있지만 Firebase의 호스팅으로 파일을 배포해 본 적은 없어서 글을 작성하였습니다.",
+			"hashs": [
+				{"name": "#Firebase"},
+        {"name": "#React"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/4/4.md",
+      "image": "/images/publishing_study/4/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 9일",
+      "title": "TypeScript Class",
+			"subTitle": "클래스는 객체 지향 프로그래밍의 기본 요소로, TypeScript에서 클래스를 정의하고 사용하는 방법은 다음과 같습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/3/3.md",
+      "image": "/images/publishing_study/3/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 3일",
+      "title": "TypeScript 함수",
+			"subTitle": "함수를 TypeScript에서 선언할 때에는 매개변수의 타입과 반환 타입을 명시할 수 있고, 이를 통해 타입 에러를 방지할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
+    },
+    {
+			"mdFile": "/images/publishing_study/2/2.md",
+      "image": "/images/publishing_study/2/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 31일",
+      "title": "React FC와 타입 직접 선언",
+			"subTitle": "React.FC는 React에서 함수형 컴포넌트를 정의하는 TypeScript에서 사용되는 제네릭 타입입니다. React.FC를 사용하여 타입을 명확하게 지정하여 Props에 대한 타입 검사를 수행합니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#TypeScript"}
+      ]
+    },
+		{
+			"mdFile": "/images/publishing_study/1/1.md",
+      "image": "/images/publishing_study/1/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 10월 24일",
+      "title": "TypeScript를 사용하는 이유",
+			"subTitle": "정적 타입은 변수의 데이터 타입을 선언하고, 변수에 할당되는 값의 타입을 컴파일 시점에서 미리 확인하는 방식입니다. 변수를 선언할 때 해당 변수의 타입을 명시적으로 지정하거나 타입 추론을 통해 타입을 결정할 수 있습니다.",
+			"hashs": [
+				{"name": "#TypeScript"},
+        {"name": "#JavaScript"}
+      ]
     }
   ]
 }
