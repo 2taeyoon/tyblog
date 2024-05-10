@@ -6,6 +6,7 @@ import Card from "../../components/list/Card";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
 import Saying from "../../components/ui/Saying";
+import CardPagination from "../../components/ui/CardPagination";
 
 export default function DesignStudy() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -46,11 +47,7 @@ export default function DesignStudy() {
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs"/>
 			</div>
 			<div className="common_wrap">
-				<div className="card_wrap">
-					{filteredCards.map(card => (
-						<Card key={card.title} cards={[card]} />
-					))}
-				</div>
+				<CardPagination filteredCards={filteredCards}/>
       </div>
     </>
   );

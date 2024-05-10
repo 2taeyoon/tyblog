@@ -1,8 +1,10 @@
-.common_wrap { position: relative; display: flex; flex-wrap: wrap; justify-content: center; width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 128px; margin-left: 250px;
+.common_wrap { display: flex; flex-wrap: wrap; justify-content: center; position: relative;  width: calc(100% - 250px); max-width: 100%; padding: 32px 64px 128px; margin-left: 250px;
 	@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
 	@media (max-width: 1024px) { padding: 16px 16px 64px; }
 	@media (max-width: 640px) { padding: 8px 8px 32px; }
 	
+	.card_pagination { position: relative; width: 100%; max-width: 1370px; }
+
 	.blog { width: 100%; max-width: 768px;
 		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 100px 0 0; border-top: 1px solid var(--whiteDDD);
 			@media (max-width: 1280px) { padding: 64px 16px 0; margin: 64px 0 0 0; }

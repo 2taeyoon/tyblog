@@ -85,6 +85,12 @@ export interface Mapping {
 }
 // 카드 컴포넌트 END!
 
+// 카드 페이지네이션 컴포넌트 START!
+export interface CardPaginationProps {
+  filteredCards: CardProps[]; // 타입 정의
+}
+// 카드 페이지네이션 컴포넌트 END!
+
 // 이전, 다음 페이지 URL START!
 export interface PageUrlsProps {
 	hyphenRemoval: string;

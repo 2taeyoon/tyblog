@@ -1,0 +1,5 @@
+.pagination { display: flex; justify-content: center;
+	li a { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin: 0 4px; border-radius: 999px; font-size: 1.5rem; cursor: pointer; }
+	.active a { background-color: var(--themabright); color: var(--white) }
+	.break { pointer-events: none; cursor: default; }
+}

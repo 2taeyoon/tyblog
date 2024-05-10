@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import PublishingStudyCard from "../../data/publishingStudyData.json";
-import Card from "../../components/list/Card";
 import SliderFade from "../../components/ui/SliderFade";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
 import Saying from "../../components/ui/Saying";
+import CardPagination from "../../components/ui/CardPagination";
 
 export default function PublishingStudy() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -43,14 +43,10 @@ export default function PublishingStudy() {
 				<div className="category_wrap">
 					<div className="category_text">Publishing Study</div>
 				</div>
-				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudyHashs"/>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudy"/>
 			</div>
 			<div className="common_wrap">
-				<div className="card_wrap">
-					{filteredCards.map(card => (
-						<Card key={card.title} cards={[card]} />
-					))}
-				</div>
+				<CardPagination filteredCards={filteredCards}/>
       </div>
     </>
   );
