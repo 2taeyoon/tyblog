@@ -11,6 +11,7 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 	const scrollSessionName = `${sessionName}-scroll`; // 스크롤 위치를 저장하는 세션 스토리지 키 이름
 	const swiperRef = useRef<SwiperClass | null>(null); // Swiper 인스턴스를 저장하기 위한 ref 생성
 
+
 	// 해시태그 선택 상태를 세션 스토리지에서 로드하는 useEffect START!
 	useEffect(() => {
 		const savedHash = sessionStorage.getItem(sessionName); // 세션 스토리지에서 저장된 해시태그를 가져옴
@@ -19,6 +20,7 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 		}
 	}, [sessionName, setSelectedHash]);
 	// 해시태그 선택 상태를 세션 스토리지에서 로드하는 useEffect END!
+
 
 	// 선택된 해시태그를 세션 스토리지에 저장하거나 제거하는 useEffect START!
 	useEffect(() => {
@@ -29,6 +31,7 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 		}
 	}, [sessionName, selectedHash]);
 	// 선택된 해시태그를 세션 스토리지에 저장하거나 제거하는 useEffect END!
+
 
 	// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect START!
 	useEffect(() => {
@@ -46,6 +49,7 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 
 		}, [scrollSessionName]);
 	// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect END!
+
 
 	return (
 		<div className="hashs_wrap">

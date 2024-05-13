@@ -46,7 +46,7 @@ export default function EtcStudy() {
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs"/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards}/>
+				<CardPagination filteredCards={filteredCards} sessionName="EtcStudyHashs"/>
       </div>
 		</>
 	);

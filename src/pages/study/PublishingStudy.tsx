@@ -46,7 +46,7 @@ export default function PublishingStudy() {
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudy"/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards}/>
+				<CardPagination filteredCards={filteredCards} sessionName="PublishingStudy"/>
       </div>
     </>
   );

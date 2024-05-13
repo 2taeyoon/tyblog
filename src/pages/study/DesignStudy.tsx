@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import DesignStudyCard from "../../data/designStudyData.json";
 import SliderFade from "../../components/ui/SliderFade";
-import Card from "../../components/list/Card";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
 import Saying from "../../components/ui/Saying";
@@ -47,7 +46,7 @@ export default function DesignStudy() {
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs"/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards}/>
+				<CardPagination filteredCards={filteredCards} sessionName="DesignStudyHashs"/>
       </div>
     </>
   );
