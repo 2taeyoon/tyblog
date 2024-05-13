@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://www.2taeyoon.com</loc>
+      <lastmod>2024-05-10</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>http://www.example.com/dp</loc>
+      <lastmod>2024-05-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+	 <url>
+      <loc>http://www.example.com/pp</loc>
+      <lastmod>2024-05-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+	 <url>
+      <loc>http://www.example.com/ds</loc>
+      <lastmod>2024-05-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+	 <url>
+      <loc>http://www.example.com/ps</loc>
+      <lastmod>2024-05-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+	 <url>
+      <loc>http://www.example.com/es</loc>
+      <lastmod>2024-05-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <!-- 여러 개의 url 태그를 추가하여 다른 웹 페이지들을 포함시킬 수 있습니다 -->
+</urlset>
