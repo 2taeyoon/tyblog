@@ -21,6 +21,7 @@ const CommonHelmet = ({
 		<meta property="og:image" content={ogImage}/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="630"/>
+		<meta property="og:type" content="website"/>
 		<meta property="og:site_name" content="이태윤의 블로그형 포트폴리오 사이트입니다."/>
 		
   </Helmet>
