@@ -5,7 +5,7 @@ import SliderFade from "../../components/ui/SliderFade";
 import { CardProps } from "../../types/props";
 import Hashs from "../../components/utill/Hashs";
 import Saying from "../../components/ui/Saying";
-import CardPagination from "../../components/ui/CardPagination";
+import CardPagination from "../../components/utill/CardPagination";
 
 export default function EtcStudy() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리

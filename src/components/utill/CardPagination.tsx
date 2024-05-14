@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card from "../../components/list/Card";
+import Card from "../list/Card";
 import ReactPaginate from 'react-paginate';
 import { CardPaginationProps } from "../../types/props";
 
@@ -7,7 +7,7 @@ import { CardPaginationProps } from "../../types/props";
 export default function CardPagination({filteredCards, sessionName}: CardPaginationProps) {
 	const [currentPage, setCurrentPage] = useState(0); // 현재 페이지 상태를 관리하는 state
 
-	const cardsPerPage = 3; // 한 페이지에 표시할 카드 수
+	const cardsPerPage = 9; // 한 페이지에 표시할 카드 수
 	const displayCards = filteredCards.slice(currentPage * cardsPerPage, (currentPage + 1) * cardsPerPage); // 페이지에 따라 표시할 카드들을 계산
 
 	// 페이지 번호가 클릭되었을 때 호출되는 함수 START!
@@ -15,6 +15,11 @@ export default function CardPagination({filteredCards, sessionName}: CardPaginat
 			const newPage = selectedItem.selected;
 			sessionStorage.setItem(`${sessionName}-pagination`, newPage.toString());
 			setCurrentPage(newPage);
+
+			// 화면 너비가 640px 이하일 때 스크롤을 맨 위로 이동
+			if (window.innerWidth <= 640) {
+				window.scrollTo(0, 0);
+			}
 	};
 	// 페이지 번호가 클릭되었을 때 호출되는 함수 END!
 

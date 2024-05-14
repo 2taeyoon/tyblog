@@ -5,7 +5,7 @@
 		&.scroll1000 { animation: headerBarAnimate .7s forwards; }
 		&.none { animation: headerBarAnimate2 .7s forwards; }
 		@media (max-width: 1536px) { width: 100%; margin-left: 0;	}
-		@media (max-width: 640px) { display: none;	}
+		@media (max-width: 640px) { display: none; }
 		.line { width: 32px; height: 2px; background-color: var(--blackmute); margin: 2px 0; }
 	}
 	// 클릭 바 END!
