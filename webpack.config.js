@@ -60,7 +60,7 @@ module.exports = (argv) => {
                 removeComments: true
               }
             : false,
-				inject: 'body'
+				inject: false
       }),
 			new CopyPlugin({
 				patterns: [
