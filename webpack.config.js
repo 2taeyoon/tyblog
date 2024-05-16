@@ -59,14 +59,16 @@ module.exports = (argv) => {
                 collapseWhitespace: true,
                 removeComments: true
               }
-            : false
+            : false,
+				
       }),
 			new CopyPlugin({
 				patterns: [
 					{ from: './public/images', to: 'images' },
 					{ from: './public/favicon', to: 'favicon' },
 					{ from: './public/manifest.json', to: 'manifest.json' },
-					{ from: './public/robots.txt', to: 'robots.txt' }
+					{ from: './public/robots.txt', to: 'robots.txt' },
+					{ from: './public/sitemap.xml', to: 'sitemap.xml' }
 				],
 			}),
       new CleanWebpackPlugin()
