@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-	<Router>
+	<Router basename="https://www.2taeyoon.com">
     <HelmetProvider>
 			<RouteApp />
     </HelmetProvider>
