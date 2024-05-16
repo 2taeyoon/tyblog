@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 import { Swiper as SwiperClass } from 'swiper/types';
 
-export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessionName}: HashsProps) {
+export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessionName, setCurrentPage}: HashsProps) {
 	const scrollSessionName = `${sessionName}-scroll`; // 스크롤 위치를 저장하는 세션 스토리지 키 이름
 	const swiperRef = useRef<SwiperClass | null>(null); // Swiper 인스턴스를 저장하기 위한 ref 생성
 
@@ -51,6 +51,12 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 	// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect END!
 
 
+		// 해시태그 클릭 시 페이지네이션을 초기화하는 함수
+		const handleHashClick = (hash: string | null) => {
+			setSelectedHash(hash);
+			setCurrentPage(0);
+		};
+
 	return (
 		<div className="hashs_wrap">
 			<Swiper
@@ -59,9 +65,9 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 				className="hashs_slider"
 				onSwiper={(swiper: SwiperClass) => (swiperRef.current = swiper)} // Swiper 인스턴스를 ref에 할당
 			>
-				<SwiperSlide className={!selectedHash ? 'active' : ''} onClick={() => setSelectedHash(null)} style={{width: 'auto'}}>전체보기</SwiperSlide>
+				<SwiperSlide className={!selectedHash ? 'active' : ''} onClick={() => handleHashClick(null)} style={{width: 'auto'}}>전체보기</SwiperSlide>
 				{uniqueHashs.map((hash: string) => (
-					<SwiperSlide style={{width: 'auto'}} key={hash} className={selectedHash === hash ? 'active' : ''} onClick={() => setSelectedHash(hash)}>
+					<SwiperSlide style={{width: 'auto'}} key={hash} className={selectedHash === hash ? 'active' : ''} onClick={() => handleHashClick(hash)}>
 						{hash}
 					</SwiperSlide>
 				))}

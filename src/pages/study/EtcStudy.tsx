@@ -10,6 +10,7 @@ import CardPagination from "../../components/utill/CardPagination";
 export default function EtcStudy() {
   const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
   const [filteredCards, setFilteredCards] = useState<CardProps[]>([]); // 필터링 카드를 상태로 관리
+	const [currentPage, setCurrentPage] = useState(0);
 
 	// 선택된 해시태그에 따라 카드를 필터링하는 함수 START!
   useEffect(() => {
@@ -43,10 +44,10 @@ export default function EtcStudy() {
 				<div className="category_wrap">
 					<div className="category_text">Etc Study</div>
 				</div>
-				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs"/>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs" setCurrentPage={setCurrentPage}/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards} sessionName="EtcStudyHashs"/>
+				<CardPagination filteredCards={filteredCards} sessionName="EtcStudyHashs" currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
 		</>
 	);

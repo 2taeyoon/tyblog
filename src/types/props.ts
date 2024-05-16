@@ -90,6 +90,8 @@ export interface CardPaginationProps {
 	
   filteredCards: CardProps[]; // 타입 정의
 	sessionName: string | undefined;
+	currentPage: number;
+	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 // 카드 페이지네이션 컴포넌트 END!
 
@@ -114,6 +116,7 @@ export interface HashsProps {
   setSelectedHash: React.Dispatch<React.SetStateAction<string | null>>;
   uniqueHashs: string[];
   sessionName: string;
+	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 // 해시태그 필터링 END!
 
