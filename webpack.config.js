@@ -59,7 +59,8 @@ module.exports = (argv) => {
                 collapseWhitespace: true,
                 removeComments: true
               }
-            : false
+            : false,
+				inject: 'body'
       }),
 			new CopyPlugin({
 				patterns: [
