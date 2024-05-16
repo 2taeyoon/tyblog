@@ -9,15 +9,7 @@ import { MetaProps } from "../../types/props";
 <meta name="googlebot" content="noindex, nofollow"> // 구글에서만 사이트 노출X
 */
 
-const CommonHelmet = ({
-  title,
-  keywords,
-  description,
-  ogTitle,
-  ogDescription,
-	ogImage,
-	ogURL
-}: MetaProps) => (
+const CommonHelmet = ({ title, keywords, description, ogTitle, ogDescription,	ogImage, ogURL }: MetaProps) => (
   <Helmet>
     <title>{title}</title>
     <meta name="keywords" content={keywords}/>
