@@ -1,6 +1,20 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/15/15.md",
+      "image": "/images/publishing_study/15/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "24년 5월 11일",
+      "title": "Sitemap을 사용해보고 오류도 잡아보기",
+			"subTitle": "간단히 말해 사이트맵(sitemap)은 웹사이트의 페이지를 나열한 파일이라고 합니다. 사이트맵은 검색 엔진이 웹사이트를 더 효율적으로 크롤링할 수 있도록 도와주는 파일입니다. 사실 sitemap이 검색엔진에 도움이 된다는 내용만 알고 있었을뿐 자세하게는 찾아보지 않았었다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#Sitemap"}
+      ]
+    },
+		{
 			"mdFile": "/images/publishing_study/14/14.md",
       "image": "/images/publishing_study/14/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
