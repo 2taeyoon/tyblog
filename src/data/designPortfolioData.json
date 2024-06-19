@@ -24,14 +24,14 @@
       "image": "/images/design_portfolio/5/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
-      "date": "23년 11월 ~ 23년 12월 (상시업무)",
+      "date": "23년 10월 ~ 23년 10월 (상시업무)",
       "title": "하이뷰 인플루언서 마케팅 웹사이트 리디자인",
       "skills": [
 				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
 				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"}
       ],
 			"hashs": [
-        {"name": "#그래픽"},
+        {"name": "#웹"},
 				{"name": "#3D"}
       ]
     },
