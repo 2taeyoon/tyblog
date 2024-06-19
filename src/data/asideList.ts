@@ -12,12 +12,6 @@ export const asideLinks = [
     image: "/images/loud_logo.png",
   },
   {
-    linkTo: "https://tydesign.tistory.com/",
-    baseClass: "tistory",
-    ariaLabel: "tistory 블로그로 이동",
-    image: "/images/tistory_logo.png",
-  },
-  {
     linkTo: "https://github.com/2taeyoon",
     baseClass: "github",
     ariaLabel: "Github 프로필로 이동",
