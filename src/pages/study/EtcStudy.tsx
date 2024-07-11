@@ -41,9 +41,9 @@ export default function EtcStudy() {
 			<SliderFade typingText="디자인 및 퍼블리싱 외의<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>디자인 및 퍼블리싱 외의 내용을 공부하고 기록한 페이지입니다.</p>"/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="EtcStudy"/>
-				<div className="category_wrap">
+				{/* <div className="category_wrap">
 					<div className="category_text">Etc Study</div>
-				</div>
+				</div> */}
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs" setCurrentPage={setCurrentPage}/>
 			</div>
 			<div className="common_wrap">

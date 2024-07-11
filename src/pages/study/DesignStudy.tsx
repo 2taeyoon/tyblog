@@ -41,9 +41,9 @@ export default function DesignStudy() {
 			<SliderFade typingText="디자인 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>디자인 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="DesignStudy"/>
-				<div className="category_wrap">
+				{/* <div className="category_wrap">
 					<div className="category_text">Design Study</div>
-				</div>
+				</div> */}
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs" setCurrentPage={setCurrentPage}/>
 			</div>
 			<div className="common_wrap">
