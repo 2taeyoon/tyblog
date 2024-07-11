@@ -1,13 +1,31 @@
 {
   "cards": [
 		{
-			"mdFile": "/images/design_portfolio/6/6.md",
+			"mdFile": "/images/design_portfolio/7/7.md",
 			"badge": "회사 / 협업사",
-      "image": "/images/design_portfolio/6/main_image.webp",
+      "image": "/images/design_portfolio/7/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
       "date": "24년 2월 ~ 24년 5월",
       "title": "KRMX 한국회원권거래소 웹페이지 디자인",
+      "skills": [
+				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
+				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
+				{"name": "Figma", "color": "#F24E1E", "icon": "./images/skill/figma.svg"}
+      ],
+			"hashs": [
+        {"name": "#웹"},
+				{"name": "#UX/UI"}
+      ]
+    },
+		{
+			"mdFile": "/images/design_portfolio/6/6.md",
+			"badge": "회사",
+      "image": "/images/design_portfolio/6/main_image.webp",
+      "profileImage": "/favicon/favicon-72x72.png",
+      "nickname": "2taeyoon",
+      "date": "23년 11월 ~ 23년 11월",
+      "title": "엔아이 자사웹 웹페이지 디자인",
       "skills": [
 				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
 				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
@@ -24,7 +42,7 @@
       "image": "/images/design_portfolio/5/main_image.webp",
       "profileImage": "/favicon/favicon-72x72.png",
       "nickname": "2taeyoon",
-      "date": "23년 10월 ~ 23년 10월 (상시업무)",
+      "date": "23년 10월 ~ 23년 10월",
       "title": "하이뷰 인플루언서 마케팅 웹사이트 리디자인",
       "skills": [
 				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
