@@ -23,14 +23,10 @@ export default function Card({ cards }: Mapping) {
 							</div>
 						</div>
 					</div>
-					<div className="card_bottom">
-						<div className="card_bottom_profile">
-							<div className="card_profile" style={{ background: `url('${card.profileImage}') center center / cover` }}></div>
-							<div className="card_nickname">{card.nickname}</div>
-							<div className="card_date">{card.date}</div>
-						</div>
+					<div className="card_bottom">						
+						<div className="card_date">{card.date}</div>
 						<div className="card_bottom_title">{card.title}</div>
-						<div className="card_bottom_sub_title">{card.subTitle}</div>
+						{ card.subTitle? <div className="card_bottom_sub_title">{card.subTitle}</div> : null }
 						{ card.skills ?
 							<div className="card_skill_wrap">
 								{ card.skills.map((skill, skillIndex) => (

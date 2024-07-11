@@ -1,8 +1,8 @@
 .swiper_common { position: relative;
-	.swiper { width: calc(100% - 250px); max-width: 100%; height: 70vh; min-height: 300px; margin-left: 250px; overflow: hidden;
+	.swiper { width: calc(100% - 250px); max-width: 100%; height: 650px; min-height: 300px; margin-left: 250px; overflow: hidden;
 		@media (max-width: 1536px) { width: 100%; margin-left: 0; }
-		@media (max-width: 1024px) { height: 50vh; }
-		@media (max-width: 640px) { height: 30vh; }
+		@media (max-width: 1024px) { height: 550px; }
+		@media (max-width: 640px) { height: 450px; }
 		.swiper-wrapper { animation: slideScale 18s linear infinite alternate; filter: brightness(.7); }
 		.swiper-slide .swiper_image { width: 100%; height: 100%; }
 		.title { position: absolute; top: calc(50% + 32px); left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whiteF9); text-align: left;

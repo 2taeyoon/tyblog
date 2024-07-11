@@ -71,11 +71,10 @@ export interface CardProps {
   badge?: string;
 	badge2?: string;
   image?: string;
-  profileImage?: string;
-  nickname?: string;
   date?: string;
   title?: string;
   subTitle?: string;
+	link?: string;
   skills?: { name: string; color: string; icon: string }[];
   hashs?: { name: string }[];
 }

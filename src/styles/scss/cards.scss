@@ -54,13 +54,7 @@
 
 
 //반복 되는 CSS는 빼서 재사용 START!
-.card_bottom_profile { display: flex; align-items: center; padding: 5px 0 5px;
-	@media (max-width: 640px) { padding: 0; }
-
-	.card_profile { width: 32px; height: 32px; border-radius: 999px; }
-	.card_nickname { padding-left: 8px; color: var(--blacklight); }
-	.card_date { padding-left: 10px; color: var(--blackmute); font-size: 1.4rem; }
-}
+.card_date { color: var(--blackmute); font-size: 1.4rem; }
 
 .card_skill_wrap { display: flex; flex-wrap: wrap; width: 100%; padding-top: 4px;
 	.card_skill { display: flex; align-items: center; justify-content: center; padding: 4px 8px; margin: 0 8px 8px 0; border-radius: 999px;

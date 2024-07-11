@@ -6,11 +6,13 @@ export default function Banner({CardFind} : {CardFind: CardProps}) {
 		<div className="banner">
 			<div className="banner_image" style={{ background: `url('${CardFind?.image}') center center / cover` }}></div>
 			<div className="banner_info">
+				{CardFind?.link && (
+          <div className="card_link_wrap">
+						<a href={CardFind.link} className="card_link" target="_blank" rel="noopener noreferrer">사이트 바로가기</a>
+					</div>
+        )}
 				<div className="card_title">{CardFind?.title}</div>
-				<div className="card_bottom_profile">
-					<div className="card_nickname">{CardFind?.nickname}</div>
-					<div className="card_date">{CardFind?.date}</div>
-				</div>
+				<div className="card_date">{CardFind?.date}</div>
 				{ CardFind.skills ?
 					<div className="card_skill_wrap">
 						{ CardFind.skills.map((skill, skillIndex) => (
