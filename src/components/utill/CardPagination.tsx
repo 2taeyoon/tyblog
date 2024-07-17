@@ -5,7 +5,7 @@ import { CardPaginationProps } from "../../types/props";
 
 
 export default function CardPagination({filteredCards, sessionName, currentPage, setCurrentPage}: CardPaginationProps) {
-	const cardsPerPage = 9; // 한 페이지에 표시할 카드 수
+	const cardsPerPage = 8; // 한 페이지에 표시할 카드 수
 	const displayCards = filteredCards.slice(currentPage * cardsPerPage, (currentPage + 1) * cardsPerPage); // 페이지에 따라 표시할 카드들을 계산
 
 	// 페이지 번호가 클릭되었을 때 호출되는 함수 START!
