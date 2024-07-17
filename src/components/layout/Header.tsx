@@ -16,9 +16,8 @@ export default function Header({trueActive}: AsideContextProps) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
-			//setScrollClass(window.scrollY >= 1000 ? "scroll1000" : "none");
 			if (window.innerWidth > 640) {
-				setScrollClass(window.scrollY >= 1000 ? "scroll1000" : "none");
+				setScrollClass(window.scrollY >= 500 ? "scroll500" : "none");
 			} else {
 				setScrollClass('none'); // 640px 이하에서는 항상 'none'을 유지
 			}
@@ -30,13 +29,19 @@ export default function Header({trueActive}: AsideContextProps) {
 
   const toggleBar = () => {
 		if (window.innerWidth > 640) {
-			if (scrollClass === "scroll1000") {
+			if (scrollClass === "scroll500") {
 				setScrollClass("none");
 			} else {
-				setScrollClass("scroll1000");
+				setScrollClass("scroll500");
 			}
 		}
   };
+
+	const handleSideMenuClick = () => {
+		if (window.innerWidth <= 1536) {
+			trueActive();
+		}
+	};
 
 	const DesignPortfolioCount = DesignPortfolioData.cards.length;
 	const PublishingPortfolioCount = PublishingPortfolioData.cards.length;
@@ -57,24 +62,24 @@ export default function Header({trueActive}: AsideContextProps) {
 						</Link>
 					<div className="nav_wrap">
 						<div className="category">PORTFOLIO</div>
-						<ul>
+						<div className="nav_list">
 							<ListLink linkTo="/dp" title="Design" baseClass="item" count={DesignPortfolioCount}/>
 							<ListLink linkTo="/pp" title="Publishing" baseClass="item" count={PublishingPortfolioCount}/>
-						</ul>
+						</div>
 					</div>
 					<div className="nav_wrap">
 						<div className="category">STUDY</div>
-						<ul>
+						<div className="nav_list">
 							<ListLink linkTo="/ds" title="Design" baseClass="item" count={DesignStudyCount}/>
 							<ListLink linkTo="/ps" title="Publishing" baseClass="item" count={PublishingStudyCount}/>
 							<ListLink linkTo="/es" title="Etc" baseClass="item" count={EtcStudyCount}/>
-						</ul>
+						</div>
 					</div>
 					</div>
 					<div className="nav_designer">
 						<Link to="/" className="category">심오한 디자이너</Link>
 					</div>
-					<div className="side_menu_wrap" onClick={trueActive}>
+					<div className="side_menu_wrap" onClick={handleSideMenuClick}>
 						<div className="side_menu"></div>
 						<div className="tooltip">
 							<div className="text">사이드바 메뉴</div>

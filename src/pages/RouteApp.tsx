@@ -53,7 +53,7 @@ export default function RouteApp() {
     <div className="RouteApp">
 			<div className={`${ isActive ? 'side_active' : '' }`}>
 				<Header trueActive={trueActive}/>
-				<Aside />
+				<Aside falseActive={falseActive}/>
 				<Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
 					<Routes>
 						{routes.map((route, index) => {

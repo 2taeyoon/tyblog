@@ -58,7 +58,7 @@
 			}
 			.title { font-size: 16px; }
 			.count { padding: 0 10px; margin-left: 8px; border: 1px var(--thema) solid; border-radius: 999px; color: var(--thema); font-size: 10px; }
-			&:hover { transform: scale(1.05); color: var(--thema); background-color: var(--themalight); }
+			&:hover { transform: scale(1.05); color: var(--thema); background-color: var(--themalight); z-index: 1; }
 
 			svg { padding-right: 12px; transition: fill .3s; }
 			&:hover svg { fill: var(--thema); }

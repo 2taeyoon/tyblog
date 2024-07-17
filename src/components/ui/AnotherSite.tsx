@@ -6,15 +6,17 @@ export default function AnotherSite() {
 	return (
 		<ul className="another_site">
 			{asideLinks.map((link, index) => (
-				<ListLink
-					key={index}
-					linkTo={link.linkTo}
-					baseClass={link.baseClass}
-					target="_blank"
-					rel="noreferrer noopener"
-					ariaLabel={link.ariaLabel}
-					image={link.image}
-				/>
+				<li>
+					<ListLink
+						key={index}
+						linkTo={link.linkTo}
+						baseClass={link.baseClass}
+						target="_blank"
+						rel="noreferrer noopener"
+						ariaLabel={link.ariaLabel}
+						image={link.image}
+					/>
+				</li>
 			))}
 	</ul>
 	)

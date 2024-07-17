@@ -33,6 +33,7 @@ export interface ListLinkProps {
 	svgColor?: string;
 	path?: string;
 	count?: number;
+	onClick?: () => void;
 }
 // 링크 컴포넌트 END!
 
