@@ -10,7 +10,7 @@
       "skills": [
 				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
 				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
-				{"name": "Figma", "color": "#F24E1E", "icon": "./images/skill/figma.svg"}
+				{"name": "Figma", "color": "#F24E1E", "icon": "/images/skill/figma.svg"}
       ],
 			"hashs": [
         {"name": "#웹"},
@@ -27,7 +27,7 @@
       "skills": [
 				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
 				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
-				{"name": "Figma", "color": "#F24E1E", "icon": "./images/skill/figma.svg"}
+				{"name": "Figma", "color": "#F24E1E", "icon": "/images/skill/figma.svg"}
       ],
 			"hashs": [
         {"name": "#웹"},
