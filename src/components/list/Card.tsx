@@ -27,7 +27,7 @@ export default function Card({ cards }: Mapping) {
 						<div className="card_date">{card.date}</div>
 						<div className="card_bottom_title">{card.title}</div>
 						{ card.subTitle? <div className="card_bottom_sub_title">{card.subTitle}</div> : null }
-						{ card.skills ?
+						{/* { card.skills ?
 							<div className="card_skill_wrap">
 								{ card.skills.map((skill, skillIndex) => (
 									<div key={skillIndex} className="card_skill" style={{ backgroundColor: skill.color }}>
@@ -36,7 +36,7 @@ export default function Card({ cards }: Mapping) {
 									</div>
 								))}
 							</div> : null
-						}
+						} */}
 						{ card.hashs ?
 							<div className="card_hash_wrap">
 								{ card.hashs.map((hash, hashIndex) => (
