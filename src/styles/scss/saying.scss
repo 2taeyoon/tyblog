@@ -1,6 +1,6 @@
-.saying_all_wrap { width: 50%; z-index: 1;
-	@media (max-width: 1536px) { width: 60%	}
-	@media (max-width: 1024px) { width: 70%	}
+.saying_all_wrap { width: 60%; z-index: 1;
+	@media (max-width: 1536px) { width: 65%	}
+	@media (max-width: 1024px) { width: 75%	}
 	@media (max-width: 640px) { width: 85%; }
 	.saying_wrap { display: flex; flex-direction: column; justify-content: space-between; position: relative; padding: 32px 64px; margin: -64px 0 16px; box-shadow: 0 0 30px 0 var(--whiteEEE); border-radius: 32px; background-color: var(--white); transition: all .3s;
 		&:hover { box-shadow: 0 0 30px 0 var(--whiteCCC); }
@@ -11,13 +11,13 @@
 		}
 		.writer_wrap { display: flex; flex-direction: column; padding-top: 8px;
 			@media (max-width: 640px) { padding-top: 4px; }
-			.writer { display: flex; justify-content: flex-end; align-items: center; color: var(--thema); font-size: 2.0rem; font-weight: 700; font-family: "Maplestory", "Malgun Gothic", sans-serif;
-				@media (max-width: 640px) { font-size: 1.8rem; }
-				span { padding-right: 8px; color: var(--thema); font-size: 2.0rem; font-weight: 700; font-family: "Maplestory", "Malgun Gothic", sans-serif;
-					@media (max-width: 640px) { font-size: 1.8rem; }
+			.writer { display: flex; justify-content: flex-end; align-items: center; color: var(--thema); font-size: 1.8rem; font-weight: 700; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif;
+				@media (max-width: 640px) { font-size: 1.6rem; }
+				span { padding-right: 8px; color: var(--thema); font-size: 1.8rem; font-weight: 700; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif;
+					@media (max-width: 640px) { font-size: 1.6rem; }
 				}
 			}
-			.job { display: flex; justify-content: flex-end; color: var(--blacklight); font-size: 1.6rem; font-weight: 300; font-family: "Maplestory", "Malgun Gothic", sans-serif;
+			.job { display: flex; justify-content: flex-end; color: var(--blacklight); font-size: 1.4rem; font-weight: 300; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif;
 				@media (max-width: 640px) { font-size: 1.4rem; }
 			}
 		}
