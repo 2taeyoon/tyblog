@@ -3,7 +3,7 @@
 	@media (max-width: 1024px) { padding: 16px 16px 64px; }
 	@media (max-width: 640px) { padding: 8px 8px 32px; }
 	
-	.card_pagination { position: relative; width: 100%; max-width: 1370px; }
+	.card_pagination { position: relative; width: 100%; }
 
 	.blog { width: 100%; max-width: 768px;
 		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 100px 0 0; border-top: 1px solid var(--whiteDDD);
