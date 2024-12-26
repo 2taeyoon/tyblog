@@ -10,9 +10,9 @@ export default function DesignPortfolio() {
     <>
       <CommonHelmet
         title="디자인 포트폴리오"
-        description="이태윤의 디자인 포트폴리오 페이지입니다."
+        description="이태윤의 디자인 포트폴리오"
         ogTitle="디자인 포트폴리오"
-        ogDescription="이태윤의 디자인 포트폴리오 페이지입니다."
+        ogDescription="이태윤의 디자인 포트폴리오"
         keywords="2taeyoon,이태윤,포트폴리오,디자인 포트폴리오"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/dp"

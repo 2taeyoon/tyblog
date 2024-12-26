@@ -31,14 +31,14 @@ export default function EtcStudy() {
 		<>
 			<CommonHelmet
 				title="이모저모 스터디"
-				description="이태윤의 그 외 스터디 페이지입니다."
+				description="이태윤의 그 외 스터디"
 				ogTitle="그 외 스터디"
-				ogDescription="이태윤의 그 외 스터디 페이지입니다."
+				ogDescription="이태윤의 그 외 스터디"
 				keywords="2taeyoon,이태윤,포트폴리오,그 외 스터디"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/es"
 			/>
-			<SliderFade typingText="그 외 스터디 페이지입니다." typingText2="그 외의 내용을 공부하고 기록한 페이지입니다."/>
+			<SliderFade typingText="그 외 스터디" typingText2="그 외 내용을 공부하고 기록한 페이지입니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="EtcStudy"/>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs" setCurrentPage={setCurrentPage}/>

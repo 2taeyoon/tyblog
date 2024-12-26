@@ -7,14 +7,14 @@ export default function Home() {
     <>
       <CommonHelmet
         title="이태윤 포트폴리오"
-        description="이태윤의 개인 공간이자 포트폴리오 사이트입니다."
+        description="이태윤의 개인 공간이자 포트폴리오 사이트"
         ogTitle="이태윤 포트폴리오"
-        ogDescription="이태윤의 개인 공간이자 포트폴리오 사이트입니다."
+        ogDescription="이태윤의 개인 공간이자 포트폴리오 사이트"
         keywords="2taeyoon,이태윤,포트폴리오"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/"
       />
-      <SliderFade typingText="안녕하세요.<br/>1년차 웹 디자이너<br/>이태윤입니다." typingText2="<br/><p class='sub_text'>나만의 공간을 만들고 싶어, 부족한 실력으로 제작한 웹사이트입니다.</p>"/>
+      <SliderFade typingText="1년차 퍼블리셔 이태윤입니다." typingText2="나만의 공간을 만들고 싶어 제작한 웹사이트입니다."/>
       <div className="common_wrap">
 				여기는 이력서와 자기소개서가 들어가는 페이지 ing..
 			</div>

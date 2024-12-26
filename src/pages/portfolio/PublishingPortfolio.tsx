@@ -10,9 +10,9 @@ export default function PublishingPortfolio() {
     <>
       <CommonHelmet
 				title="퍼블리싱 포트폴리오"
-        description="이태윤의 퍼블리싱 포트폴리오 페이지입니다."
+        description="이태윤 퍼블리싱 포트폴리오"
         ogTitle="퍼블리싱 포트폴리오"
-        ogDescription="이태윤의 퍼블리싱 포트폴리오 페이지입니다."
+        ogDescription="이태윤 퍼블리싱 포트폴리오"
         keywords="2taeyoon,이태윤,포트폴리오,퍼블리싱 포트폴리오"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/pp"
