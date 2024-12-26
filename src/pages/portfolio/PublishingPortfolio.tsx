@@ -20,9 +20,6 @@ export default function PublishingPortfolio() {
 			<SliderFade typingText="퍼블리싱 포트폴리오" typingText2="해당 페이지에서 퍼블리싱 스타일을 보실 수 있습니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingPortfolio"/>
-				{/* <div className="category_wrap">
-					<div className="category_text">Publishing Portfolio</div>
-				</div> */}
 			</div>
 			<div className="common_wrap">
 				<div className="card_wrap">

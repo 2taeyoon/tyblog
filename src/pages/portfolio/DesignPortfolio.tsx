@@ -20,9 +20,6 @@ export default function DesignPortfolio() {
 			<SliderFade typingText="디자인 포트폴리오" typingText2="해당 페이지에서 디자인 스타일을 보실 수 있습니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="DesignPortfolio"/>
-				{/* <div className="category_wrap">
-					<div className="category_text">Design Portfolio</div>
-				</div> */}
 			</div>
 			<div className="common_wrap">
 				<div className="card_wrap">
