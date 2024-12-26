@@ -38,7 +38,7 @@ export default function PublishingStudy() {
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/ps"
       />
-			<SliderFade typingText="퍼블리싱 관련<br/>스터디 페이지입니다." typingText2="<br/><p class='sub_text'>퍼블리싱 관련 내용을 공부하고 기록한 페이지입니다.</p>"/>
+			<SliderFade typingText="퍼블리싱 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingStudy"/>
 				{/* <div className="category_wrap">

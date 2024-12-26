@@ -5,15 +5,14 @@
 		@media (max-width: 640px) { height: 450px; }
 		.swiper-wrapper { animation: slideScale 18s linear infinite alternate; filter: brightness(.7); }
 		.swiper-slide .swiper_image { width: 100%; height: 100%; }
-		.title { position: absolute; top: calc(50% + 32px); left: 10%; transform: translateY(-50%); z-index: 100; color: var(--whiteF9); text-align: left;
-			@media (max-width: 1024px) { top: calc(50% + 16px); }
-			@media (max-width: 640px) { left: 5%; }
-			.Typewriter__wrapper, .Typewriter__cursor { font-size: 4.4rem; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif; font-weight: 500;
-				@media (max-width: 1024px) { font-size: 3.8rem; }
-				@media (max-width: 640px) { font-size: 3.2rem; }
+		.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; width: 100%; color: var(--whiteF9); text-align: center;
+			.main_text { font-size: 4.2rem; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif; font-weight: 500;
+				@media (max-width: 1024px) { font-size: 3.5rem; }
+				@media (max-width: 640px) { font-size: 2.8rem; }
 			}
-			.Typewriter__wrapper .sub_text { display: inline-block; font-size: 2.0rem; font-family: 'pretendard'; font-weight: 400;
-				@media (max-width: 1024px) { font-size: 1.9rem; }
+			.sub_text { display: inline-block; font-size: 2.0rem; font-family: 'pretendard'; font-weight: 400;
+				@media (max-width: 1024px) { font-size: 1.85rem; }
+				@media (max-width: 640px) { font-size: 1.7rem; }
 			}
 		}
 	}

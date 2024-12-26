@@ -8,7 +8,6 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Typewriter from 'typewriter-effect';
 import { TypingTextProps } from "../../types/props";
 import { SlidesData } from "../../data/slideList";
 
@@ -61,7 +60,9 @@ export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps
           </SwiperSlide>
         ))}
         <div className="title">
-          <Typewriter
+					<div className="main_text">{typingText}</div>
+					<div className="sub_text">{typingText2}</div>
+          {/* <Typewriter
             onInit={(typewriter) => {
               typewriter
 								.changeDelay(50)
@@ -79,7 +80,7 @@ export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps
 								})
 								.start()
             }}
-          />
+          /> */}
         </div>
       </Swiper>
     </div>

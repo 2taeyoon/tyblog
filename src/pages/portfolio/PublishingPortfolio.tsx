@@ -17,7 +17,7 @@ export default function PublishingPortfolio() {
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/pp"
       />
-			<SliderFade typingText="퍼블리싱 관련<br/>포트폴리오 페이지입니다." typingText2="<br/><p class='sub_text'>이 페이지에서 저의 퍼블리싱 스타일을 보실 수 있습니다.</p>"/>
+			<SliderFade typingText="퍼블리싱 포트폴리오" typingText2="해당 페이지에서 퍼블리싱 스타일을 보실 수 있습니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingPortfolio"/>
 				{/* <div className="category_wrap">
