@@ -6,7 +6,7 @@ export default function AnotherSite() {
 	return (
 		<ul className="another_site">
 			{asideLinks.map((link, index) => (
-				<li>
+				<li key={index}>
 					<ListLink
 						key={index}
 						linkTo={link.linkTo}
