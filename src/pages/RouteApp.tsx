@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import "../styles/css/pretendard.css";
 import "../styles/css/TTTtangsbudaejjigae.css";
@@ -25,6 +25,8 @@ const EtcStudy = lazy(() => import("./study/EtcStudy"));
 const EtcStudyContent = lazy(() => import("./study/EtcStudyContent"));
 const NotFound = lazy(() => import("./NotFound"));
 
+const Posting = lazy(() => import("./Posting"));
+
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/dp", element: <DesignPortfolio /> },
@@ -36,11 +38,13 @@ const routes = [
   { path: "/ps", element: <PublishingStudy /> },
   { path: "/ps/:title", element: <PublishingStudyContent /> },
   { path: "/es", element: <EtcStudy /> },
-  { path: "/es/:title", element: <EtcStudyContent /> }
+  { path: "/es/:title", element: <EtcStudyContent /> },
+  { path: "/post", element: <Posting /> }
 ];
 
 export default function RouteApp() {
   const [isActive, setIsActive] = useState<boolean>(false);
+	const location = useLocation(); // 현재 경로 가져오기
 
   const trueActive = () => {
     setIsActive(true);
@@ -49,11 +53,14 @@ export default function RouteApp() {
     setIsActive(false);
   };
 
+	// 특정 경로에서 Aside와 Header 숨기기
+	const hideAsideAndHeader = ["/post"].includes(location.pathname);
+
   return (
     <div className="RouteApp">
 			<div className={`${ isActive ? 'side_active' : '' }`}>
-				<Header trueActive={trueActive}/>
-				<Aside falseActive={falseActive}/>
+				{!hideAsideAndHeader && <Header trueActive={trueActive}/>}
+				{!hideAsideAndHeader && <Aside falseActive={falseActive}/>}
 				<Suspense fallback={<div>Loading...</div> /* 로딩 이미지 */}>
 					<Routes>
 						{routes.map((route, index) => {
