@@ -36,6 +36,7 @@ time, mark, audio, video, textarea, input, button {
 
 html {
 	font-size: 62.5%;
+	letter-spacing: -0.5px;
 }
 
 /* 대략 15px */
