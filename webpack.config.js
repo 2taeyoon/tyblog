@@ -48,7 +48,10 @@ module.exports = (argv) => {
       ]
     },
     plugins: [
-			new Dotenv(),
+			new Dotenv({
+				path: './.env',
+				systemvars: true
+			}),
       new webpack.ProvidePlugin({
         React: "react"
       }),
