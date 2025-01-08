@@ -1,0 +1,15 @@
+.post {
+	.title_tag {
+		.title {}
+		.tag {}
+	}
+	.markdown_content {
+		textarea {}
+		.post_view {}
+	}
+	.btn {
+		button {}
+		button:first-of-type {}
+		button:last-of-type {}
+	}
+}
