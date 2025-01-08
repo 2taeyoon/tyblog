@@ -2,6 +2,9 @@ import React from "react";
 import CommonHelmet from "../../components/utill/CommonHelmet";
 import SliderFade from "../../components/ui/SliderFade";
 
+console.log(process.env.REACT_APP_SUPABASE_ANON, "REACT_APP_SUPABASE_ANON");
+console.log(process.env.REACT_APP_SUPABASE_URL, "EACT_APP_SUPABASE_URL");
+
 export default function Home() {
   return (
     <>

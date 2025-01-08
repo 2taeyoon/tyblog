@@ -8,7 +8,7 @@ import remarkHtml from "remark-html";
 
 // 환경 변수 확인
 console.log(process.env.REACT_APP_SUPABASE_ANON, "REACT_APP_SUPABASE_ANON");
-console.log(process.env.REACT_APP_SUPABASE_URL, "EACT_APP_SUPABASE_URL")
+console.log(process.env.REACT_APP_SUPABASE_URL, "EACT_APP_SUPABASE_URL");
 
 const MarkdownEditor = () => {
   const [markdownText, setMarkdownText] = useState<string>(""); // Markdown 텍스트 상태(글 내용)
