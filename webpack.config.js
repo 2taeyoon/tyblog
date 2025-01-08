@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require("webpack");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (argv) => {
   const prod = argv.mode === "production";
@@ -47,6 +48,7 @@ module.exports = (argv) => {
       ]
     },
     plugins: [
+			new Dotenv(),
       new webpack.ProvidePlugin({
         React: "react"
       }),
