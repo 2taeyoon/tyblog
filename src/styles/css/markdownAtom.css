@@ -1,4 +1,4 @@
-.blog {
+.blog, .post_view {
 	pre code.hljs {
 		display: block;
 		overflow-x: auto;
