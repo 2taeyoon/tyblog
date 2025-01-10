@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/16/16.md",
+      "image": "/images/publishing_study/16/main_image.webp",
+      "title": "Veolog 글쓰기 창 구현해보기(Supabase)",
+			"subTitle": "안녕하세요! 오늘은 포트폴리오를 업그레이드하고 싶던 마음에 Markdown 에디터를 이용해서 Velog 글쓰기 창과 비슷한 것을 구현해보려고 합니다. 에디터를 이용해서 내용을 작성하고 Supabase에 게시하는 기능까지 해보려고 합니다!",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"},
+				{"name": "#Supabase"}
+      ]
+    },
+		{
 			"mdFile": "/images/publishing_study/15/15.md",
       "image": "/images/publishing_study/15/main_image.webp",
       "title": "Sitemap을 사용해 보고 오류도 잡아보기",
