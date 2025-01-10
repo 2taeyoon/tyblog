@@ -37,7 +37,7 @@ export default function Card({ cards }: Mapping) {
 								))}
 							</div> : null
 						} */}
-						{ card.hashs ?
+						{/* { card.hashs ?
 							<div className="card_hash_wrap">
 								{ card.hashs.map((hash, hashIndex) => (
 									<div key={hashIndex} className="card_hash">
@@ -45,7 +45,7 @@ export default function Card({ cards }: Mapping) {
 									</div>
 								))}
 							</div> : null
-						}
+						} */}
 					</div>
 				</Link>
 			))}
