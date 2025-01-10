@@ -100,9 +100,9 @@ const MarkdownEditor = () => {
 	
 		if (error) { // 발행 시 에러 처리
 			console.error("Error publishing post:", error);
-			alert(`출간에 실패했습니다: ${error.message}`);
+			alert(`발행에 실패했습니다: ${error.message}`);
 		} else { // 성공 시 모든 상태 초기화
-			alert("출간되었습니다!");
+			alert("발행되었습니다!");
 			setMarkdownText("");
 			setTitle("");
 			setTags([]);
