@@ -31,9 +31,9 @@ export default function EtcStudy() {
 		<>
 			<CommonHelmet
 				title="이모저모 스터디"
-				description="이태윤의 그 외 스터디"
+				description="그 외 스터디"
 				ogTitle="그 외 스터디"
-				ogDescription="이태윤의 그 외 스터디"
+				ogDescription="그 외 스터디"
 				keywords="2taeyoon,이태윤,포트폴리오,그 외 스터디"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/es"
