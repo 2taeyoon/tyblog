@@ -3,12 +3,12 @@
 		display: block;
 		overflow-x: auto;
 		padding: 1em;
-		&::-webkit-scrollbar { height: 5px; }
-		&::-webkit-scrollbar-thumb { border-radius: 0; }
 	}
 	code.hljs {
 		padding: 3px 5px
 	}
+	code.hljs::-webkit-scrollbar { width: 5px; height: 5px; }
+	code.hljs::-webkit-scrollbar-thumb { border-radius: 0; }
 	/*
 	
 	Atom One Dark by Daniel Gamage
