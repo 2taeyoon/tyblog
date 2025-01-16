@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/17/17.md",
+			"image": "/images/publishing_study/17/main_image.webp",
+			"title": "로컬에서는 멀쩡한 환경 변수 배포 시 오류(webpack)",
+			"subTitle": "Velog와 비슷한 마크다운 페이지를 만들다가 황당한 상황이 벌어졌습니다. 저는 Vercel을 이용해 배포 중이었는데, 분명 환경 변수를 제대로 등록했는데도 배포된 사이트에서 환경 변수가 작동하지 않는 사태가 발생했습니다. React에서 Webpack을 사용하는 프로젝트였고, 다음과 같은 .env 파일을 사용 중이었습니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"},
+				{"name": "#Vercel"}
+			]
+		},
+		{
 			"mdFile": "/images/publishing_study/16/16.md",
       "image": "/images/publishing_study/16/main_image.webp",
       "title": "Veolog 글쓰기 창 구현해보기(Supabase)",
