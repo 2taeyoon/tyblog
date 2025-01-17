@@ -112,7 +112,8 @@
 	hr {
 		margin: 48px 0;
 		border: 1px solid #eeeeee;
-		@media (max-width: 640px) { margin: 24px 0; }
+		@media (max-width: 1280px) { margin: 36px 0; }
+		@media (max-width: 768px) { margin: 24px 0; }
 	}
 
 	code {

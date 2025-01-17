@@ -6,9 +6,9 @@
 	.card_pagination { position: relative; width: 100%; }
 
 	.blog { width: 100%; max-width: 768px;
-		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 100px 0 0; border-top: 1px solid var(--whiteDDD);
-			@media (max-width: 1280px) { padding: 64px 16px 0; margin: 64px 0 0 0; }
-			@media (max-width: 768px) { flex-direction: column-reverse; align-items: center; padding: 32px 8px 0; margin: 32px 0 0 0; }
+		.page_url { display: flex; justify-content: space-between; width: 100%; padding: 100px 0 0; margin: 48px 0 0; border-top: 1px solid var(--whiteDDD);
+			@media (max-width: 1280px) { padding: 64px 16px 0; margin: 36px 0 0 0; }
+			@media (max-width: 768px) { flex-direction: column-reverse; align-items: center; padding: 32px 8px 0; margin: 24px 0 0 0; }
 
 			.page_url_wrap1 { justify-content: flex-start; }
 			.page_url_wrap2 { justify-content: flex-end; }
