@@ -5,16 +5,18 @@ import rehypeRaw from "rehype-raw"
 import { supabase } from "../data/supabaseClient";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
+import { v4 as uuidv4 } from "uuid";
 
 // 환경 변수 확인
-console.log(process.env.REACT_APP_SUPABASE_ANON, "REACT_APP_SUPABASE_ANON");
-console.log(process.env.REACT_APP_SUPABASE_URL, "EACT_APP_SUPABASE_URL");
+// console.log(process.env.REACT_APP_SUPABASE_ANON, "REACT_APP_SUPABASE_ANON");
+// console.log(process.env.REACT_APP_SUPABASE_URL, "EACT_APP_SUPABASE_URL");
 
-const MarkdownEditor = () => {
+const Posting = () => {
   const [markdownText, setMarkdownText] = useState<string>(""); // Markdown 텍스트 상태(글 내용)
   const [title, setTitle] = useState<string>(""); // 제목 상태
 	const [tags, setTags] = useState<string[]>([]); // 태그 리스트 상태
   const [currentTag, setCurrentTag] = useState(""); // 입력 중인 태그 상태
+	const [category, setCategory] = useState("DesignStudy"); // 선택한 카테고리 상태
 
 	// 태그 입력 변경 처리
 	const handleTagInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,10 +35,10 @@ const MarkdownEditor = () => {
 
 	// 특정 태그 삭제
 	const handleTagRemove = (index: number) => {
-    setTags(tags.filter((_, i) => i !== index)); // 해당 인덱스의 태그 삭제
-  };
+		setTags(tags.filter((_, i) => i !== index)); // 해당 인덱스의 태그 삭제
+	};
 
-	// 발행 버튼 클릭 시 유효성 검사
+	// 발행 버튼 클릭 시 유효성 검사 + 테이블 저장 + 스토리지 저장
 	const handlePublish = async () => {
 		if (!title && !tags.length && !markdownText) {
 			alert("제목, 태그, 내용을 모두 입력해주세요!");
@@ -72,45 +74,101 @@ const MarkdownEditor = () => {
 			alert("내용을 입력해주세요!");
 			return;
 		}
-	
-  	// 마크다운을 HTML로 변환 후 텍스트 추출
+
+		if (!category) {
+      alert("카테고리를 선택해주세요!");
+      return;
+    }
+
+		// 마크다운을 HTML로 변환 후 텍스트 추출 START!
 		const extractTextFromMarkdown = async (markdown: string, length: number) => {
-    const processedMarkdown = await remark().use(remarkHtml).process(markdown);
-    const htmlString = processedMarkdown.toString(); // HTML로 변환된 문자열
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = htmlString; // HTML을 DOM 요소로 변환
+			const processedMarkdown = await remark().use(remarkHtml).process(markdown);
+			const htmlString = processedMarkdown.toString(); // HTML로 변환된 문자열
+			const tempDiv = document.createElement("div");
+			tempDiv.innerHTML = htmlString; // HTML을 DOM 요소로 변환
 
-    tempDiv.querySelectorAll("img").forEach((img) => img.remove()); // 이미지 태그 제거
-    tempDiv.querySelectorAll("a").forEach((link) => link.remove()); // 링크 텍스트 제거
-    const text = tempDiv.textContent || tempDiv.innerText || ""; // 텍스트만 추출
+			tempDiv.querySelectorAll("img").forEach((img) => img.remove()); // 이미지 태그 제거
+			tempDiv.querySelectorAll("a").forEach((link) => link.remove()); // 링크 텍스트 제거
+			const text = tempDiv.textContent || tempDiv.innerText || ""; // 텍스트만 추출
 
-		// 이모티콘 및 특수문자 제거
-    const emojiRegex = /[\p{Emoji}\uFE0F\u200D]/gu;
-    const cleanText = text.replace(emojiRegex, "");
+			// 이모티콘 및 특수문자 제거
+			const emojiRegex = /[\p{Emoji}\uFE0F\u200D]/gu;
+			const cleanText = text.replace(emojiRegex, "");
 
-    return cleanText.substring(0, length); // 150자 반환
-  };
+			return cleanText.substring(0, length); // 150자 반환
+		};
 
-		const subTitle = await extractTextFromMarkdown(markdownText, 150); // HTML로 변환 후 150자 추출
+		console.log("카테고리:", category);
+		console.log("md 본문 내용:", markdownText);
 
-		// Supabase 테이블에 삽입
-		const { data, error } = await supabase.from("posts").insert([
-			{ title: title, tags: tags, subTitle: subTitle },
-		]);
-	
-		if (error) { // 발행 시 에러 처리
-			console.error("Error publishing post:", error);
-			alert(`발행에 실패했습니다: ${error.message}`);
-		} else { // 성공 시 모든 상태 초기화
+		try {
+			// 마크다운을 HTML로 변환 후 텍스트 추출
+			const subTitle = await extractTextFromMarkdown(markdownText, 150); // HTML로 변환 후 150자 추출
+			const fileName = `${uuidv4()}`;
+
+			// Supabase 테이블에 데이터 삽입
+			const tableName = `posts_${category}`;
+			const { data: insertedData, error: insertError } = await supabase
+				.from(tableName)
+				.insert([{ title, tags, subTitle, fileName }])
+				.select("id"); // 삽입 후 ID를 반환
+
+			if (insertError || !insertedData || insertedData.length === 0) {
+				throw new Error(`테이블 데이터 삽입 중 오류가 발생했습니다. ${insertError?.message}`);
+			}
+
+			const newFolderId = insertedData[0].id; // 삽입된 데이터의 ID 가져오기
+			console.log("새로운 폴더 ID:", newFolderId);
+
+			// 스토리지 경로 설정 (중간 폴더 포함)
+			const storagePath = `${category}/${newFolderId}/${fileName}`; // 중간 폴더 ID 추가
+			console.log("스토리지 경로:", storagePath);
+
+			// 스토리지 업로드 로직
+			const { error: storageError } = await supabase.storage
+				.from("Storage") // Storage 버킷 이름
+				.upload(storagePath, new Blob([markdownText], { type: "text/markdown" }), {
+					upsert: false, // 파일 덮어쓰기 방지
+				});
+
+			if (storageError) throw storageError;
+
 			alert("발행되었습니다!");
 			setMarkdownText("");
 			setTitle("");
 			setTags([]);
+		} catch (error: any) {
+			console.error("Error publishing post:", error.message);
+			alert(`발행에 실패했습니다: ${error.message}`);
 		}
 	};
 
   return (
     <div className="publish">
+
+      {/* 카테고리 선택 추가 */}
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="category"
+            value="DesignStudy"
+            checked={category === "DesignStudy"}
+            onChange={() => setCategory("DesignStudy")}
+          />
+          Design Study
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="category"
+            value="PublishingStudy"
+            checked={category === "PublishingStudy"}
+            onChange={() => setCategory("PublishingStudy")}
+          />
+          Publishing Study
+        </label>
+      </div>
 
 			{/* Title Input */}
 			<div className="title_tag">
@@ -153,4 +211,4 @@ const MarkdownEditor = () => {
   );
 };
 
-export default MarkdownEditor;
+export default Posting;
