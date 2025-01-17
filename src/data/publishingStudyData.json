@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/18/18.md",
+			"image": "/images/publishing_study/18/main_image.webp",
+			"title": "Veolog 글쓰기 창 구현해보기2(Supabase)",
+			"subTitle": "안녕하세요! 여러분, 이번에는 Markdown 에디터 2탄을 가지고 돌아왔습니다! 지난번에는 글을 작성하고 Supabase 테이블에 데이터 저장까지 성공했었는데요. 이제 파일로도 저장하면 더 깔끔하고 관리하기 좋지 않을까라는 생각이 들어 곧바로 실행에 옮겼습니다!",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"},
+				{"name": "#Vercel"}
+			]
+		},
+		{
 			"mdFile": "/images/publishing_study/17/17.md",
 			"image": "/images/publishing_study/17/main_image.webp",
 			"title": "로컬에서는 멀쩡한 환경 변수 배포 시 오류(webpack)",
