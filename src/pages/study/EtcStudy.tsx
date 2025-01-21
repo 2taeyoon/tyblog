@@ -38,7 +38,7 @@ export default function EtcStudy() {
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/es"
 			/>
-			<SliderFade typingText="그 외 스터디" typingText2="그 외 내용을 공부하고 기록한 페이지입니다."/>
+			<SliderFade typingText="그 외 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="EtcStudy"/>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs" setCurrentPage={setCurrentPage}/>
