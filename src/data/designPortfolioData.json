@@ -1,23 +1,6 @@
 {
   "cards": [
 		{
-			"mdFile": "/images/design_portfolio/7/7.md",
-			"badge": "회사 / 협업사",
-      "image": "/images/design_portfolio/7/main_image.webp",
-      "date": "2024년 1월 ~ 2024년 5월",
-      "title": "KRMX 한국회원권거래소 웹페이지 디자인",
-			"link": "http://krmx.co.kr/",
-      "skills": [
-				{"name": "Photoshop", "color": "#31A8FF", "icon": "/images/skill/adobephotoshop.svg"},
-				{"name": "Illustrator", "color": "#FF9A00", "icon": "/images/skill/adobeillustrator.svg"},
-				{"name": "Figma", "color": "#F24E1E", "icon": "/images/skill/figma.svg"}
-      ],
-			"hashs": [
-        {"name": "#웹"},
-				{"name": "#UX/UI"}
-      ]
-    },
-		{
 			"mdFile": "/images/design_portfolio/6/6.md",
 			"badge": "회사",
       "image": "/images/design_portfolio/6/main_image.jpg",
