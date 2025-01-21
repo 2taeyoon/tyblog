@@ -73,9 +73,10 @@ export interface CardProps {
 	badge2?: string;
   image?: string;
   date?: string;
-  title?: string;
+  title: string;
   subTitle?: string;
 	link?: string;
+	type?: string;
   skills?: { name: string; color: string; icon: string }[];
   hashs?: { name: string }[];
 }
@@ -87,11 +88,11 @@ export interface Mapping {
 
 // 카드 페이지네이션 컴포넌트 START!
 export interface CardPaginationProps {
-	
   filteredCards: CardProps[]; // 타입 정의
 	sessionName: string | undefined;
 	currentPage: number;
 	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+	basePath?: any;
 }
 // 카드 페이지네이션 컴포넌트 END!
 
