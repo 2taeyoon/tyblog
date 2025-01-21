@@ -92,7 +92,6 @@ export interface CardPaginationProps {
 	sessionName: string | undefined;
 	currentPage: number;
 	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-	basePath?: any;
 }
 // 카드 페이지네이션 컴포넌트 END!
 
