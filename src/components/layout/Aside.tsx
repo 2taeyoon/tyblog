@@ -31,7 +31,7 @@ export default function Aside({falseActive}: AsideProps) {
 						to="/"
 						className="resume"
 					>
-						RESUME
+						HOME
 					</Link>
 					<div className="nav_wrap">
 						<div className="category">Portfolio</div>

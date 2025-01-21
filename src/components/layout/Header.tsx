@@ -58,7 +58,7 @@ export default function Header({trueActive}: AsideContextProps) {
 							to="/"
 							className="resume"
 						>
-							RESUME
+							HOME
 						</Link>
 					<div className="nav_wrap">
 						<div className="category">PORTFOLIO</div>
