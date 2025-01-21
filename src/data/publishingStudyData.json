@@ -1,6 +1,18 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/19/19.md",
+			"image": "/images/publishing_study/19/main_image.webp",
+			"sortDate": "2025-01-21",
+			"title": "React 프로젝트 개선: 동적 URL 삼항 연산자 사용 시 경로 이상 해결",
+			"subTitle": "제가 진행했던 React 프로젝트의 코드를 살짝 손보고 새로운 기능을 추가했는데요. 개선하는 과정에서 (정말 개선이 잘 되었다고는 생각하지는 않지만) URL 경로 이상 문제도 다뤄보도록 하겠습니다. 헬멧과 슬라이드 배너만 돌아가는 아무것도 없는 Home 탭이었습니다. 여기에 공부했던 블로그 글을 전부 화면에 표시해주면 좋을 것 같다는 생각을 했습니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#Webpack"},
+				{"name": "#TypeScript"}
+			]
+		},
+		{
 			"mdFile": "/images/publishing_study/18/18.md",
 			"image": "/images/publishing_study/18/main_image.webp",
 			"sortDate": "2025-01-17",
@@ -10,7 +22,7 @@
 				{"name": "#React"},
 				{"name": "#Webpack"},
 				{"name": "#TypeScript"},
-				{"name": "#Vercel"}
+				{"name": "#Supabase"}
 			]
 		},
 		{
