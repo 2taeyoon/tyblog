@@ -41,10 +41,10 @@ export default function DesignStudy() {
 			<SliderFade typingText="디자인 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="DesignStudy"/>
-				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudyHashs" setCurrentPage={setCurrentPage}/>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudy" setCurrentPage={setCurrentPage}/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards} sessionName="DesignStudyHashs" currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+				<CardPagination filteredCards={filteredCards} sessionName="DesignStudy" currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
     </>
   );
