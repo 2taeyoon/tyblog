@@ -41,10 +41,10 @@ export default function EtcStudy() {
 			<SliderFade typingText="그 외 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="EtcStudy"/>
-				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudyHashs" setCurrentPage={setCurrentPage}/>
+				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="EtcStudy" setCurrentPage={setCurrentPage}/>
 			</div>
 			<div className="common_wrap">
-				<CardPagination filteredCards={filteredCards} sessionName="EtcStudyHashs" currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+				<CardPagination filteredCards={filteredCards} sessionName="EtcStudy" currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
 		</>
 	);
