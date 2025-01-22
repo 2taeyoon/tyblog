@@ -137,9 +137,14 @@ const Posting = () => {
 			setMarkdownText("");
 			setTitle("");
 			setTags([]);
-		} catch (error: any) {
-			console.error("Error publishing post:", error.message);
-			alert(`발행에 실패했습니다: ${error.message}`);
+		} catch (error) {
+			if(error instanceof Error){
+				console.error("Error publishing post:", error.message);
+				alert(`발행에 실패했습니다: ${error.message}`);
+			} else {
+				console.error("Unexpected error:", error);
+				alert("알 수 없는 오류가 발생했습니다.");
+			}
 		}
 	};
 
