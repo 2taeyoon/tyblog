@@ -89,7 +89,7 @@ export interface Mapping {
 // 카드 페이지네이션 컴포넌트 START!
 export interface CardPaginationProps {
   filteredCards: CardProps[]; // 타입 정의
-	sessionName: string | undefined;
+	sessionName: string;
 	currentPage: number;
 	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -122,7 +122,7 @@ export interface HashsProps {
 
 // 명언 컴포넌트 START!
 export interface SayingProps {
-  saying: string;
+  say: string;
   writer: string;
 	job: string;
 };
