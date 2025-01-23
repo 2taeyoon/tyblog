@@ -4,41 +4,49 @@ import { sayings } from "../../data/sayingList";
 
 export default function Saying({sessionName}: SayingComponentProps) {
   const [currentSaying, setCurrentSaying] = useState<SayingProps>(() => {
-    const savedData = sessionStorage.getItem("saying"); // 'saying' 키에서 전체 데이터를 가져옴
 
-    if (savedData) {
-      const data = JSON.parse(savedData);
-      // sessionName에 따라 해당 섹션의 데이터를 반환
-      return data[sessionName] || getRandomSaying();
+    const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}"); // sessionName으로 저장된 데이터를 JSON 형식으로 불러옵니다.
+    if (savedData.Saying) {
+        return savedData.Saying; // Saying이라는 속성이 포함되어 있다면 해당 데이터를 반환
     } else {
-      return getRandomSaying(); // 세션스토리지에 데이터가 없으면 랜덤 명언으로 설정
+        return getRandomSaying(); // 저장된 데이터가 없으면 랜덤 명언 반환
     }
   });
 
-  // 랜덤 명언을 가져오는 함수
-  function getRandomSaying() {
-    const randomIndex = Math.floor(Math.random() * sayings.length);
-    return sayings[randomIndex];
-  }
+	// 랜덤 명언을 가져오는 함수 START!
+	function getRandomSaying() {
+		const randomIndex = Math.floor(Math.random() * sayings.length); //sayings 배열의 임의의 값을 생성하고 정수로 반환
+		return sayings[randomIndex];
+	}
 
-  useEffect(() => {
-    const savedData = sessionStorage.getItem("saying");
-    const data = savedData ? JSON.parse(savedData) : {};
-
-    // 현재 세션 이름에 해당하는 데이터를 업데이트
-    data[sessionName] = currentSaying;
-
-    sessionStorage.setItem("saying", JSON.stringify(data));
-  }, [currentSaying, sessionName]);
-
-  const handleRefreshClick = () => {
+	const handleRefreshClick = () => {
+		//클릭 시 새로운 랜덤 명언을 가져오고 업데이트
     setCurrentSaying(getRandomSaying());
   };
+	// 랜덤 명언을 가져오는 함수 END!
+
+
+	// 세션스토리지의 기존 데이터를 유지하면서 Saying 데이터 추가 START!
+  useEffect(() => {
+		const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}");
+
+		const updatedData = { ...savedData,
+			Saying: {
+				job: currentSaying.job,
+				say: currentSaying.say,
+				writer: currentSaying.writer
+			}
+		};
+
+		sessionStorage.setItem(sessionName, JSON.stringify(updatedData));
+
+  }, [currentSaying, sessionName]);
+	// 세션스토리지의 기존 데이터를 유지하면서 Saying 데이터 추가 END!
 
   return (
     <div className="saying_all_wrap">
       <div className="saying_wrap">
-        <div className="saying">"{currentSaying.saying}"</div>
+        <div className="saying">"{currentSaying.say}"</div>
         <div className="writer_wrap">
           <div className="writer"><span>-</span>{currentSaying.writer}</div>
           <div className="job">{currentSaying.job}</div>
