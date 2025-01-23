@@ -62,16 +62,16 @@ export default function CardPagination({filteredCards, sessionName, currentPage,
 				)}
 			</div>
 			<ReactPaginate
-				previousLabel={prevButton}
-				nextLabel={nextButton}
-				breakLabel={'···'}
-				pageCount={pageCount/*Math.ceil(filteredCards.length / cardsPerPage)*/}
-				marginPagesDisplayed={1} // 앞뒤로 보여줄 페이지 수
-				pageRangeDisplayed={2} // 현재 선택된 페이지 주변으로 보여줄 페이지 수
-				onPageChange={handlePageClick}
-				containerClassName={'pagination'}
-				activeClassName={'active'}
-				forcePage={currentPage} // 강제로 현재 페이지를 설정
+				previousLabel={prevButton} // 이전 페이지 버튼에 표시할 요소
+				nextLabel={nextButton} // 다음 페이지 버튼에 표시할 요소
+				breakLabel={'···'} // 페이지 번호 사이에 구분자 표시할 요소
+				pageCount={pageCount} // 페이지네이션에 표시할 총 페이지 수
+				marginPagesDisplayed={1} // 앞뒤로 보여줄 고정 페이지 수
+				pageRangeDisplayed={2} // 현재 선택된 페이지 주변에 표시할 페이지 범위
+				onPageChange={handlePageClick} // 페이지가 변경될 때 호출되는 콜백 함수
+				containerClassName={'pagination'} // 최상단 부모 클래스 이름
+				activeClassName={'active'} // 현재 선택된 페이지에 적용할 클래스 이름
+				forcePage={currentPage} // 강제로 현재 페이지를 설정 (주로 상태 관리와 연계)
 			/>
 		</div>
 	)
