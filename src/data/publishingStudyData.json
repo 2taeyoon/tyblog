@@ -1,6 +1,17 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/20/20.md",
+			"image": "/images/publishing_study/20/main_image.webp",
+			"sortDate": "2025-01-23",
+			"title": "React 프로젝트 개선: 세션 스토리지 수정 및 오류 해결",
+			"subTitle": "안녕하세요! 오늘은 React 프로젝트에서 세션 스토리지를 이용해 지저분했던 스토리지를 조금이나마 개선한 과정을 소개하려고 합니다. 프로젝트의 주요 기능인 명언 표시(Saying), 카드 페이징(CardPagination), 해시태그(Hashs)에서 데이터를 저장하고 읽어오는 방식을 업그레이드했습니다.",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#SessionStorage"}
+			]
+		},
+		{
 			"mdFile": "/images/publishing_study/19/19.md",
 			"image": "/images/publishing_study/19/main_image.webp",
 			"sortDate": "2025-01-21",
@@ -20,7 +31,6 @@
 			"subTitle": "안녕하세요! 여러분, 이번에는 Markdown 에디터 2탄을 가지고 돌아왔습니다! 지난번에는 글을 작성하고 Supabase 테이블에 데이터 저장까지 성공했었는데요. 이제 파일로도 저장하면 더 깔끔하고 관리하기 좋지 않을까라는 생각이 들어 곧바로 실행에 옮겼습니다!",
 			"hashs": [
 				{"name": "#React"},
-				{"name": "#Webpack"},
 				{"name": "#TypeScript"},
 				{"name": "#Supabase"}
 			]
@@ -46,7 +56,6 @@
 			"subTitle": "안녕하세요! 오늘은 포트폴리오를 업그레이드하고 싶던 마음에 Markdown 에디터를 이용해서 Velog 글쓰기 창과 비슷한 것을 구현해보려고 합니다. 에디터를 이용해서 내용을 작성하고 Supabase에 게시하는 기능까지 해보려고 합니다!",
 			"hashs": [
 				{"name": "#React"},
-				{"name": "#Webpack"},
 				{"name": "#TypeScript"},
 				{"name": "#Supabase"}
       ]
