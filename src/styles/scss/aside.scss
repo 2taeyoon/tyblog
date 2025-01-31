@@ -12,7 +12,7 @@
 }
 // 해더의 side_menu_wrap 클래스 클릭시 END!
 
-.aside { display: flex; flex-direction: column; align-items: center; padding: 50px 0; }
+.aside { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px 0; height: 100%; }
 
 .profile_wrap { display: flex; flex-direction: column; align-items: center;
 	.profile { width: 150px; height: 150px; border-radius: 50%; background-color: var(--thema); overflow: hidden; cursor: pointer;
@@ -25,11 +25,9 @@
 			img:hover { transform: none; }
 		}
 	}
-	.sitename { padding-top: 6px; font-size: 16px; font-weight: 500; }
-	.nickname { font-size: 14px; font-weight: 400; }
 }
 
-.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0; border-radius: 50px; background-color: var(--whiteFD); border: 1px solid var(--line);
+.another_site { display: flex; justify-content: center; align-items: center; position: relative; padding: 16px; margin: 16px 0 32px; border-radius: 50px; background-color: var(--whiteFD); border: 1px solid var(--line);
 	a { display: block; margin: 0 10px; transition: transform .3s;
 		&:hover { transform: scale(1.1); }
 		@media (max-width: 640px) {
@@ -43,7 +41,7 @@
 }
 
 .nav { width: 100%; padding: 16px 0; border-top: 1px solid var(--line);
-	.resume { display: inline-block; width: 100%; padding: 10px 36px; transition: transform .3s;
+	.home { display: inline-block; width: 100%; padding: 10px 36px; transition: transform .3s;
 		background-image: linear-gradient(to right, var(--thema), var(--themalight)); background-clip: text; -webkit-background-clip: text; color: transparent; font-weight: 700; font-size: 16px;
 		&:hover { transform: scale(1.05); animation: hueRotate 2s ease-in infinite alternate; }
 		@media (max-width: 640px) {
