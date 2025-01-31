@@ -17,8 +17,8 @@ export default function Home() {
   const combinedData = useMemo(() => {
     return [
       ...designStudyData.cards.map(card => ({ ...card, type: "ds" })),
+			...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
       ...etcStudyData.cards.map(card => ({ ...card, type: "es" })),
-      ...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
     ];
   }, []);
 
@@ -57,8 +57,9 @@ export default function Home() {
         keywords="2taeyoon,포트폴리오,개인 블로그"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/"
+				ogType="website"
       />
-      <SliderFade typingText="" typingText2=""/>
+      <SliderFade/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="Home"/>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="Home" setCurrentPage={setCurrentPage}/>
