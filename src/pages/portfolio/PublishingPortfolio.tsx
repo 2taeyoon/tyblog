@@ -16,8 +16,9 @@ export default function PublishingPortfolio() {
         keywords="2taeyoon,이태윤,포트폴리오,퍼블리싱 포트폴리오"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/pp"
+				ogType="website"
       />
-			<SliderFade typingText="퍼블리싱 포트폴리오" typingText2="해당 페이지에서 퍼블리싱 스타일을 보실 수 있습니다."/>
+			<SliderFade/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingPortfolio"/>
 			</div>

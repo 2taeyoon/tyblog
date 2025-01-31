@@ -37,8 +37,9 @@ export default function PublishingStudy() {
 				keywords="2taeyoon,이태윤,포트폴리오,퍼블리싱 스터디"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/ps"
+				ogType="website"
       />
-			<SliderFade typingText="퍼블리싱 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
+			<SliderFade/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="PublishingStudy"/>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="PublishingStudy" setCurrentPage={setCurrentPage}/>

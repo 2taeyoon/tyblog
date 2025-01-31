@@ -37,8 +37,9 @@ export default function DesignStudy() {
         keywords="2taeyoon,이태윤,포트폴리오,디자인 스터디"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/ds"
+				ogType="website"
       />
-			<SliderFade typingText="디자인 스터디" typingText2="관련 내용을 공부하고 기록한 페이지입니다."/>
+			<SliderFade/>
 			<div className="common_wrap pd_none_col">
 				<Saying sessionName="DesignStudy"/>
 				<Hashs selectedHash={selectedHash} setSelectedHash={setSelectedHash} uniqueHashs={uniqueHashs} sessionName="DesignStudy" setCurrentPage={setCurrentPage}/>
