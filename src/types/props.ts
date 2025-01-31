@@ -9,6 +9,7 @@ export interface MetaProps {
   ogDescription: string | undefined;
 	ogImage: string | undefined;
 	ogURL: string | undefined;
+	ogType: string | undefined;
 }
 // 메타 태그 END!
 
@@ -73,6 +74,7 @@ export interface CardProps {
 	badge2?: string;
   image?: string;
   date?: string;
+	sortDate?: string;
   title: string;
   subTitle?: string;
 	link?: string;
@@ -102,13 +104,6 @@ export interface PageUrlsProps {
 	basePath: string;
 }
 // 이전, 다음 페이지 URL END!
-
-// 슬라이드 컴포넌트 START!
-export interface TypingTextProps {
-	typingText: string;
-	typingText2: string;
-}
-// 슬라이드 컴포넌트 END!
 
 // 해시태그 필터링 START!
 export interface HashsProps {
