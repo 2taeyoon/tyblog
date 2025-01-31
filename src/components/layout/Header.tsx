@@ -43,41 +43,20 @@ export default function Header({trueActive}: AsideContextProps) {
 		}
 	};
 
-	const DesignPortfolioCount = DesignPortfolioData.cards.length;
-	const PublishingPortfolioCount = PublishingPortfolioData.cards.length;
-	const DesignStudyCount = DesignStudyData.cards.length;
-	const PublishingStudyCount = PublishingStudyData.cards.length;
-	const EtcStudyCount = EtcStudyData.cards.length;
-
   return (
     <header className="header">
 			<div className={`header_wrap ${isScrolled ? 'scroll' : ''} ${scrollClass}`}>
 				<nav className="nav">
 					<div className="nav_header">
-						<Link
-							to="/"
-							className="resume"
-						>
-							HOME
-						</Link>
-					<div className="nav_wrap">
-						<div className="category">PORTFOLIO</div>
-						<div className="nav_list">
-							<ListLink linkTo="/dp" title="Design" baseClass="item" count={DesignPortfolioCount}/>
-							<ListLink linkTo="/pp" title="Publishing" baseClass="item" count={PublishingPortfolioCount}/>
+						<div className="nav_wrap">
+							<Link to="/" className="category">HOME</Link>
+							<Link to="/ds" className="category">DESIGN</Link>
+							<Link to="/ps" className="category">PUBLISHING</Link>
+							<Link to="/es" className="category">ETC</Link>
 						</div>
 					</div>
-					<div className="nav_wrap">
-						<div className="category">STUDY</div>
-						<div className="nav_list">
-							<ListLink linkTo="/ds" title="Design" baseClass="item" count={DesignStudyCount}/>
-							<ListLink linkTo="/ps" title="Publishing" baseClass="item" count={PublishingStudyCount}/>
-							<ListLink linkTo="/es" title="Etc" baseClass="item" count={EtcStudyCount}/>
-						</div>
-					</div>
-					</div>
-					<div className="nav_designer">
-						<Link to="/" className="category">심오한 디자이너</Link>
+					<div className="nav_publisher">
+						<Link to="/" className="category">심오한 퍼블리셔</Link>
 					</div>
 					<div className="side_menu_wrap" onClick={handleSideMenuClick}>
 						<div className="side_menu"></div>
