@@ -17,8 +17,8 @@ export default function Profile() {
 					/>
 				</div>
 			</Link>
-			<div className="sitename">심오한 디자이너</div>
-			<div className="nickname">2taeyoon</div>
+			{/* <div className="sitename">심오한 디자이너</div>
+			<div className="nickname">2taeyoon</div> */}
 		</div>
   );
 }
