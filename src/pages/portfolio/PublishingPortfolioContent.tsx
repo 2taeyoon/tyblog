@@ -40,6 +40,7 @@ export default function PublishingPortfolioContent() {
         keywords={PublishingCardFind?.title}
 				ogImage={`https://www.2taeyoon.com${PublishingCardFind?.image}`}
 				ogURL={`https://www.2taeyoon.com/pp/${title}`}
+				ogType="article"
       />
 			<div className="common_wrap banner_wrap">
 				{PublishingCardFind && <Banner CardFind={PublishingCardFind} />}
