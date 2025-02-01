@@ -74,7 +74,6 @@
     "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
-    "node-sass": "^9.0.0",
     "prettier": "^3.1.0",
     "sass-loader": "^16.0.4",
     "source-map": "^0.7.4",
