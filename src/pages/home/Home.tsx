@@ -50,11 +50,11 @@ export default function Home() {
   return (
     <>
       <CommonHelmet
-        title="2taeyoon의 개인 블로그"
-        description="개인 공간이자 포트폴리오 사이트"
+        title="2taeyoon"
+        description="2taeyoon의 개인 블로그입니다."
         ogTitle="개인 블로그"
-        ogDescription="개인 공간이자 포트폴리오 사이트"
-        keywords="2taeyoon,포트폴리오,개인 블로그"
+        ogDescription="2taeyoon의 개인 블로그입니다."
+        keywords="2taeyoon,개인 블로그"
 				ogImage="https://www.2taeyoon.com/favicon/favicon-512x512.png"
 				ogURL="https://www.2taeyoon.com/"
 				ogType="website"

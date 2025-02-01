@@ -10,6 +10,7 @@ import rehypeRaw from "rehype-raw"
 import PageUrls from "../../components/utill/PageUrls";
 import Banner from "../../components/ui/Banner";
 
+
 export default function DesignStudyContent() {
 	const { title } = useParams(); // 현재 하이픈이 적용된 URL 가져오기
   const hyphenRemoval = title?.replace(/-/g, " ") ?? ""; // 현재 하이픈이 적용된 URL의 하이픈 제거 후, 공백 추가
