@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <meta name="color-scheme" content="light dark"/>
-        <meta name="supported-color-schemes" content="dark"/>
+        <meta name="color-scheme" content="light"/>
+        <meta name="supported-color-schemes" content="light"/>
 				<meta name="format-detection" content="telephone=no, date=no, email=no, address=no"/>
 				<link rel="icon" href="/favicon.ico" title="icon"/>
 				<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
