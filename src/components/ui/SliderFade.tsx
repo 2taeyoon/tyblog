@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
@@ -8,34 +8,33 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { TypingTextProps } from "../../types/props";
-import { SlidesData } from "../../data/slideList";
+import { CardProps } from "../../types/props";
+import designStudyData from "../../data/designStudyData.json";
+import publishingStudyData from "../../data/publishingStudyData.json";
+import etcStudyData from "../../data/etcStudyData.json";
+import { Link } from "react-router-dom";
 
+export function SliderFadeComponent() {
 
-export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps) {
+  const [combinedData, setCombinedData] = useState<CardProps[]>([]);
+  const [selectedCards, setSelectedCards] = useState<CardProps[]>([]);
 
-	//이미지 미리 로드하는 함수 START!
-	useEffect(() => {
-		preLoadImages(SlidesData);
-	}, []);
+  // combinedData 업데이트 (리렌더링될 때마다 실행)
+  useEffect(() => {
+    setCombinedData([
+      ...designStudyData.cards.map(card => ({ ...card, type: "ds" })),
+      ...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
+      ...etcStudyData.cards.map(card => ({ ...card, type: "es" })),
+    ]);
+  }, []); // 빈 배열 -> 최초 1회 실행
 
-	const preLoadImages = (imageArray: string[]) => {
-		imageArray.forEach((image) => {
-			const img = new Image();
-			img.src = image;
-		});
-	};
-	//이미지 미리 로드하는 함수 END!
-
-	//슬라이더 이미지 랜덤으로 3개만 선택한 상수 START!
-	const selectedIndices: number[] = [];
-	while (selectedIndices.length < 3) {
-		const randomIndex = Math.floor(Math.random() * SlidesData.length);
-		if (!selectedIndices.includes(randomIndex)) {
-			selectedIndices.push(randomIndex);
-		}
-	}
-	//슬라이더 이미지 랜덤으로 3개만 선택한 상수 END!
+  // selectedCards 업데이트 (combinedData가 변경될 때 실행)
+  useEffect(() => {
+    if (combinedData.length > 0) {
+      const shuffled = [...combinedData].sort(() => 0.5 - Math.random()); // 랜덤 섞기
+      setSelectedCards(shuffled.slice(0, 5)); // 5개 선택
+    }
+  }, [combinedData]); // combinedData가 변경될 때 실행
 
 	return (
     <div className="swiper_common">
@@ -51,37 +50,17 @@ export function SliderFadeComponent({ typingText, typingText2 }: TypingTextProps
         modules={[Autoplay, EffectFade]}
         className="mySwiper"
       >
-        {selectedIndices.map((slideImage: number, index: number) => (
-          <SwiperSlide key={index}>
-            <div
-              className="swiper_image"
-              style={{ background: `url('${SlidesData[slideImage]}') center center / cover` }}
-            ></div>
-          </SwiperSlide>
+				{selectedCards.map((card, index) => (
+					<SwiperSlide key={index}>
+						<Link to={`${card.type}/${card.title?.replace(/\s+/g, '-')}`} className="swiper_image_wrap">
+							<div className="swiper_image" style={{ background: card.image ? `url('${card.image}') center center / cover` : "none" }}></div>
+							<div className="description">
+								<div className="title">{card.title}</div>
+								<div className="sub_title">{card.subTitle}</div>
+							</div>
+						</Link>
+					</SwiperSlide>
         ))}
-        <div className="title">
-					<div className="main_text">{typingText}</div>
-					<div className="sub_text">{typingText2}</div>
-          {/* <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-								.changeDelay(50)
-                .typeString(typingText)
-								.callFunction(() => {
-									const cursorElement = document.querySelector('.Typewriter__cursor') as HTMLElement;;
-									if (cursorElement) cursorElement.style.fontSize = '2.0rem';
-								})
-								.typeString(typingText2)
-								.callFunction(() => {
-									setTimeout(() => {
-										const cursorElement = document.querySelector('.Typewriter__cursor') as HTMLElement;;
-										if (cursorElement) cursorElement.style.display = 'none';
-									}, 3000);
-								})
-								.start()
-            }}
-          /> */}
-        </div>
       </Swiper>
     </div>
   );
