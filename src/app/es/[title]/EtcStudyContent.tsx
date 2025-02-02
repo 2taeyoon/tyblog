@@ -45,7 +45,7 @@ export default function EtcStudyContent({title}: TitleProps) {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={decodedTitle} cards={EtcCard.cards} basePath="es"/>
+					<PageUrls hyphenRemoval={decodedTitle} cards={EtcCard.cards}/>
         </div>
       </div>
     </>

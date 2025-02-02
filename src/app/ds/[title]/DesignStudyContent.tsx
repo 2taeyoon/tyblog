@@ -45,7 +45,7 @@ export default function DesignStudyContent({title}: TitleProps) {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={decodedTitle} cards={DesignCard.cards} basePath="ds"/>
+					<PageUrls hyphenRemoval={decodedTitle} cards={DesignCard.cards}/>
         </div>
       </div>
     </>
