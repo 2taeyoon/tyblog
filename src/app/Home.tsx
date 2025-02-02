@@ -11,6 +11,10 @@ import Hashs from "@/components/utill/Hashs";
 import { CardProps } from "@/types/props";
 
 export default function Home() {
+	useEffect(()=>{ // 홈에 들어올 시 fromHome 추가
+		sessionStorage.setItem("fromHome", "/");
+	})
+
 	const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
 	const [filteredCards, setFilteredCards] = useState<CardProps[]>([]);
 	const [currentPage, setCurrentPage] = useState(0);
