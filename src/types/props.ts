@@ -69,19 +69,19 @@ export interface SvgProps {
 
 // 카드 컴포넌트 START!
 export interface CardProps {
-	mdFile?: string;
-  badge?: string;
-	badge2?: string;
-  image?: string;
-  date?: string;
-	sortDate?: string;
-  title: string;
-  subTitle?: string;
-	link?: string;
-	type?: string;
-  skills?: { name: string; color: string; icon: string }[];
-  hashs?: { name: string }[];
-	sessionName?: string;
+	mdFile?: string; // 마크다운 파일 경로
+  badge?: string; // 카드에 출력되는 뱃지
+	badge2?: string; // 카드에 출력되는 뱃지
+  image?: string; // 카드 썸네일
+	sortDate?: string; // 최신순 정렬을 위한 날짜
+  title: string; // 카드 제목
+  subTitle?: string; // 카드 부제목
+	type?: string; // Home에서 PageUrl 클릭 시 링크 오류로 인한 url 설정
+  hashs?: { name: string }[]; // 배너에 사용되는 해시태그
+	sessionName?: string; // ds, ps, es에서 카드 클릭 시 링크 오류로 인한 url 설정
+	date?: string; // 포트폴리오 날짜인데 곧 삭제
+	link?: string; // 배너에 사용하는 포트폴리오 링크인데 곧 삭제
+	skills?: { name: string; color: string; icon: string }[]; // 배너에 사용되는 포트폴리오 스킬인데 곧 삭제
 }
 
 export interface Mapping {
@@ -103,7 +103,6 @@ export interface CardPaginationProps {
 export interface PageUrlsProps {
 	hyphenRemoval: string;
 	cards: CardProps[];
-	basePath: string;
 }
 // 이전, 다음 페이지 URL END!
 
