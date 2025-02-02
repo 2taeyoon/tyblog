@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeContents from "@/app/Home";
+import Home from "@/app/Home";
 
 export const metadata = {
   title: "2taeyoon",
@@ -21,7 +21,7 @@ export const metadata = {
 export default function page() {
 	return (
 		<div>
-			<HomeContents/>
+			<Home/>
 		</div>
 	)
 }
