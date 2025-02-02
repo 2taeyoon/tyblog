@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { AsideContextProps } from "../../types/props";
+'use client';
 
-import DesignPortfolioData from "../../data/designPortfolioData.json";
-import PublishingPortfolioData from "../../data/publishingPortfolioData.json";
-import DesignStudyData from "../../data/designStudyData.json";
-import PublishingStudyData from "../../data/publishingStudyData.json";
-import EtcStudyData from "../../data/etcStudyData.json";
-import ListLink from "../list/ListLink";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { AsideContextProps } from "../../types/props";
 
 export default function Header({trueActive}: AsideContextProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -49,14 +44,14 @@ export default function Header({trueActive}: AsideContextProps) {
 				<nav className="nav">
 					<div className="nav_header">
 						<div className="nav_wrap">
-							<Link to="/" className="category">HOME</Link>
-							<Link to="/ds" className="category">DESIGN</Link>
-							<Link to="/ps" className="category">PUBLISHING</Link>
-							<Link to="/es" className="category">ETC</Link>
+							<Link href="/" className="category">HOME</Link>
+							<Link href="/ds" className="category">DESIGN</Link>
+							<Link href="/ps" className="category">PUBLISHING</Link>
+							<Link href="/es" className="category">ETC</Link>
 						</div>
 					</div>
 					<div className="nav_publisher">
-						<Link to="/" className="category">심오한 퍼블리셔</Link>
+						<Link href="/" className="category">심오한 퍼블리셔</Link>
 					</div>
 					<div className="side_menu_wrap" onClick={handleSideMenuClick}>
 						<div className="side_menu"></div>

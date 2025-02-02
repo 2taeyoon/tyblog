@@ -1,5 +1,8 @@
+'use client';
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Profile() {
 	const [imageSrc, setImageSrc] = useState("/images/profile.webp");
@@ -9,12 +12,9 @@ export default function Profile() {
 
   return (
 		<div className="profile_wrap">
-			<Link to="/">
+			<Link href="/">
 				<div className="profile" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-					<img
-						src={imageSrc}
-						alt="profile"
-					/>
+					<Image src={imageSrc} alt="profile" sizes="150px" priority={true} fill style={{ objectFit: "cover" }}/>
 				</div>
 			</Link>
 		</div>

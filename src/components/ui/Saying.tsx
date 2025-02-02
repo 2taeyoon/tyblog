@@ -1,55 +1,56 @@
 import React, { useEffect, useState } from "react";
-import { SayingComponentProps, SayingProps } from "../../types/props";
-import { sayings } from "../../data/sayingList";
+import { SayingComponentProps, SayingProps } from "@/types/props";
+import { sayings } from "@/data/sayingList";
 
 export default function Saying({sessionName}: SayingComponentProps) {
-  const [currentSaying, setCurrentSaying] = useState<SayingProps>(() => {
-
-    const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}"); // sessionName으로 저장된 데이터를 JSON 형식으로 불러옵니다.
-    if (savedData.Saying) {
-        return savedData.Saying; // Saying이라는 속성이 포함되어 있다면 해당 데이터를 반환
-    } else {
-        return getRandomSaying(); // 저장된 데이터가 없으면 랜덤 명언 반환
-    }
-  });
-
-	// 랜덤 명언을 가져오는 함수 START!
+  // 랜덤으로 명언을 가져오는 함수
 	function getRandomSaying() {
-		const randomIndex = Math.floor(Math.random() * sayings.length); //sayings 배열의 임의의 값을 생성하고 정수로 반환
-		return sayings[randomIndex];
-	}
+    const randomIndex = Math.floor(Math.random() * sayings.length); // sayings 배열에서 무작위 인덱스를 선택
+    return sayings[randomIndex]; // 해당 인덱스에 있는 명언 객체를 반환
+  }
 
-	const handleRefreshClick = () => {
-		//클릭 시 새로운 랜덤 명언을 가져오고 업데이트
-    setCurrentSaying(getRandomSaying());
-  };
-	// 랜덤 명언을 가져오는 함수 END!
+  // 현재 화면에 표시할 명언을 저장하는 state (초기값은 null)
+  const [currentSaying, setCurrentSaying] = useState<SayingProps | null>(null);
 
-
-	// 세션스토리지의 기존 데이터를 유지하면서 Saying 데이터 추가 START!
   useEffect(() => {
-		const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}");
+		// 클라이언트 사이드에서 실행할 때 (서버에서는 실행되지 않도록 방지)
+    if (typeof window !== "undefined") {
+			// sessionStorage에서 해당 sessionName에 저장된 데이터를 가져옴
+      const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}");
 
-		const updatedData = { ...savedData,
-			Saying: {
-				job: currentSaying.job,
-				say: currentSaying.say,
-				writer: currentSaying.writer
-			}
-		};
+			// 만약 sessionStorage에 명언이 저장되어 있다면, 그대로 사용
+      if (savedData.Saying) {
+        setCurrentSaying(savedData.Saying);
+      } else {
+				// 저장된 명언이 없으면 새로운 랜덤 명언을 가져와서 state에 저장
+        const initialSaying = getRandomSaying();
+        setCurrentSaying(initialSaying);
 
-		sessionStorage.setItem(sessionName, JSON.stringify(updatedData));
+				// 새로운 명언을 sessionStorage에 저장 (이후 새로고침해도 유지됨)
+        sessionStorage.setItem(sessionName, JSON.stringify({ ...savedData, Saying: initialSaying }));
+      }
+    }
+  }, [sessionName]); // sessionName이 변경될 때만 실행
 
-  }, [currentSaying, sessionName]);
-	// 세션스토리지의 기존 데이터를 유지하면서 Saying 데이터 추가 END!
+	// "새로운 명언 가져오기" 버튼을 클릭했을 때 실행되는 함수
+  const handleRefreshClick = () => {
+    const newSaying = getRandomSaying();
+    setCurrentSaying(newSaying);
+
+		// sessionStorage에도 새로운 명언을 저장
+    if (typeof window !== "undefined") {
+      const savedData = JSON.parse(sessionStorage.getItem(sessionName) || "{}");
+      sessionStorage.setItem(sessionName, JSON.stringify({ ...savedData, Saying: newSaying }));
+    }
+  };
 
   return (
     <div className="saying_all_wrap">
       <div className="saying_wrap">
-        <div className="saying">"{currentSaying.say}"</div>
+        <div className="saying">{`"${currentSaying?.say}"`}</div>
         <div className="writer_wrap">
-          <div className="writer"><span>-</span>{currentSaying.writer}</div>
-          <div className="job">{currentSaying.job}</div>
+          <div className="writer"><span>-</span>{currentSaying?.writer}</div>
+          <div className="job">{currentSaying?.job}</div>
         </div>
         <div className="border"></div>
         <div className="reset_btn" onClick={handleRefreshClick}>

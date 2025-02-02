@@ -13,13 +13,13 @@ export interface MetaProps {
 }
 // 메타 태그 END!
 
-// 호버시 클래스 추가 START!
+// 호버 시 클래스 추가 START!
 export interface IsHoverProps {
   children: ReactNode;
   baseClass: string;
   hoverClass: string;
 }
-// 호버시 클래스 추가 END!
+// 호버 시 클래스 추가 END!
 
 // 링크 컴포넌트 START!
 export interface ListLinkProps {
@@ -81,10 +81,12 @@ export interface CardProps {
 	type?: string;
   skills?: { name: string; color: string; icon: string }[];
   hashs?: { name: string }[];
+	sessionName?: string;
 }
 
 export interface Mapping {
   cards: CardProps[];
+	sessionName?: string;
 }
 // 카드 컴포넌트 END!
 
@@ -132,3 +134,9 @@ export interface AsideContextProps {
   trueActive: () => void;
 }
 // 헤더 컴포넌트 END!
+
+// 콘텐츠 컴포넌트 START!
+export interface TitleProps {
+  title: string;
+}
+// 콘텐츠 컴포넌트 END!

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { HashsProps } from "../../types/props";
+import { HashsProps } from "@/types/props";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -58,21 +58,20 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 			sessionStorage.setItem(sessionName, JSON.stringify(updatedData));
 		});
 
-		}, [sessionName]);
+	}, [sessionName]);
 	// 슬라이더의 스크롤 위치를 세션 스토리지에서 로드하는 useEffect END!
 
 
-		// 해시태그 클릭 시 페이지네이션을 초기화하는 함수
-		const handleHashClick = (hash: string | null) => {
-			setSelectedHash(hash);
-			setCurrentPage(0);
-			console.log("Hash clicked:", hash);
-			console.log("Page reset to 0");
-		};
+	// 해시태그 클릭 시 페이지네이션을 초기화하는 함수
+	const handleHashClick = (hash: string | null) => {
+		setSelectedHash(hash);
+		setCurrentPage(0);
+	};
 
 	return (
 		<div className="hashs_wrap">
 			<Swiper
+				loop={false}
 				slidesPerView={'auto'}
 				freeMode={true}
 				className="hashs_slider"
@@ -88,5 +87,3 @@ export default function Hashs({selectedHash, setSelectedHash, uniqueHashs, sessi
 		</div>
 	)
 }
-
-

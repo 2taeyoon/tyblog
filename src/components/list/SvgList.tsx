@@ -1,5 +1,5 @@
 import React from 'react'
-import { SvgProps } from "../../types/props"
+import { SvgProps } from "@/types/props"
 
 export default function SvgList({ svgColor, path, svgWH }: SvgProps) {
 	return (

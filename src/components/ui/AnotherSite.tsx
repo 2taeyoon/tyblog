@@ -1,6 +1,6 @@
 import React from 'react'
-import ListLink from "../list/ListLink";
-import { asideLinks } from "../../data/asideList";
+import ListLink from "@/components/list/ListLink";
+import { asideLinks } from "@/data/asideList";
 
 export default function AnotherSite() {
 	return (

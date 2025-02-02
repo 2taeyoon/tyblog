@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardProps } from "../../types/props"
+import { CardProps } from "@/types/props"
 
 export default function Banner({CardFind} : {CardFind: CardProps}) {
 	return (

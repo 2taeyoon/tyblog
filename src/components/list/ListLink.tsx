@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ListLinkProps } from "../../types/props";
-import SvgList from "./SvgList";
+import SvgList from "@/components/list/SvgList";
 
 export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, count, onClick, svgColor, svgWH, path }: ListLinkProps) {
 	const linkStyle = image ? { background: `url(${image}) center center / cover` } : {};
 
   return (
 		<Link
-			to={linkTo}
+			href={linkTo}
 			className={baseClass}
 			target={target}
 			rel={rel}

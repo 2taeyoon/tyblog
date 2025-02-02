@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Profile from "../ui/Profile";
-import AnotherSite from "../ui/AnotherSite";
+import Link from "next/link";
+import Profile from "@/components/ui/Profile";
+import AnotherSite from "@/components/ui/AnotherSite";
 
 import DesignStudyData from "../../data/designStudyData.json";
 import PublishingStudyData from "../../data/publishingStudyData.json";
 import EtcStudyData from "../../data/etcStudyData.json";
-import ListLink from "../list/ListLink";
+import ListLink from "@/components/list/ListLink";
 
 interface AsideProps {
   falseActive: () => void;
@@ -24,7 +24,7 @@ export default function Aside({falseActive}: AsideProps) {
 				<AnotherSite/>
 				<nav className="nav">
 					<Link
-						to="/"
+						href="/"
 						className="home"
 					>
 						HOME

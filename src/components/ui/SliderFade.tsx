@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +14,7 @@ import { CardProps } from "../../types/props";
 import designStudyData from "../../data/designStudyData.json";
 import publishingStudyData from "../../data/publishingStudyData.json";
 import etcStudyData from "../../data/etcStudyData.json";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export function SliderFadeComponent() {
 
@@ -38,30 +40,32 @@ export function SliderFadeComponent() {
 
 	return (
     <div className="swiper_common">
-      <Swiper
-        loop={true}
-        effect={"fade"}
-				speed={1000}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false
-        }}
-        allowTouchMove={false}
-        modules={[Autoplay, EffectFade]}
-        className="mySwiper"
-      >
-				{selectedCards.map((card, index) => (
-					<SwiperSlide key={index}>
-						<Link to={`${card.type}/${card.title?.replace(/\s+/g, '-')}`} className="swiper_image_wrap">
-							<div className="swiper_image" style={{ background: card.image ? `url('${card.image}') center center / cover` : "none" }}></div>
-							<div className="description">
-								<div className="title">{card.title}</div>
-								<div className="sub_title">{card.subTitle}</div>
-							</div>
-						</Link>
-					</SwiperSlide>
-        ))}
-      </Swiper>
+			{selectedCards.length > 1 && (
+				<Swiper
+					loop={true}
+					effect={"fade"}
+					speed={1000}
+					autoplay={{
+						delay: 5000,
+						disableOnInteraction: false
+					}}
+					allowTouchMove={false}
+					modules={[Autoplay, EffectFade]}
+					className="mySwiper"
+				>
+					{selectedCards.map((card, index) => (
+						<SwiperSlide key={index}>
+							<Link href={`${card.type}/${card.title?.replace(/\s+/g, '-')}`} className="swiper_image_wrap">
+								<div className="swiper_image" style={{ background: card.image ? `url('${card.image}') center center / cover` : "none" }}></div>
+								<div className="description">
+									<div className="title">{card.title}</div>
+									<div className="sub_title">{card.subTitle}</div>
+								</div>
+							</Link>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			)}
     </div>
   );
 }

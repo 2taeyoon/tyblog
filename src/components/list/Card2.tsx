@@ -1,12 +1,12 @@
 import React from 'react'
 import { Mapping } from "../../types/props"
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Card({ cards }: Mapping) {
 	return (
 		<>
 			{ cards.map((card, index) => (
-				<Link to={`${card.type}/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
+				<Link href={`${card.type}/${card.title?.replace(/\s+/g, '-')}`} key={index} className="card">
 					<div className="card_top">
 						<div className="card_img" style={{ background: `url('${card.image}') center center / cover` }}>
 							<div className="card_badge_wrap">
