@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeContents from "@/app/HomeContents";
+import HomeContents from "@/app/Home";
 
 export const metadata = {
   title: "2taeyoon",
