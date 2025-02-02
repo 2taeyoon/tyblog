@@ -1,6 +1,17 @@
 {
   "cards": [
 		{
+			"mdFile": "/images/publishing_study/21/21.md",
+			"image": "/images/publishing_study/21/main_image.webp",
+			"sortDate": "2025-02-02",
+			"title": "React에서 NextJS로 마이그레이션 중 발생한 세션 스토리지 오류",
+			"subTitle": "React 프로젝트를 NextJS로 마이그레이션하면서 마주쳤던 sessionStorage 관련 오류를 공유하려고 합니다. 사실 저는 React 코드 그대로 NextJS에서 쓰면 되지 않을까? 하는 가벼운 생각을 했는데요. 마이그레이션을 진행하다보니 작은 오류부터 큼지막한 오류까지 다양했습니다. 작은 오류: img 태그를 Image 컴포넌트로 변경하라는 오류, useLocation이 아니라 usePathname을 사용해야 하는 오류 등",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#SessionStorage"}
+			]
+		},
+		{
 			"mdFile": "/images/publishing_study/20/20.md",
 			"image": "/images/publishing_study/20/main_image.webp",
 			"sortDate": "2025-01-23",
@@ -27,7 +38,7 @@
 			"mdFile": "/images/publishing_study/18/18.md",
 			"image": "/images/publishing_study/18/main_image.webp",
 			"sortDate": "2025-01-17",
-			"title": "Veolog 글쓰기 창 구현해보기2(Supabase)",
+			"title": "Veolog 글쓰기 창 구현해 보기2(Supabase)",
 			"subTitle": "안녕하세요! 여러분, 이번에는 Markdown 에디터 2탄을 가지고 돌아왔습니다! 지난번에는 글을 작성하고 Supabase 테이블에 데이터 저장까지 성공했었는데요. 이제 파일로도 저장하면 더 깔끔하고 관리하기 좋지 않을까라는 생각이 들어 곧바로 실행에 옮겼습니다!",
 			"hashs": [
 				{"name": "#React"},
@@ -52,7 +63,7 @@
 			"mdFile": "/images/publishing_study/16/16.md",
       "image": "/images/publishing_study/16/main_image.webp",
 			"sortDate": "2025-01-10",
-      "title": "Veolog 글쓰기 창 구현해보기(Supabase)",
+      "title": "Veolog 글쓰기 창 구현해 보기(Supabase)",
 			"subTitle": "안녕하세요! 오늘은 포트폴리오를 업그레이드하고 싶던 마음에 Markdown 에디터를 이용해서 Velog 글쓰기 창과 비슷한 것을 구현해보려고 합니다. 에디터를 이용해서 내용을 작성하고 Supabase에 게시하는 기능까지 해보려고 합니다!",
 			"hashs": [
 				{"name": "#React"},
