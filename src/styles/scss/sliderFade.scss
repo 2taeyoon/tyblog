@@ -4,7 +4,7 @@
 		@media (max-width: 1024px) { height: 500px; }
 		@media (max-width: 640px) { height: 400px; }
 		.swiper-slide .swiper_image_wrap { height: 100%;  }
-		.swiper_image { width: 100%; height: 100%; animation: slideScale 18s linear infinite alternate; filter: brightness(.7); }
+		.swiper_image { width: 100%; height: 100%; animation: slideScale 18s linear infinite alternate; filter: brightness(0.1) contrast(0.9); }
 		.description { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; width: 100%; color: var(--whiteF9); text-align: center;
 			.title { font-size: 4.2rem; font-family: "TTTtangsbudaejjigae", "Malgun Gothic", sans-serif; font-weight: 500;
 				@media (max-width: 1024px) { font-size: 3.5rem; }
