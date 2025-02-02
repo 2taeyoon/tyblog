@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ title: st
     openGraph: {
       title: PublishingFind.title,
       description: PublishingFind.subTitle,
-      url: `https://www.2taeyoon.com/es/${decodedTitle}`,
+      url: `https://www.2taeyoon.com/ps/${decodedTitle}`,
 			images: [
 				{
 					url: `https://www.2taeyoon.com${PublishingFind.image}`,
