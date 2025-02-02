@@ -6,6 +6,7 @@ import "@/style/css/markdown.scss";
 import "@/style/css/markdownAtom.css";
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import HeaderAside from "@/components/layout/HeaderAside";
 
 export default function RootLayout({
@@ -45,6 +46,7 @@ export default function RootLayout({
 				</div>
         {/* Vercel 측정도구 */}
 				<Analytics />
+				<SpeedInsights />
       </body>
     </html>
   );
