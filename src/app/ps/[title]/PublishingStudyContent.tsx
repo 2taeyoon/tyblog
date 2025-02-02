@@ -11,7 +11,7 @@ import rehypeRaw from "rehype-raw"
 import PageUrls from "@/components/utill/PageUrl";
 import Banner from "@/components/ui/Banner";
 
-export default function DesignStudyContent({title}: TitleProps) {
+export default function PublishingStudyContent({title}: TitleProps) {
 		const [markdown, setMarkdown] = useState("");
 		const [notFoundState, setNotFoundState] = useState(false);
 
@@ -45,7 +45,7 @@ export default function DesignStudyContent({title}: TitleProps) {
           <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
             {markdown}
           </ReactMarkdown>
-					<PageUrls hyphenRemoval={decodedTitle} cards={PublishingCard.cards} basePath="ds"/>
+					<PageUrls hyphenRemoval={decodedTitle} cards={PublishingCard.cards} basePath="ps"/>
         </div>
       </div>
     </>
