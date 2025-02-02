@@ -14,7 +14,7 @@ export default function Profile() {
 		<div className="profile_wrap">
 			<Link href="/">
 				<div className="profile" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-					<Image src={imageSrc} alt="profile" sizes="150px" priority={true} fill style={{ objectFit: "cover" }}/>
+					<Image src={imageSrc} alt="profile" sizes="150px" priority fill style={{ objectFit: "cover" }}/>
 				</div>
 			</Link>
 		</div>
