@@ -1,8 +1,40 @@
-import React, { useEffect } from 'react'
+'use client';
+
+import React, { useEffect, useState } from 'react'
 import Link from "next/link";
 import { CardProps, PageUrlsProps } from "@/types/props";
+import { usePathname } from "next/navigation";
+
+import designStudyData from "@/data/designStudyData.json";
+import publishingStudyData from "@/data/publishingStudyData.json";
+import etcStudyData from "@/data/etcStudyData.json";
 
 export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsProps) {
+
+	const pathname = usePathname(); // 현재 경로 확인
+	const [isFromHome, setIsFromHome] = useState(false);
+
+	useEffect(() => {
+		// 세션 스토리지에 fromHome이 있을 경우 isFromHome 활성화화
+		if (sessionStorage.getItem("fromHome") === "/") {
+			setIsFromHome(true);
+		}
+	}, [pathname]);
+
+	const combinedData = [
+		...designStudyData.cards.map(card => ({ ...card, type: "ds" })),
+		...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
+		...etcStudyData.cards.map(card => ({ ...card, type: "es" })),
+	];
+
+	const sorted = combinedData.sort((a, b) => {
+		const dateA = new Date(a.sortDate || "2024-01-01").getTime();
+		const dateB = new Date(b.sortDate || "2024-01-01").getTime();
+		return dateB - dateA;
+	});
+
+	// fromHome에 따라서 사용 데이터 결정
+	const dataSource = isFromHome ? sorted : cards;
 
 	// 현재 페이지의 JSON 배열을 받아 이전 페이지와 다음 페이지 URL 구현 START!
 	function getPageUrls(currentTitle: string, cards: CardProps[]) {
@@ -37,7 +69,7 @@ export default function PageUrls({ hyphenRemoval, cards, basePath }: PageUrlsPro
 		return { nextPageUrl, prevPageUrl, nextPageTitle, prevPageTitle, nextPageImage, prevPageImage }; // 다음 페이지와 이전 페이지의 URL을 반환
 	}
 
-	const { nextPageUrl, prevPageUrl, nextPageTitle, prevPageTitle, nextPageImage, prevPageImage } = getPageUrls(hyphenRemoval, cards);
+	const { nextPageUrl, prevPageUrl, nextPageTitle, prevPageTitle, nextPageImage, prevPageImage } = getPageUrls(hyphenRemoval, dataSource);
 	// 현재 페이지의 JSON 배열을 받아 이전 페이지와 다음 페이지 URL 구현 END!
 
 	// 스크롤 초기화 함수 START!
