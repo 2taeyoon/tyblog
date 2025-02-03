@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
@@ -20,6 +20,9 @@ export function SliderFadeComponent() {
 
   const [combinedData, setCombinedData] = useState<CardProps[]>([]);
   const [selectedCards, setSelectedCards] = useState<CardProps[]>([]);
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const progressRefs = useRef<(HTMLDivElement | null)[]>([]);
+	const swiperRef = useRef<SwiperClass | null>(null);
 
   // combinedData 업데이트 (리렌더링될 때마다 실행)
   useEffect(() => {
@@ -38,19 +41,31 @@ export function SliderFadeComponent() {
     }
   }, [combinedData]); // combinedData가 변경될 때 실행
 
+  const onAutoplayTimeLeft = (s: SwiperClass, timeLeft: number, progress: number) => {
+		const activeIndex = s.realIndex
+		setCurrentIndex(activeIndex + 1); // 1부터 시작하도록 설정
+    if (progressRefs.current[activeIndex]) {
+      progressRefs.current[activeIndex].style.width = `${(1 - progress) * 100}%`;
+    } // progress가 1이면 시간이 남아있는 상태, 0이면 시간이 다 지나간 상태
+			// timeLeft를 사용하지 않는데 제거하면 작동이 멈춤..
+  };
+
 	return (
     <div className="swiper_common">
 			{selectedCards.length > 1 && (
 				<Swiper
 					loop={true}
 					effect={"fade"}
-					speed={1000}
+					speed={1000} // 슬라이드 전환 속도
 					autoplay={{
-						delay: 5000,
-						disableOnInteraction: false
+						delay: 5000, // 다음 슬라이드로 넘어가는 시간
+						disableOnInteraction: false, // 상호작용해도 자동 재생이 멈추지 않음
+						pauseOnMouseEnter: false, // 마우스를 올려도 멈추지 않음음
 					}}
-					allowTouchMove={false}
+					allowTouchMove={false} // 사용자 상호작용 넘기기 비활성화
 					modules={[Autoplay, EffectFade]}
+					onAutoplayTimeLeft={onAutoplayTimeLeft} 
+					onSwiper={(s) => (swiperRef.current = s)}
 					className="mySwiper"
 				>
 					{selectedCards.map((card, index) => (
@@ -60,6 +75,14 @@ export function SliderFadeComponent() {
 								<div className="description">
 									<div className="title">{card.title}</div>
 									<div className="sub_title">{card.subTitle}</div>
+									<div className="autoplay_progress">
+										<div className="progress_bar" ref={(el) => {progressRefs.current[index] = el}}></div>
+									</div>
+									<div className="current_page">
+										<span>{currentIndex}</span>
+										<span>/ </span>
+										<span>{selectedCards.length}</span>
+									</div>
 								</div>
 							</Link>
 						</SwiperSlide>
