@@ -10,7 +10,7 @@ export const metadata = {
     url: "https://www.2taeyoon.com/",
     images: [
       {
-        url: "https://www.2taeyoon.com/favicon/favicon-512x512.png",
+        url: "https://www.2taeyoon.com/favicon/main_meta_image.png",
         alt: "Profile Thumbnail",
       },
     ],
