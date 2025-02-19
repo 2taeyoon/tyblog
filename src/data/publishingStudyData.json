@@ -2,6 +2,19 @@
   "cards": [
 		{
 			"type": "ps",
+			"mdFile": "/images/publishing_study/22/22.md",
+			"image": "/images/publishing_study/22/main_image.webp",
+			"sortDate": "2025-02-19",
+			"title": "NextJS 15 마이그레이션 오류 해결기: params는 이제 Promise",
+			"subTitle": "오늘은 NextJS 15로 프로젝트를 마이그레이션하면서 겪은 params 오류와 해결 과정을 정리하려고 합니다. NextJS 15 params 오류 발생 React 파일들을 NextJS에 맞게 변경하는데 터미널에서 다음과 같은 오류가 발생했습니다. 오류 메시지 등장! Error: Route \"/ps/[title]\" used `params.title`. `params` should be awaited before using its properties. 뭐지? params를 `await`로 감싸야 한다? 이전 React에서는 잘되던 코드인데 왜 이런 오류가 발생..?",
+			"hashs": [
+				{"name": "#React"},
+				{"name": "#NextJS"},
+				{"name": "#SessionStorage"}
+			]
+		},
+		{
+			"type": "ps",
 			"mdFile": "/images/publishing_study/21/21.md",
 			"image": "/images/publishing_study/21/main_image.webp",
 			"sortDate": "2025-02-02",
@@ -9,6 +22,7 @@
 			"subTitle": "React 프로젝트를 NextJS로 마이그레이션하면서 마주쳤던 sessionStorage 관련 오류를 공유하려고 합니다. 사실 저는 React 코드 그대로 NextJS에서 쓰면 되지 않을까? 하는 가벼운 생각을 했는데요. 마이그레이션을 진행하다보니 작은 오류부터 큼지막한 오류까지 다양했습니다. 작은 오류: img 태그를 Image 컴포넌트로 변경하라는 오류, useLocation이 아니라 usePathname을 사용해야 하는 오류 등",
 			"hashs": [
 				{"name": "#React"},
+				{"name": "#NextJS"},
 				{"name": "#SessionStorage"}
 			]
 		},
