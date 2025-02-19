@@ -2,15 +2,40 @@
   "cards": [
 		{
 			"type": "ps",
-			"mdFile": "/images/publishing_study/22/22.md",
+			"mdFile": "/images/publishing_study/24/24.md",
+			"image": "/images/publishing_study/24/main_image.webp",
+			"sortDate": "2025-02-20",
+			"title": "포트폴리오 제작기 1: 메인페이지",
+			"subTitle": "저는 현재 포트폴리오 사이트를 만들고 있습니다. 가장 중요하게 신경 쓴 부분이 바로 메인 페이지인데요. 아무래도 처음 이미지를 전달해주는 메인이기 때문에 이것저것 많이 시도를 해본 것 같아요. 첫인상이 중요한 만큼 단순한 정적인 페이지가 아니라 포트폴리오 사이트에서 흔히 볼 수 있는 다양한 애니메이션과 인터랙션을 활용해서 동적인 화면을 만들고자 했습니다. 이번 글에서는 메인 페이지를 구성하는 주요 코드들과 역할을 하나씩 분석하면서 각 컴포넌트가 어떻게 동작하는지 알아보려고 합니다!",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"}
+			]
+		},
+		{
+			"type": "ps",
+			"mdFile": "/images/publishing_study/23/23.md",
 			"image": "/images/publishing_study/22/main_image.webp",
 			"sortDate": "2025-02-19",
+			"title": "23번",
+			"subTitle": "23번",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"}
+			]
+		},
+		{
+			"type": "ps",
+			"mdFile": "/images/publishing_study/22/22.md",
+			"image": "/images/publishing_study/22/main_image.webp",
+			"sortDate": "2025-02-15",
 			"title": "NextJS 15 마이그레이션 오류 해결기: params는 이제 Promise",
 			"subTitle": "오늘은 NextJS 15로 프로젝트를 마이그레이션하면서 겪은 params 오류와 해결 과정을 정리하려고 합니다. NextJS 15 params 오류 발생 React 파일들을 NextJS에 맞게 변경하는데 터미널에서 다음과 같은 오류가 발생했습니다. 오류 메시지 등장! Error: Route \"/ps/[title]\" used `params.title`. `params` should be awaited before using its properties. 뭐지? params를 `await`로 감싸야 한다? 이전 React에서는 잘되던 코드인데 왜 이런 오류가 발생..?",
 			"hashs": [
 				{"name": "#React"},
 				{"name": "#NextJS"},
-				{"name": "#SessionStorage"}
+				{"name": "#SessionStorage"},
+				{"name": "#TypeScript"}
 			]
 		},
 		{
@@ -23,7 +48,8 @@
 			"hashs": [
 				{"name": "#React"},
 				{"name": "#NextJS"},
-				{"name": "#SessionStorage"}
+				{"name": "#SessionStorage"},
+				{"name": "#TypeScript"}
 			]
 		},
 		{
