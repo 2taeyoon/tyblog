@@ -4,7 +4,7 @@
 		@media (max-width: 1024px) { height: 500px; }
 		@media (max-width: 640px) { height: 400px; }
 		.swiper-slide .swiper_image_wrap { height: 100%; }
-		.swiper_image { width: 100%; height: 100%; animation: slideScale 18s linear infinite alternate; filter: brightness(0.1) contrast(0.9); }
+		.swiper_image { width: 100%; height: 100%; filter: brightness(0.1) contrast(0.9); }
 		.description { display: flex ; flex-direction: column; position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%); z-index: 100; width: 500px; margin-left: 0; color: var(--whiteF9); text-align: center;
 			@media (max-width: 1024px) { width: 400px; }
 			@media (max-width: 640px) { top: 55%; width: 300px; }
@@ -16,7 +16,7 @@
 				@media (max-width: 1024px) { font-size: 1.9rem; }
 				@media (max-width: 640px) { font-size: 1.8rem; }
 			}
-			.autoplay_progress { position: absolute; top: 0; left: 0; width: 100%; height: 3px; background-color: var(--thema); overflow: hidden; z-index: 100;
+			.autoplay_progress { position: absolute; top: 0; left: 0; width: 100%; height: 5px; background-color: var(--thema); overflow: hidden; z-index: 100;
 				.progress_bar { height: 100%; width: 0%; background-color: var(--themabright); transition: width linear; }
 			}
 			.current_page { position: absolute; top: -40px; right: 0;
