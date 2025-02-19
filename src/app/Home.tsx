@@ -12,7 +12,9 @@ import { CardProps } from "@/types/props";
 
 export default function Home() {
 	useEffect(()=>{ // 홈에 들어올 시 fromHome 추가
-		sessionStorage.setItem("fromHome", "/");
+    if (typeof window !== "undefined") {
+			sessionStorage.setItem("fromHome", "/");
+		}
 	})
 
 	const [selectedHash, setSelectedHash] = useState<string | null>(null); // 해시태그를 상태로 관리
@@ -48,6 +50,19 @@ export default function Home() {
 		setFilteredCards(sorted);
 	}, [selectedHash, combinedData])
 	// 선택된 해시태그에 따라 카드를 필터링하는 함수 END!
+
+
+  // Hydration 오류 방지: sessionStorage 사용 전 window 체크 START!
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedPage = JSON.parse(sessionStorage.getItem("home") || "{}").Pagination;
+      if (storedPage !== undefined) {
+        setCurrentPage(storedPage);
+      }
+    }
+  }, []);
+  // Hydration 오류 방지: sessionStorage 사용 전 window 체크 END!
+
 
 	// 카드에서 중복되지 않은 해시태그들만 추출하여 배열로 생성
 	const uniqueHashs = Array.from(new Set(combinedData.flatMap(card => card.hashs.map(hash => hash.name))));
