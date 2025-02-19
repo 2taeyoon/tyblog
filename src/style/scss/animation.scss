@@ -16,15 +16,6 @@
   }
 }
 
-@keyframes slideScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-		transform: scale(1.15);
-  }
-}
-
 // 카드 컴포넌트에 사용되는 애니메이션 START!
 @keyframes expandWidth {
   from {
