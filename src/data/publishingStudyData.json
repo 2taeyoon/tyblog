@@ -15,6 +15,19 @@
 		},
 		{
 			"type": "ps",
+			"mdFile": "/images/publishing_study/23/23.md",
+			"image": "/images/publishing_study/23/main_image.webp",
+			"sortDate": "2025-02-20",
+			"title": "NextJS에서 JSON 기반 동적 Sitemap 생성",
+			"subTitle": "NextJS에서 JSON을 기반으로 동적 라우팅이 설정되어 있는데요. 이번에 자동으로 동적 sitemap.xml을 생성했습니다. 기존의 정적인 sitemap을 동적으로 변환하는 과정과 JSON 데이터를 기반으로 sitemap을 자동으로 업데이트하는지 알아보았습니다. 기존 Sitemap vs 변경된 Sitemap 우선 기존의 sitemap.xml과 우리가 새롭게 변경할 sitemap.xml의 차이점을 먼저 살펴보겠습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"},
+				{"name": "#Sitemap"}
+			]
+		},
+		{
+			"type": "ps",
 			"mdFile": "/images/publishing_study/22/22.md",
 			"image": "/images/publishing_study/22/main_image.webp",
 			"sortDate": "2025-02-15",
