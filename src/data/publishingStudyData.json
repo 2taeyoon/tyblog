@@ -2,6 +2,19 @@
   "cards": [
 		{
 			"type": "ps",
+			"mdFile": "/images/publishing_study/26/26.md",
+			"image": "/images/publishing_study/26/main_image.webp",
+			"sortDate": "2025-03-20",
+			"title": "포트폴리오 제작기 2: 프로필 섹션",
+			"subTitle": "저번에 포트폴리오 제작기 1: 메인페이지를 구현하고 나서 이번에는 포트폴리오 사이트의 저를 소개하는 프로필 섹션을 구현해야겠다는 생각이 들었습니다. 프로필 섹션은 방문자가 나라는 사람을 가장 먼저 알게 되는 곳이기 때문에, 어떻게 해야하나 고민을 많이 했지만 이번에는 gsap의 pin으로 스크롤이 고정된 것이 아닌 스크롤을 내리면서 작동하는 스크롤 트리거로 구현해보았습니다. 포트폴리오 페이지이기 때문에 단순히 정적인 UI가 아니라 효과를 적용한 비디오 + 마우스 인터렉션 효과 + 애니메이션을 적극적으로 활용했습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"},
+				{"name": "#Portfolio"}
+			]
+		},
+		{
+			"type": "ps",
 			"mdFile": "/images/publishing_study/25/25.md",
 			"image": "/images/publishing_study/25/main_image.webp",
 			"sortDate": "2025-02-25",
