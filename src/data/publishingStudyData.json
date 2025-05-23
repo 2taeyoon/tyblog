@@ -2,6 +2,32 @@
   "cards": [
 		{
 			"type": "ps",
+			"mdFile": "/images/publishing_study/28/28.md",
+			"image": "/images/publishing_study/28/main_image.webp",
+			"sortDate": "2025-05-10",
+			"title": "포트폴리오 제작기 4: 프로젝트 섹션 구현기",
+			"subTitle": "이번 포스트에서는 포트폴리오 웹사이트의 하이라이트 중 하나인 프로젝트 섹션 구현 과정을 살펴보려고 합니다. 코드 기반 프로젝트와 디자인 중심 프로젝트를 한 화면에 나란히 배치하고, GSAP ScrollTrigger를 활용해 텍스트 등장, 카드 애니메이션, 이미지 모달 등을 적용하여 인터랙션을 강화했습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"},
+				{"name": "#Portfolio"}
+			]
+		},
+		{
+			"type": "ps",
+			"mdFile": "/images/publishing_study/27/27.md",
+			"image": "/images/publishing_study/27/main_image.webp",
+			"sortDate": "2025-04-30",
+			"title": "포트폴리오 제작기 3: 스킬 섹션 구현기",
+			"subTitle": "이번 포스트에서는 포트폴리오 사이트의 스킬 소개 섹션을 구현하면서 사용한 주요 코드를 살펴보려고 합니다. 스킬 소개 섹션은 방문자에게 내가 어떤 기술을 다룰 수 있는지를 보여주는 중요한 부분입니다. 그래서 이 섹션은 단순히 나열하는 것이 아니라 각 기술에 대한 설명과 함께 애니메이션 효과를 추가하여 시각적 돋보이게게 만들었습니다.",
+			"hashs": [
+				{"name": "#NextJS"},
+				{"name": "#TypeScript"},
+				{"name": "#Portfolio"}
+			]
+		},
+		{
+			"type": "ps",
 			"mdFile": "/images/publishing_study/26/26.md",
 			"image": "/images/publishing_study/26/main_image.webp",
 			"sortDate": "2025-03-20",
