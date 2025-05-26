@@ -8,7 +8,7 @@ import { CardProps, TitleProps } from "@/types/props";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"
 import rehypeRaw from "rehype-raw"
-import remarkGfm from "remark-gfm"; // ✅ GFM 지원 추가
+import remarkGfm from "remark-gfm";
 import PageUrls from "@/components/utill/PageUrl";
 import Banner from "@/components/ui/Banner";
 
@@ -43,7 +43,7 @@ export default function PublishingStudyContent({title}: TitleProps) {
 			</div>
       <div className="common_wrap">
         <div className="blog">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeHighlight]}>
             {markdown}
           </ReactMarkdown>
 					<PageUrls hyphenRemoval={decodedTitle} cards={PublishingCard.cards}/>
