@@ -38,6 +38,8 @@ export default function RootLayout({
 				<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png"/>
 				<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/favicon-192x192.png"/>
 				<link rel="icon" type="image/png" sizes="512x512"  href="/favicon/favicon-512x512.png"/>
+				<meta name="naver-site-verification" content="b31001398f78b93a5261e498862e5905546ebe94" />
+				<meta name="google-site-verification" content="JjftBsdUusKSonsp6gVw-ivUUVv5sVXF0rtETJu280Q" />
       </head>
       <body>
 				<div className="RouteApp">
