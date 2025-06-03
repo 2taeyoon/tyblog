@@ -5,12 +5,11 @@
 			"mdFile": "/images/back_study/1/1.md",
       "image": "/images/back_study/1/main_image.webp",
 			"sortDate": "2025-06-03",
-      "title": "테스트",
-			"subTitle": "프론트엔드를 배울 때 cdnjs 사이트에서 복사 붙혀넣기만 했었지 정확하게 CDN이 무엇인지는 모르고 있었습니다. 이번에 CDN과 스트리밍 서버에 대해서 공부해보려고 합니다. 😙",
+      "title": "Spring Boot로 간단한 API 만들기",
+			"subTitle": "https://start.spring.io에 접속하시면 다음과 같은 화면이 나타납니다. 여기서 아래와 같이 설정해주시면 됩니다 Project: Maven (가장 널리 사용되고 안정적인 방식입니다) Language: Java (Kotlin이나 Groovy도 선택 가능하지만, Java가 가장 보편적입니다) Spring Boot: 최신 안정 버전 선택 Packaging: JAR (실행 가능한 단일 파일) Java: 로컬에 설치된 JDK 버전",
 			"hashs": [
-				{"name": "#CDN"},
-				{"name": "#Streaming"},
-				{"name": "#Server"}
+				{"name": "#SpringBoot"},
+				{"name": "#Java"}
 			]
 		}
   ]

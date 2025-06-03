@@ -52,15 +52,15 @@
 					&:hover { color: var(--white); animation: none; }
 				}
 				.nav_wrap { display: flex; align-items: center; justify-content: center; position: relative; margin: 0 8px;
-					.category { display: flex; align-items: center; justify-content: center; padding: 8px 0; width: 200px; height: 100%; color: var(--whiteCCC); font-weight: 700; font-size: 1.6rem; transition: all .3s; text-align: center;
-						@media (max-width: 1280px) { width: 180px; }
-						@media (max-width: 1024px) { width: 150px; }
-						@media (max-width: 768px) { width: 120px; }
+					.category { display: flex; align-items: center; justify-content: center; padding: 8px 0; width: 175px; height: 100%; color: var(--whiteCCC); font-weight: 700; font-size: 1.6rem; transition: all .3s; text-align: center;
+						@media (max-width: 1280px) { width: 150px; }
+						@media (max-width: 1024px) { width: 120px; }
+						@media (max-width: 768px) { width: 90px; }
 						&:hover { color: var(--white); transform: scale(1.05); }
 					}
 				}
 			}
-			.nav_publisher { display: none; /*width: auto; position: relative; padding: 0 16px; margin: 0 4px;*/
+			.nav_front { display: none; /*width: auto; position: relative; padding: 0 16px; margin: 0 4px;*/
 				@media (max-width: 640px) { display: block; }
 				.category { padding: 12px 24px; cursor: pointer; color: var(--black); font-weight: 700; font-size: 1.6rem; text-align: center;
 				}

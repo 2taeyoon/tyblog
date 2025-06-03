@@ -51,7 +51,7 @@ export default function Header({trueActive}: AsideContextProps) {
 							<Link href="/es" className="category">Etc</Link>
 						</div>
 					</div>
-					<div className="nav_publisher">
+					<div className="nav_front">
 						<Link href="/" className="category">심오한 프론트</Link>
 					</div>
 					<div className="side_menu_wrap" onClick={handleSideMenuClick}>
