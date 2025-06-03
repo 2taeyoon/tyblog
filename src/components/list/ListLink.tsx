@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ListLinkProps } from "../../types/props";
+import { ListLinkProps } from "@/types/props";
 import SvgList from "@/components/list/SvgList";
 
 export default function ListLink({ linkTo, title, baseClass, target, rel, ariaLabel, image, count, onClick, svgColor, svgWH, path }: ListLinkProps) {

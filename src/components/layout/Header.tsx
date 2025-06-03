@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { AsideContextProps } from "../../types/props";
+import { AsideContextProps } from "@/types/props";
 
 export default function Header({trueActive}: AsideContextProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -44,14 +44,15 @@ export default function Header({trueActive}: AsideContextProps) {
 				<nav className="nav">
 					<div className="nav_header">
 						<div className="nav_wrap">
-							<Link href="/" className="category">HOME</Link>
-							<Link href="/ds" className="category">DESIGN</Link>
-							<Link href="/ps" className="category">PUBLISHING</Link>
-							<Link href="/es" className="category">ETC</Link>
+							<Link href="/" className="category">Home</Link>
+							<Link href="/ds" className="category">Design</Link>
+							<Link href="/fs" className="category">Front</Link>
+							<Link href="/bs" className="category">Back</Link>
+							<Link href="/es" className="category">Etc</Link>
 						</div>
 					</div>
 					<div className="nav_publisher">
-						<Link href="/" className="category">심오한 퍼블리셔</Link>
+						<Link href="/" className="category">심오한 프론트</Link>
 					</div>
 					<div className="side_menu_wrap" onClick={handleSideMenuClick}>
 						<div className="side_menu"></div>

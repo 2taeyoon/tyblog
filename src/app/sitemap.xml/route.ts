@@ -1,14 +1,16 @@
 import { NextResponse } from "next/server";
-import DesignCard from "@/data/designStudyData.json";
-import PublishingCard from "@/data/publishingStudyData.json";
-import EtcCard from "@/data/etcStudyData.json";
+import DesignStudyData from "@/data/designStudyData.json";
+import FrontStudyData from "@/data/frontStudyData.json";
+import BackStudyData from "@/data/backStudyData.json";
+import EtcStudyData from "@/data/etcStudyData.json";
 import { CardProps } from "@/types/props";
 
 // JSON 파일을 하나의 배열로 통합
 const combinedData: CardProps[] = [
-  ...DesignCard.cards,
-  ...PublishingCard.cards,
-  ...EtcCard.cards,
+  ...DesignStudyData.cards,
+  ...FrontStudyData.cards,
+  ...BackStudyData.cards,
+  ...EtcStudyData.cards,
 ];
 
 // 동적 경로 생성
@@ -41,7 +43,12 @@ function generateSitemap(paths: { url: string; }[]) {
       <priority>1.0</priority>
     </url>
 		<url>
-      <loc>${domain}/ps</loc>
+      <loc>${domain}/fs</loc>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+		<url>
+      <loc>${domain}/bs</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -67,7 +74,7 @@ function generateSitemap(paths: { url: string; }[]) {
 // ✅ NextJS 서버 API 라우트 GET()
 export async function GET() {
   const paths = await getDynamicPaths(); //  `/${item.type}/${encodedTitle}` 값을 사용
-  const sitemap = generateSitemap(paths); // 변환한 값을 generateSitemap의 인수로 넣음음
+  const sitemap = generateSitemap(paths); // 변환한 값을 generateSitemap의 인수로 넣음
 
 	// NextJS API HTTP 응답
   return new NextResponse(sitemap, {

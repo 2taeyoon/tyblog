@@ -10,10 +10,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { CardProps } from "../../types/props";
-import designStudyData from "../../data/designStudyData.json";
-import publishingStudyData from "../../data/publishingStudyData.json";
-import etcStudyData from "../../data/etcStudyData.json";
+import { CardProps } from "@/types/props";
+import DesignStudyData from "@/data/designStudyData.json";
+import FrontStudyData from "@/data/frontStudyData.json";
+import BackStudyData from "@/data/backStudyData.json";
+import EtcStudyData from "@/data/etcStudyData.json";
 import Link from "next/link";
 
 export function SliderFadeComponent() {
@@ -28,9 +29,10 @@ export function SliderFadeComponent() {
   // combinedData 업데이트 (리렌더링될 때마다 실행)
   useEffect(() => {
     setCombinedData([
-      ...designStudyData.cards.map(card => ({ ...card, type: "ds" })),
-      ...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
-      ...etcStudyData.cards.map(card => ({ ...card, type: "es" })),
+      ...DesignStudyData.cards.map(card => ({ ...card, type: "ds" })),
+      ...FrontStudyData.cards.map(card => ({ ...card, type: "fs" })),
+      ...BackStudyData.cards.map(card => ({ ...card, type: "bs" })),
+      ...EtcStudyData.cards.map(card => ({ ...card, type: "es" })),
     ]);
   }, []); // 빈 배열 -> 최초 1회 실행
 

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import Card from "@/components/list/Card";
 import Card2 from "@/components/list/Card2";
 import ReactPaginate from 'react-paginate';
-import { CardPaginationProps } from "../../types/props";
+import { CardPaginationProps } from "@/types/props";
 
 
 export default function CardPagination({filteredCards, sessionName, currentPage, setCurrentPage}: CardPaginationProps) {

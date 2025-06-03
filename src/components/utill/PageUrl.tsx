@@ -5,9 +5,10 @@ import Link from "next/link";
 import { CardProps, PageUrlsProps } from "@/types/props";
 import { usePathname } from "next/navigation";
 
-import designStudyData from "@/data/designStudyData.json";
-import publishingStudyData from "@/data/publishingStudyData.json";
-import etcStudyData from "@/data/etcStudyData.json";
+import DesignStudyData from "@/data/designStudyData.json";
+import FrontStudyData from "@/data/frontStudyData.json";
+import BackStudyData from "@/data/backStudyData.json";
+import EtcStudyData from "@/data/etcStudyData.json";
 
 export default function PageUrls({ hyphenRemoval, cards }: PageUrlsProps) {
 
@@ -22,9 +23,10 @@ export default function PageUrls({ hyphenRemoval, cards }: PageUrlsProps) {
 	}, [pathname]);
 
 	const combinedData = [
-		...designStudyData.cards.map(card => ({ ...card })),
-		...publishingStudyData.cards.map(card => ({ ...card })),
-		...etcStudyData.cards.map(card => ({ ...card })),
+		...DesignStudyData.cards.map(card => ({ ...card })),
+		...FrontStudyData.cards.map(card => ({ ...card })),
+		...BackStudyData.cards.map(card => ({ ...card })),
+		...EtcStudyData.cards.map(card => ({ ...card })),
 	];
 
 	const sorted = combinedData.sort((a, b) => {
@@ -69,9 +71,7 @@ export default function PageUrls({ hyphenRemoval, cards }: PageUrlsProps) {
 	}
 
 	const { nextPageUrl, prevPageUrl, nextPageTitle, prevPageTitle, nextPageImage, prevPageImage, prevPageBasePath, nextPageBasePath } = getPageUrls(hyphenRemoval, dataSource);
-	// 현재 페이지의 JSON 배열을 받아 이전 페이지와 다음 페이지 URL 구현 END!
-console.log("nextPageBasePath", `${nextPageBasePath}/${nextPageUrl}`);
-console.log("prevPageBasePath", `${prevPageBasePath}/${prevPageUrl}`);
+
 	// 스크롤 초기화 함수 START!
 	useEffect(()=>{
 		window.scrollTo(0, 0);

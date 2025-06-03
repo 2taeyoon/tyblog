@@ -2,9 +2,10 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import SliderFade from "@/components/ui/SliderFade";
-import designStudyData from "@/data/designStudyData.json";
-import publishingStudyData from "@/data/publishingStudyData.json";
-import etcStudyData from "@/data/etcStudyData.json";
+import DesignStudyData from "@/data/designStudyData.json";
+import FrontStudyData from "@/data/frontStudyData.json";
+import BackStudyData from "@/data/backStudyData.json";
+import EtcStudyData from "@/data/etcStudyData.json";
 import CardPagination from "@/components/utill/CardPagination";
 import Saying from "@/components/ui/Saying";
 import Hashs from "@/components/utill/Hashs";
@@ -23,9 +24,10 @@ export default function Home() {
 
   const combinedData = useMemo(() => {
     return [
-      ...designStudyData.cards.map(card => ({ ...card, type: "ds" })),
-			...publishingStudyData.cards.map(card => ({ ...card, type: "ps" })),
-      ...etcStudyData.cards.map(card => ({ ...card, type: "es" })),
+      ...DesignStudyData.cards.map(card => ({ ...card, type: "ds" })),
+			...FrontStudyData.cards.map(card => ({ ...card, type: "fs" })),
+			...BackStudyData.cards.map(card => ({ ...card, type: "bs" })),
+      ...EtcStudyData.cards.map(card => ({ ...card, type: "es" })),
     ];
   }, []);
 
