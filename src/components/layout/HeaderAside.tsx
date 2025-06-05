@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from "next/navigation";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from "@/components/layout/Header";
 import Aside from "@/components/layout/Aside";
 
@@ -14,6 +14,18 @@ export default function HeaderAside() {
 	const falseActive = () => {
     setIsActive(false);
   };
+
+	useEffect(() => {
+    if (isActive) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isActive]);
 
 	const pathname = usePathname();
 
