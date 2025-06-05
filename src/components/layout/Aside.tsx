@@ -22,15 +22,10 @@ export default function Aside({falseActive}: AsideProps) {
   return (
 		<div className="aside_wrap">
 			<div className="aside">
-				<Profile/>
+				<Profile falseActive={falseActive}/>
 				<AnotherSite/>
 				<nav className="nav">
-					<Link
-						href="/"
-						className="home"
-					>
-						Home
-					</Link>
+					<Link href="/" className="home" onClick={falseActive}>Home</Link>
 					<div className="nav_wrap">
 						<div className="category">Study</div>
 						<div className="nav_list">
